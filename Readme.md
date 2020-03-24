@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Oleg Parkhomenko](https://up.htmlacademy.ru/adaptive/19/user/635705).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/id292541).
 
 ---
 
