@@ -63,9 +63,9 @@
         </ul>
       </nav>
       <h1 class="header__title">В путешествие с крутыми попутчиками!</h1>
-      <div class="">
-        <a class="main-nav__authorization authorization" href="#">Авторизация</a>
-        <ul class="main-nav__list contacts">
+      <div class="header__wrapper">
+        <a class="header__authorization authorization" href="#">Авторизация</a>
+        <ul class="header__list contacts">
           <li class="contacts__item">
             <a class="contacts__link" href="tel:88005558628">
               <img src="http://placehold.it/18x18" alt="Телефон" width="18" height="18">
@@ -82,7 +82,7 @@
       </div>
       <p class="header__lead">
         <q>Лучшее приложение, что я видел в жизни!</q>
-        <cite>Мурат Эльтазинглавный редактор газеты «гаджетлайф»</cite>
+        <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
       </p>
       <div class="header__road-map road-map">
         <ol class="road-map__list">
@@ -162,38 +162,54 @@
         <b>Теперь можно легко найти единомышленников!</b>
         <ul class="fellow-travelers__list">
           <li class="fellow-travelers__item">
-            <article class="fellow-travelers__content tourist">
-              <a class="tourist__link" href="#">
-                <h3 class="tourist__title">Таня Фирсова</h3>
-              </a>
-              <span class="tourist__level level">99</span>
-              <img src="http://placehold.it/285x285" alt="Таня Фирсова" width="285" height="285">
-              <div class="tourist__countries state-flag">
+            <article class="tourist">
+              <header class="tourist__header">
+                <div class="tourist__heading">
+                  <a class="tourist__link tourist__link--title" href="profile.html">
+                    <h3 class="tourist__title">Таня Фирсова</h3>
+                  </a>
+                </div>
+                <div class="tourist__img">
+                  <a class="tourist__link tourist__link--img" href="profile.html">
+                    <img src="http://placehold.it/70x70" alt="Петя Демин" width="70" height="70">
+                  </a>
+                  <section class="tourist__level level">
+                    <h4 class="visually-hidden">левел:</h4>
+                    <p class="level__value">80</p>
+                  </section>
+                </div>
+                <div class="tourist__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#ЗОЖ</li>
+                    <li class="hashtags__item">#ПП</li>
+                    <li class="hashtags__item">#Фитнес</li>
+                    <li class="hashtags__item">#Пляж</li>
+                    <li class="hashtags__item">#Авокадо</li>
+                    <li class="hashtags__item">#Смузи</li>
+                  </ul>
+                </div>
+              </header>
+              <section class="tourist__countries state-flag">
+                <h4 class="visually-hidden">хочет посетить:</h4>
                 <ul class="state-flag__list">
                   <li class="state-flag__item">
                     <img src="http://placehold.it/35x24" alt="Шри Ланка" width="35" height="24">
+                    <p class="state-flag__description">Шри Ланка</p>
                   </li>
                   <li class="state-flag__item">
                     <img src="http://placehold.it/35x24" alt="Таиланд" width="35" height="24">
+                    <p class="state-flag__description">Таиланд</p>
                   </li>
                   <li class="state-flag__item">
                     <img src="http://placehold.it/35x24" alt="Сейшелы" width="35" height="24">
+                    <p class="state-flag__description">Сейшелы</p>
                   </li>
                 </ul>
-              </div>
-              <div class="tourist__hashtags hashtags">
-                <ul class="hashtags__list">
-                  <li class="hashtags__item">#ЗОЖ</li>
-                  <li class="hashtags__item">#ПП</li>
-                  <li class="hashtags__item">#Фитнес</li>
-                  <li class="hashtags__item">#Пляж</li>
-                  <li class="hashtags__item">#Авокадо</li>
-                  <li class="hashtags__item">#Смузи</li>
-                </ul>
-              </div>
-              <div class="tourist__preferred preferred">
+              </section>
+              <section class="tourist__preferred preferred">
+                <h4 class="visually-hidden">транспорт:</h4>
                 <ul class="preferred__list">
-                  <li class="preferred__item" data-tooltip="Авиаперелёт">
+                  <li class="preferred__item preferred__item--checked" data-tooltip="Авиаперелёт">
                     <img src="http://placehold.it/19x21" alt="Авиаперелёт" width="19" height="21">
                   </li>
                   <li class="preferred__item" data-tooltip="Автотранспорт">
@@ -206,51 +222,66 @@
                     <img src="http://placehold.it/20x21" alt="Пешком" width="20" height="21">
                   </li>
                 </ul>
-              </div>
+              </section>
             </article>
           </li>
           <li class="fellow-travelers__item">
-            <article class="fellow-travelers__content tourist">
-              <a class="tourist__link" href="#">
-                <h3 class="tourist__title">Петя Демин</h3>
-              </a>
-              <span class="tourist__level level">99</span>
-              <img src="http://placehold.it/285x285" alt="Петя Демин" width="285" height="285">
-              <div class="tourist__countries state-flag">
+            <article class="tourist">
+              <header class="tourist__header">
+                <div class="tourist__heading">
+                  <a class="tourist__link tourist__link--title" href="profile.html">
+                    <h3 class="tourist__title">Петя Демин</h3>
+                  </a>
+                </div>
+                <div class="tourist__img">
+                  <a class="tourist__link tourist__link--img" href="profile.html">
+                    <img src="http://placehold.it/70x70" alt="Петя Демин" width="70" height="70">
+                  </a>
+                  <section class="tourist__level level">
+                    <h4 class="visually-hidden">левел:</h4>
+                    <p class="level__value">80</p>
+                  </section>
+                </div>
+                <div class="tourist__hashtags hashtags">
+                  <ul class="hashtags__list">
+                    <li class="hashtags__item">#Бургер</li>
+                    <li class="hashtags__item">#Бар</li>
+                    <li class="hashtags__item">#Футбол</li>
+                    <li class="hashtags__item">#Концерт</li>
+                    <li class="hashtags__item">#Крафт</li>
+                  </ul>
+                </div>
+              </header>
+              <section class="tourist__countries state-flag">
+                <h4 class="visually-hidden">хочет посетить:</h4>
                 <ul class="state-flag__list">
                   <li class="state-flag__item">
                     <img src="http://placehold.it/35x24" alt="Германия" width="35" height="24">
+                    <p class="state-flag__description">Германия</p>
                   </li>
                   <li class="state-flag__item">
                     <img src="http://placehold.it/35x24" alt="Чехия" width="35" height="24">
+                    <p class="state-flag__description">Чехия</p>
                   </li>
                 </ul>
-              </div>
-              <div class="tourist__hashtags hashtags">
-                <ul class="hashtags__list">
-                  <li class="hashtags__item">#Бургер</li>
-                  <li class="hashtags__item">#Бар</li>
-                  <li class="hashtags__item">#Футбол</li>
-                  <li class="hashtags__item">#Концерт</li>
-                  <li class="hashtags__item">#Крафт</li>
-                </ul>
-              </div>
-              <div class="tourist__preferred preferred">
+              </section>
+              <section class="tourist__preferred preferred">
+                <h4 class="visually-hidden">транспорт:</h4>
                 <ul class="preferred__list">
-                  <li class="preferred__item" data-tooltip="Авиаперелёт">
+                  <li class="preferred__item preferred__item--checked" data-tooltip="Авиаперелёт">
                     <img src="http://placehold.it/19x21" alt="Авиаперелёт" width="19" height="21">
                   </li>
-                  <li class="preferred__item" data-tooltip="Автотранспорт">
+                  <li class="preferred__item preferred__item--checked" data-tooltip="Автотранспорт">
                     <img src="http://placehold.it/17x21" alt="Автотранспорт" width="17" height="21">
                   </li>
                   <li class="preferred__item" data-tooltip="Велосипед">
                     <img src="http://placehold.it/24x21" alt="Велосипед" width="24" height="21">
                   </li>
-                  <li class="preferred__item" data-tooltip="Пешком">
+                  <li class="preferred__item preferred__item--checked" data-tooltip="Пешком">
                     <img src="http://placehold.it/20x21" alt="Пешком" width="20" height="21">
                   </li>
                 </ul>
-              </div>
+              </section>
             </article>
           </li>
         </ul>
