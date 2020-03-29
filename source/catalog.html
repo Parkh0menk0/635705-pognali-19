@@ -9,6 +9,7 @@
 
 <body>
 
+  <!-- Шапка -->
   <header class="header">
     <div class="container">
       <a class="header__logo" href="index.html">
@@ -29,44 +30,12 @@
             </li>
           </ul>
         </div>
-        <a class="main-nav__authorization authorization" href="#">Авторизация</a>
-        <ul class="main-nav__list contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:88005558628">
-              <img src="http://placehold.it/18x18" alt="Телефон" width="18" height="18">
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
-              <img src="http://placehold.it/18x13" alt="Электронная почта" width="18" height="13">
-              mail@htmlacademy.ru
-            </a>
-          </li>
-        </ul>
-        <ul class="main-nav__list social">
-          <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/" target="_blank" rel="noreferrer">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
       </nav>
       <h1 class="header__title">Попутчики</h1>
     </div>
   </header>
-  <!-- /header -->
 
+  <!-- Основное содержимое -->
   <main>
 
     <!-- Здесь будет фильтр -->
@@ -342,8 +311,8 @@
     <!-- /.catalog -->
 
   </main>
-  <!-- /main -->
 
+  <!-- Подвал -->
   <footer class="footer">
     <div class="container">
       <a class="footer__logo">
@@ -374,7 +343,59 @@
       </div>
     </div>
   </footer>
-  <!-- /footer -->
+
+  <!-- Выпадающее меню для мобильной и планшетной версии -->
+  <template id="drop-down-menu">
+    <div class="drop-down-menu">
+      <ul class="drop-down-menu__site-list site-list">
+        <li class="site-list__item">
+          <a href="index.html">О сервисе</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>Направления</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <a class="drop-down-menu__authorization authorization" href="#">Авторизация</a>
+      <ul class="drop-down-menu__contacts contacts">
+        <li class="contacts__item">
+          <a class="contacts__link" href="tel:88005558628">
+            <!-- <svg role="img" aria-hidden="true" width="18" height="18">
+              <use xlink:href="#icon-" x="0" y="0"></use>
+            </svg> -->
+            8 800 555-86-28
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+            <!-- <svg role="img" aria-hidden="true" width="18" height="13">
+              <use xlink:href="#icon-" x="0" y="0"></use>
+            </svg> -->
+            mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+      <ul class="main-nav__social social">
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </template>
 
 </body>
 
