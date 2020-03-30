@@ -69,9 +69,198 @@
   <!-- Основное содержимое -->
   <main>
 
-    <!-- Здесь будет фильтр -->
+    <section class="filter-country">
+      <div class="filter-country__header">
+        <h2 class="filter-country__title">
+          <button class="filter-country__btn filter-country__btn--open">Фильтрация по странам</button>
+        </h2>
+        <button class="filter-country__btn filter-country__btn--close">
+          <span class="visually-hidden">Свернуть</span>
+        </button>
+        <button class="filter-country__btn filter-country__btn--all">
+          <span class="visually-hidden">Показать всё</span>
+        </button>
+      </div>
+      <div class="filter-country__content">
+        <div class="territory" role="menu">
+          <button type="button" class="territory__btn territory__btn--active" role="menuitemradio"
+            aria-checked="true">Европа</button>
+          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Азия</button>
+          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Америка</button>
+          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Острова</button>
+        </div>
+        <div class="letter" role="menu">
+          <button type="button" class="letter__btn letter__btn--active" role="menuitemradio"
+            aria-checked="true">А</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Б</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">В</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Г</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Д</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Е</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">И</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">З</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">К</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Л</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">М</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Н</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">О</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">П</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Р</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">С</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Т</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">У</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ф</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Х</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ч</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ш</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Э</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ю</button>
+          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Я</button>
+        </div>
+        <div class="country">
+          <ul class="country__list">
+            <li class="country__item">
+              <a class="country__link" href="islands/australia.html">Австралия</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="europe/austria.html">Австрия</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="asia/azerbaijan.html">Азербайджан</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="europe/albania.html">Албания</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="africa/algeria.html">Алжир</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="africa/angola.html">Ангола</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="europe/andorra.html">Андорра</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="america/argentina.html">Аргентина</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="asia/armenia.html">Армения</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="asia/afghanistan.html">Афганистан</a>
+            </li>
+          </ul>
+        </div>
+        <button class="filter-country__btn filter-country__btn--close">Свернуть</button>
+      </div>
+    </section>
+    <!-- /.filter-country -->
 
-    <!-- Здесь будет форма -->
+    <form class="companion-form" method="get" action="https://echo.htmlacademy.ru" role="search">
+      <h2 class="companion-form__title">Подберите идеального попутчика</h2>
+      <fieldset class="companion-form__fieldset">
+        <legend class="companion-form__legend">
+          <button type="button">Хобби</button>
+        </legend>
+        <!-- Контент на макете отсутствует -->
+      </fieldset>
+      <fieldset class="companion-form__fieldset">
+        <legend class="companion-form__legend">
+          <button type="button">Музыка</button>
+        </legend>
+        <ul class="companion-form__list" role="listbox">
+          <li class="companion-form__item" role="option">
+            <input id="companion-music-1" class="visually-hidden" type="checkbox" name="hard-rock" checked>
+            <label class="companion-form__label" for="companion-music-1">Тяжелый рок</label>
+          </li>
+          <li class="companion-form__item" role="option">
+            <input id="companion-music-2" class="visually-hidden" type="checkbox" name="russian-rap">
+            <label class="companion-form__label" for="companion-music-2">Русский рэп</label>
+          </li>
+          <li class="companion-form__item" role="option">
+            <input id="companion-music-3" class="visually-hidden" type="checkbox" name="eurodens">
+            <label class="companion-form__label" for="companion-music-3">Евроденс</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="companion-form__fieldset">
+        <legend class="companion-form__legend">
+          <button type="button">Еда</button>
+        </legend>
+        <!-- Контент на макете отсутствует -->
+      </fieldset>
+      <fieldset class="companion-form__fieldset">
+        <legend class="companion-form__legend">
+          <button type="button">Транспорт</button>
+        </legend>
+        <ul class="companion-form__list" role="listbox">
+          <li class="companion-form__item" role="option">
+            <input id="companion-vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
+            <label class="companion-form__label" for="companion-vehicle-1">
+              <span class="visually-hidden">Авиаперелёт</span>
+              <!-- <svg role="img" width="19" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
+            </label>
+          </li>
+          <li class="companion-form__item" role="option">
+            <input id="companion-vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
+            <label class="companion-form__label" for="companion-vehicle-2">
+              <span class="visually-hidden">Автотранспорт</span>
+              <!-- <svg role="img" width="17" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
+            </label>
+          </li>
+          <li class="companion-form__item" role="option">
+            <input id="companion-vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
+            <label class="companion-form__label" for="companion-vehicle-3">
+              <span class="visually-hidden">Велосипед</span>
+              <!-- <svg role="img" width="24" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
+            </label>
+          </li>
+          <li class="companion-form__item" role="option">
+            <input id="companion-vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
+            <label class="companion-form__label" for="companion-vehicle-4">
+              <span class="visually-hidden">Пешком</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="companion-form__fieldset double-range">
+        <legend class="companion-form__legend double-range__legend">
+          <button type="button">Левел</button>
+        </legend>
+        <div class="double-range__range">
+          <div class="double-range__controls">
+            <div class="double-range__scale">
+              <div class="double-range__bar"></div>
+            </div>
+            <div class="double-range__toggle double-range__toggle--min"></div>
+            <div class="double-range__toggle double-range__toggle--max"></div>
+          </div>
+          <div class="double-range__price">
+            <p class="double-range__wrapper">
+              <label class="visually-hidden" for="min-value">от</label>
+              <input id="min-value" class="double-range__input" name="min-value" type="number" value="30" min="0"
+                max="100">
+            </p>
+            <p class="double-range__wrapper">
+              <label class="visually-hidden" for="max-value">до</label>
+              <input id="max-value" class="double-range__input" name="max-value" type="number" value="100" min="1"
+                max="100">
+            </p>
+          </div>
+        </div>
+      </fieldset>
+      <button class="companion-form__btn" type="submit">Показать</button>
+    </form>
+    <!-- /.companion-form -->
 
     <section class="catalog">
       <div class="container">
