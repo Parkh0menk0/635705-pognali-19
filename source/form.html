@@ -85,29 +85,38 @@
       </fieldset>
       <fieldset>
         <legend>Транспорт</legend>
-        <ul class="vehicle">
-          <li class="vehicle__item" data-tooltip="Авиаперелёт">
-            <input id="plane" class="visually-hidden" type="checkbox" name="plane" checked>
-            <label for="plane">
-              <img src="http://placehold.it/19x21" alt="Авиаперелёт" width="19" height="21">
+        <ul class="vehicle" role="listbox">
+          <li class="vehicle__item" role="option" data-tooltip="Авиаперелёт">
+            <input id="vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
+            <label class="vehicle__label" for="vehicle-1">
+              <span class="visually-hidden">Авиаперелёт</span>
+              <!-- <svg role="img" width="19" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Автотранспорт">
-            <input id="car" class="visually-hidden" type="checkbox" name="car" checked>
-            <label for="car">
-              <img src="http://placehold.it/17x21" alt="Автотранспорт" width="17" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Автотранспорт">
+            <input id="vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
+            <label class="vehicle__label" for="vehicle-2">
+              <span class="visually-hidden">Автотранспорт</span>
+              <!-- <svg role="img" width="17" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Велосипед">
-            <input id="bicycle" class="visually-hidden" type="checkbox" name="bicycle">
-            <label for="bicycle">
-              <img src="http://placehold.it/24x21" alt="Велосипед" width="24" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Велосипед">
+            <input id="vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
+            <label class="vehicle__label" for="vehicle-3">
+              <span class="visually-hidden">Велосипед</span>
+              <!-- <svg role="img" width="24" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Пешком">
-            <input id="walk" class="visually-hidden" type="checkbox" name="walk" checked>
-            <label for="walk">
-              <img src="http://placehold.it/20x21" alt="Пешком" width="20" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Пешком">
+            <input id="vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
+            <label class="vehicle__label" for="vehicle-4">
+              <span class="visually-hidden">Пешком</span>
             </label>
           </li>
         </ul>
