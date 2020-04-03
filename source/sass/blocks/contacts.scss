@@ -1,0 +1,27 @@
+.contacts {
+  list-style: none;
+}
+
+.contacts__link {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  color: $navy;
+  padding: 12px;
+  padding-left: 61px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: $dark-blue-grey-two;
+  }
+}

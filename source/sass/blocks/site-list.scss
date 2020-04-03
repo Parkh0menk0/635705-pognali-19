@@ -1,0 +1,16 @@
+.site-list {
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+
+.site-list__link {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: $navy;
+}

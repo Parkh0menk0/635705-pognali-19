@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  background-color: $navy;
+  background-image: linear-gradient(transparent 73.5%, $dark-blue-grey 73.5%),
+    linear-gradient(transparent 478px, $navy 478px), url("../img/header/traveller-illustration-mobile@1x.png"),
+    url("../img/header/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 0 0, 62% 223px, 50% 0%;
+
+  &.open {
+    background-image: linear-gradient($white 54.3%, transparent 54.3%);
+  }
+
+  &--catalog {
+    background-image: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .header__wrapper {
+      justify-content: flex-start;
+      padding-top: 19px;
+      padding-bottom: 9px;
+    }
+
+    .topmenu {
+      display: none;
+    }
+
+    .header__title {
+      position: relative;
+      text-align: left;
+      padding-bottom: 0;
+      width: 64%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: $mango;
+        bottom: -11px;
+        left: 0;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &--form {
+    background-image: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .header__wrapper {
+      justify-content: flex-start;
+      padding-top: 19px;
+      padding-bottom: 9px;
+    }
+
+    .topmenu {
+      display: none;
+    }
+
+    .header__title {
+      position: relative;
+      text-align: left;
+      padding-bottom: 0;
+      width: 80%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: $mango;
+        bottom: -11px;
+        left: 0;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 27px;
+  padding-bottom: 39px;
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 19px;
+}
+
+.header__title {
+  margin: 0;
+  order: 2;
+  width: 97%;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+
+  color: $white;
+
+  text-align: center;
+  padding-bottom: 244px;
+}
+
+.header__lead {
+  margin: 0;
+  margin-bottom: 30px;
+  order: 4;
+}
+
+.header__road-map {
+  width: 100%;
+  order: 5;
+}
+
+.header__drop-down {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

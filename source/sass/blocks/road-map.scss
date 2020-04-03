@@ -1,0 +1,46 @@
+.road-map {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  @include list-reset;
+}
+
+.road-map__item {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 22px 103px 32px 24px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  color: $navy;
+
+  &:nth-child(1n) {
+    background-color: $mango;
+  }
+
+  &:nth-child(2n) {
+    background-color: $mango-three;
+    margin-top: -10px;
+  }
+
+  &:nth-child(3n) {
+    background-color: $mango-two;
+    margin-top: -10px;
+  }
+
+  &:nth-child(4n) {
+    background-color: $light-gold;
+    margin-top: -10px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 22px;
+  }
+}

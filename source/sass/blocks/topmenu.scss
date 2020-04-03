@@ -1,0 +1,65 @@
+.topmenu {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @include list-reset;
+}
+
+.topmenu__link {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    content: "";
+    width: 18px;
+  }
+
+  &--phone {
+    background-color: $mango;
+
+    &::before {
+      background-image: url("../img/svg/topmenu-phone.svg");
+      height: 18px;
+    }
+
+    &:hover {
+      background-color: $dusty-orange;
+    }
+  }
+
+  &--mail {
+    background-color: $mango-two;
+
+    &::before {
+      background-image: url("../img/svg/topmenu-mail.svg");
+      height: 14px;
+    }
+
+    &:hover {
+      background-color: $mango;
+    }
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.topmenu__authorization {
+  padding: 7px 6px 3px;
+  width: 189px;
+}

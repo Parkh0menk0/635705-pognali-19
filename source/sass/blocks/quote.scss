@@ -1,0 +1,22 @@
+.quote {
+  width: 82%;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $white;
+  background-color: $navy;
+}
+
+.quote__content {
+  max-width: 77%;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.quote__author {
+  max-width: 77%;
+  display: block;
+  font-weight: bold;
+  font-style: normal;
+}
