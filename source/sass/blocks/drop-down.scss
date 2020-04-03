@@ -1,6 +1,7 @@
 .drop-down {
-  background-color: $white;
   display: none;
+
+  background-color: $white;
 
   &.open {
     display: block;
@@ -14,15 +15,16 @@
 
 .drop-down__site-list {
   display: flex;
+
   margin: 0;
-  padding: 0;
   margin-bottom: 49px;
+  padding: 0;
 }
 
 .drop-down__authorization {
-  padding: 12px 6px 8px;
   width: 100%;
   margin-bottom: 51px;
+  padding: 12px 6px 8px;
 }
 
 .drop-down__contacts {

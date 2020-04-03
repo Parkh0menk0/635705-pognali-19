@@ -1,22 +1,27 @@
 .quote {
-  width: 82%;
   font-size: 16px;
   line-height: 22px;
 
+  width: 82%;
+
   color: $white;
-  background-color: $navy;
+  background-color: $dark-two;
 }
 
 .quote__content {
-  max-width: 77%;
-  display: block;
   font-weight: 300;
+
+  display: block;
+
+  max-width: 77%;
   margin-bottom: 18px;
 }
 
 .quote__author {
-  max-width: 77%;
-  display: block;
   font-weight: bold;
   font-style: normal;
+
+  display: block;
+
+  max-width: 77%;
 }

@@ -1,12 +1,22 @@
 .btn {
-  display: block;
   font-size: 17px;
   font-weight: bold;
   line-height: 30px;
-  text-transform: uppercase;
-  border-radius: 60px;
 
-  color: $navy;
-  background-color: $light-gold;
+  display: block;
+
   text-align: center;
+  text-transform: uppercase;
+
+  color: $dark-two;
+  border-radius: 60px;
+  background-color: $light-gold;
+
+  &:hover {
+    background-color: $mango-two;
+  }
+
+  &:active {
+    color: rgba($dark-two, 0.3);
+  }
 }

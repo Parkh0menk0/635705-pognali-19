@@ -8,16 +8,18 @@
 }
 
 .road-map__item {
-  width: 100%;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
-  padding: 22px 103px 32px 24px;
+
   overflow: hidden;
+
+  width: 100%;
+  padding: 22px 103px 32px 24px;
+
+  color: $dark-two;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
-  color: $navy;
 
   &:nth-child(1n) {
     background-color: $mango;
