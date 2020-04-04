@@ -12,6 +12,15 @@
   border-radius: 60px;
   background-color: $light-gold;
 
+  &--show-all {
+    font-size: 18px;
+    text-transform: none;
+    text-align: left;
+    width: 100%;
+    padding: 17px 23px 15px;
+    border-radius: 10px;
+  }
+
   &:hover {
     background-color: $mango-two;
   }

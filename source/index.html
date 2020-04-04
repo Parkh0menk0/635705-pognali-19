@@ -54,7 +54,7 @@
                 </a>
               </li>
             </ul>
-            <a class="topmenu__authorization btn" href="#">Авторизация</a>
+            <a class="topmenu__btn btn btn--authorization" href="#">Авторизация</a>
           </div>
         </nav>
         <h1 class="header__title">В путешествие с крутыми попутчиками!</h1>
@@ -86,7 +86,7 @@
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="drop-down__authorization btn" href="#">Авторизация</a>
+          <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
           <ul class="drop-down__contacts contacts">
             <li class="contacts__item">
               <a class="contacts__link contacts__link--phone" href="tel:88005558628">
@@ -146,70 +146,69 @@
     </section>
     <!-- /.about -->
 
-    <section class="destination">
+    <section class="destination section">
       <div class="container">
-        <h2 class="destination__title">Направления</h2>
-        <p class="destination__lead">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели
-          бы
-          отправиться и чем можно
-          там заняться.</p>
-        <ul class="destination__list">
-          <li class="destination__item">
-            <article class="destination__content country">
-              <div class="country__wrapper">
-                <h3 class="country__title">Таиланд</h3>
-                <ul class="flag">
-                  <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Таиланд">
-                      <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+        <div class="destination__wrapper">
+          <div class="destination__lead">
+            <h2 class="destination__title section__title">Направления</h2>
+            <p class="destination__content section__content">Мы не продаем туры<br>и ничего не рекламируем. Люди сами
+              пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <ul class="destination__list">
+            <li class="destination__item country">
+              <div class="country__header">
+                <div class="country__wrapper">
+                  <div class="country__description">
+                    <h3 class="country__title">Таиланд</h3>
+                    <p class="country__content">Джунгли зовут!</p>
+                    <a class="country__link country__link--th" href="asia/thailand.html">
+                      <span class="visually-hidden">Таиланд</span>
                     </a>
-                  </li>
-                </ul>
-                <span class="country__visitors">18321</span>
-                <p class="country__content">Джунгли зовут!</p>
+                  </div>
+                  <span class="country__visitors">18321</span>
+                </div>
               </div>
-            </article>
-          </li>
-          <li class="destination__item">
-            <article class="destination__content country">
-              <div class="country__wrapper">
-                <h3 class="country__title">Франция</h3>
-                <ul class="flag">
-                  <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Франция">
-                      <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+              <p class="country__content">
+                <img src="img/destination/thailand-mobile@1x.jpg" alt="Таиланд">
+              </p>
+            </li>
+            <li class="destination__item country">
+              <div class="country__header">
+                <div class="country__wrapper">
+                  <div class="country__description">
+                    <h3 class="country__title">Франция</h3>
+                    <p class="country__content">Трэ бьен, манифик!</p>
+                    <a class="country__link country__link--fr" href="europe/france.html">
+                      <span class="visually-hidden">Франция</span>
                     </a>
-                  </li>
-                </ul>
-                <span class="country__visitors">12518</span>
-                <p class="country__content">Трэ бьен, манифик!</p>
+                  </div>
+                  <span class="country__visitors">12518</span>
+                </div>
               </div>
-            </article>
-          </li>
-          <li class="destination__item">
-            <article class="destination__content country">
-              <div class="country__wrapper">
-                <h3 class="country__title">Чехия</h3>
-                <ul class="flag">
-                  <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Чехия">
-                      <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+              <p class="country__content">
+                <img src="img/destination/france-mobile@1x.jpg" alt="Франция">
+              </p>
+            </li>
+            <li class="destination__item country">
+              <div class="country__header">
+                <div class="country__wrapper">
+                  <div class="country__description">
+                    <h3 class="country__title">Чехия</h3>
+                    <p class="country__content">Закоулки старой Европы</p>
+                    <a class="country__link country__link--cz" href="europe/сzech.html">
+                      <span class="visually-hidden">Чехия</span>
                     </a>
-                  </li>
-                </ul>
-                <span class="country__visitors">5326</span>
-                <p class="country__content">Закоулки старой Европы</p>
+                  </div>
+                  <span class="country__visitors">5326</span>
+                </div>
               </div>
-            </article>
-          </li>
-        </ul>
-        <a class="destination__show-all btn btn--show-all" href="form.html">Показать все</a>
+              <p class="country__content">
+                <img src="img/destination/czech-mobile@1x.jpg" alt="Чехия">
+              </p>
+            </li>
+          </ul>
+          <a class="destination__btn btn btn--show-all" href="form.html">Показать все</a>
+        </div>
       </div>
     </section>
     <!-- /.destination -->
@@ -235,7 +234,7 @@
                   </a>
                   <div class="tourist__level level">
                     <p class="level__text">99</p>
-                    <svg>
+                    <svg width="60" height="60">
                       <circle class="level__bg" cx="30" cy="30" r="30"></circle>
                       <circle class="level__progress" cx="30" cy="30" r="30"></circle>
                     </svg>
@@ -325,7 +324,7 @@
                   </a>
                   <div class="tourist__level level">
                     <p class="level__text">80</p>
-                    <svg>
+                    <svg width="60" height="60">
                       <circle class="level__bg" cx="30" cy="30" r="30"></circle>
                       <circle class="level__progress" cx="30" cy="30" r="30"></circle>
                     </svg>
@@ -430,12 +429,18 @@
         <p>Мы с радостью на них ответим!</p>
         <ul class="feedback__list contacts">
           <li class="contacts__item">
-            <a class="contacts__link" href="tel:88005558628">
+            <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+              <!-- <svg role="img" width="35" height="24">
+                <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
+              </svg> -->
               8 800 555-86-28
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+            <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
+              <!-- <svg role="img" width="35" height="24">
+                <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
+              </svg> -->
               mail@htmlacademy.ru
             </a>
           </li>
@@ -466,17 +471,18 @@
       </a>
       <ul class="footer__list social">
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+          <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/" target="_blank" rel="noreferrer">
+          <a class="social__link social__link--vk" href="https://vk.com/" target="_blank" rel="noreferrer">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a class="social__link social__link--insta" href="https://www.instagram.com/" target="_blank"
+            rel="noreferrer">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>

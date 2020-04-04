@@ -1,0 +1,94 @@
+.country {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.country__header {
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  margin-top: -16px;
+  padding-top: 26px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+}
+
+.country__wrapper {
+  margin: 0 auto;
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.country__title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: $dark-two;
+}
+
+.country__content {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: rgba($greyish-brown, 0.3);
+
+  img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+}
+
+.country__link {
+  display: block;
+  position: absolute;
+  top: -12px;
+  width: 36px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 2px;
+
+  &--th {
+    background-image: url("../img/svg/thailand.svg");
+  }
+
+  &--fr {
+    background-image: url("../img/svg/france.svg");
+  }
+
+  &--cz {
+    background-image: url("../img/svg/сzech.svg");
+  }
+}
+
+.country__visitors {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+
+  color: rgba($greyish-brown, 0.3);
+
+  &::before {
+    opacity: 0.1;
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: -18px;
+    width: 11px;
+    height: 11px;
+    background-image: url("../img/svg/user.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
