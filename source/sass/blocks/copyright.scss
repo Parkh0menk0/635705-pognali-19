@@ -1,0 +1,35 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__content {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+
+  color: $greyish-brown;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  background-color: $mango;
+
+  svg {
+    width: 27px;
+    height: 34px;
+    fill: $dark-blue-grey;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
