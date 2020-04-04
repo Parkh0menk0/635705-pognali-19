@@ -1,0 +1,91 @@
+.rates {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $pale-grey;
+  background-color: $pale-grey;
+  background-image: url("../img/rates/rates@1x.png");
+  background-repeat: no-repeat;
+  background-position: 88.3% 10.5%;
+  background-size: 99px 99px;
+}
+
+.rates__wrapper {
+  padding-top: 52px;
+  padding-bottom: 35px;
+  padding-left: 24px;
+  padding-right: 27px;
+}
+
+.rates__title {
+  margin: 0;
+  margin-bottom: 19px;
+  max-width: 68%;
+  margin-bottom: 43px;
+}
+
+.rates__list {
+  @include list-reset;
+  margin-bottom: 28px;
+  counter-reset: flag;
+}
+
+.rates__item {
+  position: relative;
+  border-top: 1px solid rgba($black, 0.05);
+  padding-top: 11px;
+  padding-bottom: 10px;
+  max-width: 87%;
+
+  &::after {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 38px;
+
+    position: absolute;
+    top: 3px;
+    right: -54px;
+
+    width: 34px;
+    height: 34px;
+
+    content: counter(flag);
+    counter-increment: flag;
+    text-align: center;
+
+    color: $white;
+    border-radius: 50%;
+  }
+
+  &:nth-child(1n)::after {
+    background-color: $mango-three;
+  }
+
+  &:nth-child(2n)::after {
+    background-color: $mango-two;
+  }
+
+  &:nth-child(3n)::after {
+    background-color: $light-gold;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid rgba($black, 0.05);
+  }
+}
+
+.rates__content {
+  max-width: 90%;
+  margin: 0;
+  margin-bottom: 60px;
+
+  color: $greyish-brown;
+}
+
+.rates__link {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+
+  color: $dark-blue-grey;
+}
