@@ -161,9 +161,16 @@
                   <div class="country__description">
                     <h3 class="country__title">Таиланд</h3>
                     <p class="country__content">Джунгли зовут!</p>
-                    <a class="country__link country__link--th" href="asia/thailand.html">
-                      <span class="visually-hidden">Таиланд</span>
-                    </a>
+                    <ul class="country__flag flag">
+                      <li class="flag__item">
+                        <a class="flag__link" href="asia/thailand.html">
+                          <span class="visually-hidden">Таиланд</span>
+                            <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-th" x="0" y="0"></use>
+                        </svg> -->
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                   <span class="country__visitors">18321</span>
                 </div>
@@ -178,9 +185,16 @@
                   <div class="country__description">
                     <h3 class="country__title">Франция</h3>
                     <p class="country__content">Трэ бьен, манифик!</p>
-                    <a class="country__link country__link--fr" href="europe/france.html">
-                      <span class="visually-hidden">Франция</span>
-                    </a>
+                    <ul class="country__flag flag">
+                      <li class="flag__item">
+                        <a class="flag__link" href="europe/france.html">
+                          <span class="visually-hidden">Фпанция</span>
+                            <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-fr" x="0" y="0"></use>
+                        </svg> -->
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                   <span class="country__visitors">12518</span>
                 </div>
@@ -195,9 +209,16 @@
                   <div class="country__description">
                     <h3 class="country__title">Чехия</h3>
                     <p class="country__content">Закоулки старой Европы</p>
-                    <a class="country__link country__link--cz" href="europe/сzech.html">
-                      <span class="visually-hidden">Чехия</span>
-                    </a>
+                    <ul class="country__flag flag">
+                      <li class="flag__item">
+                        <a class="flag__link" href="europe/czech.html">
+                          <span class="visually-hidden">Чехия</span>
+                            <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-cz" x="0" y="0"></use>
+                        </svg> -->
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                   <span class="country__visitors">5326</span>
                 </div>
@@ -213,187 +234,186 @@
     </section>
     <!-- /.destination -->
 
-    <section class="fellow-travelers">
+    <section class="fellow-travelers section">
       <div class="container">
-        <h2 class="fellow-travelers__title">Попутчики</h2>
-        <p class="fellow-travelers__lead">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен
-          пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <b>Теперь можно легко найти единомышленников!</b>
-        <ul class="fellow-travelers__list">
-          <li class="fellow-travelers__item">
-            <article class="tourist">
-              <header class="tourist__header">
-                <div class="tourist__heading">
-                  <a class="tourist__link tourist__link--title" href="profile.html">
-                    <h3 class="tourist__title">Таня Фирсова</h3>
+        <div class="fellow-travelers__wrapper">
+          <div class="fellow-travelers__lead">
+            <h2 class="fellow-travelers__title section__title">Попутчики</h2>
+            <p class="fellow-travelers__content section__content">Все мы индивидуальны и у каждого свой взгляд на
+              идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="fellow-travelers__content section__content section__content--bold">Теперь можно легко найти
+              единомышленников!</p class="fellow-travelers__content section__content">
+          </div>
+          <ul class="fellow-travelers__list">
+            <li class="fellow-travelers__item traveler-preview">
+              <div class="traveler-preview__content">
+                <div class="traveler-preview__heading">
+                  <a class="traveler-preview__link traveler-preview__link--title" href="profile.html">
+                    <h3 class="traveler-preview__title">Таня Фирсова</h3>
                   </a>
                 </div>
-                <div class="tourist__img">
-                  <a class="tourist__link tourist__link--img" href="profile.html">
-                    <img src="http://placehold.it/270x270" alt="Таня Фирсова" width="270" height="270">
-                  </a>
-                  <div class="tourist__level level">
-                    <p class="level__text">99</p>
-                    <svg width="60" height="60">
-                      <circle class="level__bg" cx="30" cy="30" r="30"></circle>
-                      <circle class="level__progress" cx="30" cy="30" r="30"></circle>
-                    </svg>
-                  </div>
+                <div class="traveler-preview__hashtags hashtags">
+                  <a class="hashtags__link" href="#">#ЗОЖ</a> <a class="hashtags__link" href="#">#ПП</a> <a
+                    class="hashtags__link" href="#">#Фитнес</a> <a class="hashtags__link" href="#">#пляж</a> <a
+                    class="hashtags__link" href="#">#Авокадо</a> <a class="hashtags__link" href="#">#Смузи</a>
                 </div>
-                <div class="tourist__hashtags hashtags">
-                  <a class="hashtags__link" href="#">#ЗОЖ</a>
-                  <a class="hashtags__link" href="#">#ПП</a>
-                  <a class="hashtags__link" href="#">#Фитнес</a>
-                  <a class="hashtags__link" href="#">#Пляж</a>
-                  <a class="hashtags__link" href="#">#Авокадо</a>
-                  <a class="hashtags__link" href="#">#Смузи</a>
-                </div>
-              </header>
-              <div class="tourist__item tourist__item--countries">
-                <h4 class="visually-hidden">Хочет посетить:</h4>
-                <ul class="flag">
+                <ul class="traveler-preview__wishes flag">
                   <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Шри Ланка">
+                    <a class="flag__link" href="island/srilanka.html">
+                      <span class="visually-hidden">Шри Ланка</span>
                       <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Таиланд">
-                      <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                    <a class="flag__link" href="asia/thailand.html">
+                      <span class="visually-hidden">Таиланд</span>
+                        <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Сейшелы">
+                    <a class="flag__link" href="island/seychelles.html">
+                      <span class="visually-hidden">Сейшелы</span>
                       <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div class="tourist__inem tourist__inem--preferred">
-                <h4 class="visually-hidden">Предпочитаемый транспорт:</h4>
-                <ul class="preferred">
+                <ul class="traveler-preview__preferred preferred">
                   <li class="preferred__item preferred__item--active" data-tooltip="Авиаперелёт">
-                    <a class="preferred__link" href="#" aria-label="Авиаперелёт">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Авиаперелёт</span>
                       <!-- <svg role="img" width="19" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item" data-tooltip="Автотранспорт">
-                    <a class="preferred__link" href="#" aria-label="Автотранспорт">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Автотранспорт</span>
                       <!-- <svg role="img" width="17" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item" data-tooltip="Велосипед">
-                    <a class="preferred__link" href="#" aria-label="Велосипед">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Велосипед</span>
                       <!-- <svg role="img" width="24" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item" data-tooltip="Пешком">
-                    <a class="preferred__link" href="#" aria-label="Пешком">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Пешком</span>
                       <!-- <svg role="img" width="20" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                 </ul>
               </div>
-            </article>
-          </li>
-          <li class="fellow-travelers__item">
-            <article class="tourist">
-              <header class="tourist__header">
-                <div class="tourist__heading">
-                  <a class="tourist__link tourist__link--title" href="profile.html">
-                    <h3 class="tourist__title tourist__title--active">Петя Демин</h3>
-                  </a>
-                </div>
-                <div class="tourist__img">
-                  <a class="tourist__link tourist__link--img" href="profile.html">
-                    <img src="http://placehold.it/270x270" alt="Петя Демин" width="270" height="270">
-                  </a>
-                  <div class="tourist__level level">
-                    <p class="level__text">80</p>
+              <div class="traveler-preview__picture">
+                <a class="traveler-preview__link traveler-preview__link--img" href="profile.html">
+                  <img src="img/travellers/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="270" height="270">
+                </a>
+                <div class="traveler-preview__level">
+                  <div class="level level--firsova">
+                    <p class="level__text">99</p>
                     <svg width="60" height="60">
-                      <circle class="level__bg" cx="30" cy="30" r="30"></circle>
-                      <circle class="level__progress" cx="30" cy="30" r="30"></circle>
+                      <circle class="level__progress" cx="30" cy="30" r="28"></circle>
                     </svg>
                   </div>
                 </div>
-                <div class="tourist__hashtags hashtags">
-                  <a class="hashtags__link" href="#">#Бургер</a>
-                  <a class="hashtags__link" href="#">#Бар</a>
-                  <a class="hashtags__link" href="#">#Футбол</a>
-                  <a class="hashtags__link" href="#">#Концерт</a>
-                  <a class="hashtags__link" href="#">#Крафт</a>
+              </div>
+            </li>
+            <li class="fellow-travelers__item traveler-preview">
+              <div class="traveler-preview__content">
+                <div class="traveler-preview__heading">
+                  <a class="traveler-preview__link traveler-preview__link--title" href="profile.html">
+                    <h3 class="traveler-preview__title">Петя Демин</h3>
+                  </a>
                 </div>
-              </header>
-              <div class="tourist__item tourist__item--countries">
-                <h4 class="visually-hidden">Хочет посетить:</h4>
-                <ul class="flag">
+                <div class="traveler-preview__hashtags hashtags">
+                  <a class="hashtags__link" href="#">#бургер</a> <a class="hashtags__link" href="#">#бар</a> <a
+                    class="hashtags__link" href="#">#футбол</a> <a class="hashtags__link" href="#">#концерт</a> <a
+                    class="hashtags__link" href="#">#крафт</a>
+                </div>
+                <ul class="traveler-preview__wishes flag">
                   <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Германия">
+                    <a class="flag__link" href="europe/germany.html">
+                      <span class="visually-hidden">Германия</span>
                       <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="flag__item">
-                    <a class="flag__link" href="#" aria-label="Чехия">
+                    <a class="flag__link" href="europe/czech.html">
+                      <span class="visually-hidden">Чехия</span>
                       <!-- <svg role="img" width="35" height="24">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div class="tourist__inem tourist__inem--preferred">
-                <h4 class="visually-hidden">Предпочитаемый транспорт:</h4>
-                <ul class="preferred">
+                <ul class="traveler-preview__preferred preferred">
                   <li class="preferred__item preferred__item--active" data-tooltip="Авиаперелёт">
-                    <a class="preferred__link" href="#" aria-label="Авиаперелёт">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Авиаперелёт</span>
                       <!-- <svg role="img" width="19" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item preferred__item--active" data-tooltip="Автотранспорт">
-                    <a class="preferred__link" href="#" aria-label="Автотранспорт">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Автотранспорт</span>
                       <!-- <svg role="img" width="17" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item" data-tooltip="Велосипед">
-                    <a class="preferred__link" href="#" aria-label="Велосипед">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Велосипед</span>
                       <!-- <svg role="img" width="24" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                   <li class="preferred__item preferred__item--active" data-tooltip="Пешком">
-                    <a class="preferred__link" href="#" aria-label="Пешком">
+                    <a class="preferred__link" href="#">
+                      <span class="visually-hidden">Пешком</span>
                       <!-- <svg role="img" width="20" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
                     </a>
                   </li>
                 </ul>
               </div>
-            </article>
-          </li>
-        </ul>
-        <a class="fellow-travelers__show-all btn btn--show-all" href="form.html">Показать все</a>
+              <div class="traveler-preview__picture">
+                <a class="traveler-preview__link traveler-preview__link--img" href="profile.html">
+                  <img src="img/travellers/demin-mobile@1x.jpg" alt="Петя Дёмин" width="270" height="270">
+                </a>
+                <div class="traveler-preview__level">
+                  <div class="level level--demin">
+                    <p class="level__text">80</p>
+                    <svg width="60" height="60">
+                      <circle class="level__progress" cx="30" cy="30" r="28"></circle>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a class="fellow-travelers__show-all btn btn--show-all" href="form.html">Показать всех</a>
+        </div>
       </div>
     </section>
     <!-- /.fellow-travelers -->
@@ -489,7 +509,8 @@
       </ul>
       <div class="footer__codivyright copyright">
         <p>Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">html academy</span>
           <!-- <svg role="img" width="27" height="34">
             <use xlink:href="#icon-" x="0" y="0"></use>
           </svg> -->
