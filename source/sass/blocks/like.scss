@@ -1,0 +1,33 @@
+.like {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.like__btn {
+  @include btn-res;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-image: url("../img/svg/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 13px 11px;
+  background-color: $pale-grey;
+
+  &--active {
+    background-image: url("../img/svg/heart-active.svg");
+    background-color: $beige;
+  }
+}
+
+.like__count {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: $dark-two;
+}

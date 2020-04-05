@@ -1,34 +1,18 @@
 .flag {
-  display: flex;
-  flex-direction: row;
-
   list-style: none;
-
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.flag__item {
-  width: 35px;
-  height: 24px;
-  margin-right: 19px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .flag__link {
   display: block;
 
-  width: 35px;
-  height: 24px;
-
   border-radius: 2px;
   background-color: $mango;
+}
 
-  svg {
-    width: 35px;
-    height: 24px;
-  }
+.flag__description {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $dark-slate-blue;
+  text-transform: uppercase;
 }

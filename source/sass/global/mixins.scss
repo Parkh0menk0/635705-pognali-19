@@ -4,3 +4,15 @@
 
   list-style: none;
 }
+
+@mixin btn-res {
+  font: inherit;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}

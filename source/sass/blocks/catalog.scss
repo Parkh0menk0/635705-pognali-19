@@ -1,0 +1,23 @@
+.catalog {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $pale-grey;
+}
+
+.catalog__wrapper {
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.catalog__list {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.catalog__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

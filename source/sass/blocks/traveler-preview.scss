@@ -48,6 +48,81 @@
   position: absolute;
   top: 16px;
   left: 17px;
+
+  .level {
+    position: relative;
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    &--firsova {
+      .level__progress {
+        stroke-dasharray: 169;
+      }
+    }
+
+    &--demin {
+      .level__progress {
+        stroke-dasharray: 144;
+      }
+    }
+  }
+
+  .level__progress {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+
+    fill: rgba($black, 0.6);
+    stroke-width: 3px;
+    stroke: $mango;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+  }
+
+  .level__text {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+
+    position: absolute;
+    top: -10px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: $white;
+
+    &::before {
+      position: absolute;
+      bottom: -1px;
+      left: 14px;
+
+      width: 31px;
+      height: 1px;
+
+      content: "";
+
+      background-color: rgba($white, 0.3);
+    }
+
+    &::after {
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 14px;
+
+      display: block;
+
+      content: "level";
+    }
+  }
 }
 
 .traveler-preview__title {
@@ -101,9 +176,35 @@
   z-index: 1;
   top: -11px;
 
+  display: flex;
+  flex-direction: row;
+
   max-width: 93%;
   margin: 0;
   padding: 0;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .flag__item {
+    width: 35px;
+    height: 24px;
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .flag__link {
+    width: 35px;
+    height: 24px;
+
+    svg {
+      width: 35px;
+      height: 24px;
+    }
+  }
 }
 
 .traveler-preview__preferred {

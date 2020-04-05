@@ -1,31 +1,12 @@
 .level {
   position: relative;
-  width: 60px;
-  height: 60px;
-
-  svg {
-    width: 60px;
-    height: 60px;
-  }
-
-  &--firsova {
-    .level__progress {
-      stroke-dasharray: 169;
-    }
-  }
-
-  &--demin {
-    .level__progress {
-      stroke-dasharray: 144;
-    }
-  }
 }
 
 .level__progress {
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 
-  fill: rgba($black, 0.6);
+  fill: none;
   stroke-width: 3px;
   stroke: $mango;
   stroke-linecap: round;
@@ -38,37 +19,8 @@
   line-height: 24px;
 
   position: absolute;
-  top: -10px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  width: 100%;
 
   text-align: center;
 
   color: $white;
-
-  &::before {
-    position: absolute;
-    bottom: -1px;
-    left: 14px;
-
-    width: 31px;
-    height: 1px;
-
-    content: "";
-
-    background-color: rgba($white, 0.3);
-  }
-
-  &::after {
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 14px;
-
-    display: block;
-
-    content: "level";
-  }
 }
