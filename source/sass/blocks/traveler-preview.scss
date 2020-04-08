@@ -171,7 +171,7 @@
   margin-bottom: 6px;
 }
 
-.traveler-preview__wishes {
+.traveler-preview__list {
   position: absolute;
   z-index: 1;
   top: -11px;
@@ -180,30 +180,34 @@
   flex-direction: row;
 
   max-width: 93%;
+  list-style: none;
   margin: 0;
   padding: 0;
 
   justify-content: flex-start;
   align-items: flex-start;
+}
 
-  .flag__item {
-    width: 35px;
-    height: 24px;
-    margin-right: 19px;
+.traveler-preview__item {
+  width: 35px;
+  height: 24px;
+  margin-right: 19px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
+}
 
-  .flag__link {
+.traveler-preview__country {
+  display: block;
+  width: 35px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: $mango;
+
+  svg {
     width: 35px;
     height: 24px;
-
-    svg {
-      width: 35px;
-      height: 24px;
-    }
   }
 }
 

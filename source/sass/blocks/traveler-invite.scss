@@ -106,38 +106,50 @@
   }
 }
 
-.traveler-invite__wishes {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+.traveler-invite__list {
+  @include list-reset;
 
-  justify-content: flex-start;
-  align-items: flex-start;
+  &--wishes {
+    display: flex;
+    flex-direction: column;
 
-  .flag__item {
-    width: 100%;
-    margin-bottom: 10px;
-    position: relative;
-  }
+    justify-content: flex-start;
+    align-items: flex-start;
 
-  .flag__link {
-    position: absolute;
-    top: -3px;
-    left: -1px;
-    width: 26px;
-    height: 18px;
+    .traveler-invite__item {
+      width: 100%;
+      margin-bottom: 10px;
+      position: relative;
+    }
 
-    svg {
+    .traveler-invite__country {
+      position: absolute;
+      top: -3px;
+      left: -1px;
       width: 26px;
       height: 18px;
-    }
-  }
+      border-radius: 2px;
+      background-color: $mango;
 
-  .flag__description {
-    margin: 0;
-    padding-left: 40px;
-    letter-spacing: 0.3px;
+      svg {
+        width: 26px;
+        height: 18px;
+      }
+    }
+
+    .traveler-invite__description {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 18px;
+
+      margin: 0;
+      padding-left: 40px;
+
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+
+      color: $dark-slate-blue;
+    }
   }
 }
 

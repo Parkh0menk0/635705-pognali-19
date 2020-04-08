@@ -58,27 +58,20 @@
   position: absolute;
   top: -12px;
 
-  margin: 0;
-  padding: 0;
+  width: 35px;
+  height: 24px;
+  margin-right: 19px;
 
-  .flag__item {
-    width: 35px;
-    height: 24px;
-    margin-right: 19px;
+  border-radius: 2px;
+  background-color: $mango;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 
-  .flag__link {
+  svg {
     width: 35px;
     height: 24px;
-
-    svg {
-      width: 35px;
-      height: 24px;
-    }
   }
 }
 
