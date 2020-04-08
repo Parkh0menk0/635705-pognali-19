@@ -17,38 +17,6 @@
     padding: 8px 23px 3px;
   }
 
-  &--show-all {
-    font-size: 18px;
-
-    position: relative;
-
-    width: 100%;
-    padding: 17px 23px 15px;
-
-    text-align: left;
-    text-transform: none;
-
-    color: $dark-slate-blue;
-    border-radius: 10px;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 23px;
-      bottom: 0;
-
-      width: 10px;
-      height: 14px;
-      margin: auto;
-
-      content: "";
-
-      background-image: url("../img/svg/triangle-arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-  }
-
   &:hover {
     background-color: $mango-two;
   }
