@@ -30,7 +30,7 @@
 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: $white;
+  background-color: white;
 
   justify-content: flex-start;
   align-items: center;
@@ -76,7 +76,7 @@
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
 
-    fill: rgba($black, 0.6);
+    fill: rgba(black, 0.6);
     stroke-width: 3px;
     stroke: $mango;
     stroke-linecap: round;
@@ -98,7 +98,7 @@
 
     text-align: center;
 
-    color: $white;
+    color: white;
 
     &::before {
       position: absolute;
@@ -110,7 +110,7 @@
 
       content: "";
 
-      background-color: rgba($white, 0.3);
+      background-color: rgba(white, 0.3);
     }
 
     &::after {
