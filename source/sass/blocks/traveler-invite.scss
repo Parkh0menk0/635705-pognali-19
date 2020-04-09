@@ -5,26 +5,20 @@
 }
 
 .traveler-invite__info {
-  padding-top: 15px;
-  padding-bottom: 58px;
+  padding: 15px 25px 58px 25px;
 }
 
-.traveler-invite__basic {
-  margin-bottom: 10px;
-}
-
-.traveler-invite__desire {
-  margin-bottom: 10px;
-}
-
-.traveler-invite__wrapper {
-  margin: 0 auto;
-  width: 81%;
+.traveler-invite__interests {
   display: flex;
   flex-direction: column;
 
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.traveler-invite__preferences {
+  margin-bottom: 10px;
 }
 
 .traveler-invite__heading {
@@ -165,34 +159,6 @@
 }
 
 .traveler-invite__level {
-  width: 45px;
-  height: 45px;
-
-  .level__text {
-    font-size: 18;
-    color: $dark-slate-blue;
-    top: -10px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  svg {
-    width: 45px;
-    height: 45px;
-  }
-
-  &--firsova {
-    .level__progress {
-      stroke-dasharray: 120;
-    }
-  }
-
-  &--demin {
-    .level__progress {
-      stroke-dasharray: 100;
-    }
-  }
 }
 
 .traveler-invite__preferred {

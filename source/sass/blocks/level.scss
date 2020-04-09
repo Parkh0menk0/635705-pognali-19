@@ -1,5 +1,102 @@
 .level {
   position: relative;
+
+  &--fill {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .level__progress {
+      stroke-width: 3px;
+      fill: rgba(black, 0.6);
+
+      &--firsova {
+        stroke-dasharray: 169;
+      }
+
+      &--demin {
+        stroke-dasharray: 144;
+      }
+    }
+
+    .level__text {
+      font-size: 24px;
+
+      width: 100%;
+
+      &::before {
+        position: absolute;
+        bottom: 23px;
+        left: 15px;
+
+        width: 31px;
+        height: 1px;
+
+        content: "";
+
+        background-color: rgba(white, 0.3);
+      }
+
+      &::after {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 14px;
+
+        display: block;
+
+        content: "level";
+      }
+    }
+  }
+
+  &--small {
+    width: 45px;
+    height: 45px;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+
+    .level__progress {
+      stroke-width: 2px;
+
+      &--firsova {
+        stroke-dasharray: 120;
+      }
+
+      &--demin {
+        stroke-dasharray: 100;
+      }
+
+      &--smolov {
+        stroke-dasharray: 68;
+      }
+
+      &--rogovaya {
+        stroke-dasharray: 68;
+      }
+    }
+
+    .level__text {
+      font-size: 24px;
+      color: $dark-slate-blue;
+    }
+  }
+
+  &--big {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
 .level__progress {
@@ -7,18 +104,22 @@
   transform-origin: 50% 50%;
 
   fill: none;
-  stroke-width: 3px;
   stroke: $mango;
   stroke-linecap: round;
   stroke-dashoffset: 0;
 }
 
 .level__text {
-  font-size: 24px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 1.2;
 
   position: absolute;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+
+  margin: 0;
 
   text-align: center;
 
