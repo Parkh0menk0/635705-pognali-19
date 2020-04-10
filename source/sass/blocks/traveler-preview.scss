@@ -37,7 +37,7 @@
 }
 
 .traveler-preview__heading {
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 
 .traveler-preview__picture {
@@ -92,52 +92,91 @@
 }
 
 .traveler-preview__hashtags {
-  width: 91%;
-  margin-bottom: 6px;
-}
-
-.traveler-preview__list {
-  position: absolute;
-  z-index: 1;
-  top: -11px;
-
   display: flex;
   flex-direction: row;
 
-  max-width: 93%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  width: 72%;
+  margin-bottom: 9px;
+  padding-left: 7px;
+
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  a {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+
+    margin-right: 7px;
+
+    letter-spacing: 0.2px;
+
+    color: $greyish-brown;
+  }
+}
+
+.traveler-preview__list {
+  @include list-reset;
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
 
   justify-content: flex-start;
   align-items: flex-start;
-}
 
-.traveler-preview__item {
-  width: 35px;
-  height: 24px;
-  margin-right: 19px;
+  &--country {
+    position: absolute;
+    z-index: 1;
+    top: -11px;
 
-  &:last-child {
-    margin-right: 0;
+    max-width: 93%;
+
+    .traveler-preview__item {
+      width: 35px;
+      height: 24px;
+      margin-right: 19px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .traveler-preview__link {
+      display: block;
+      width: 35px;
+      height: 24px;
+      border-radius: 2px;
+      background-color: $mango;
+
+      svg {
+        width: 35px;
+        height: 24px;
+      }
+    }
   }
-}
 
-.traveler-preview__country {
-  display: block;
-  width: 35px;
-  height: 24px;
-  border-radius: 2px;
-  background-color: $mango;
+  &--preferred {
+    max-width: 85%;
 
-  svg {
-    width: 35px;
-    height: 24px;
+    .traveler-preview__item {
+      width: 32px;
+      height: 32px;
+    }
+
+    .traveler-preview__link {
+      display: block;
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: 50%;
+      background-color: $pale-grey;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
-}
-
-.traveler-preview__preferred {
-  max-width: 85%;
-  margin: 0;
-  padding: 0;
 }
