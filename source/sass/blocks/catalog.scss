@@ -5,8 +5,14 @@
 }
 
 .catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 28px;
   padding-bottom: 30px;
+
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .catalog__list {
@@ -19,5 +25,54 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.catalog__more {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+
+  position: relative;
+
+  display: block;
+
+  margin-bottom: 19px;
+  padding-left: 31px;
+
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  color: $dark-slate-blue;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -1px;
+
+    width: 18px;
+    height: 18px;
+
+    content: "";
+
+    background-image: url("../img/svg/qty-plus.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover {
+    color: rgba($dark-slate-blue, 0.6);
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }

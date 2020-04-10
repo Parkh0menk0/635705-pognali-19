@@ -1,15 +1,16 @@
 .footer {
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  background-color: $pale-grey;
+  background-color: white;
 }
 
 .footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 33px;
   padding-bottom: 16px;
 
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
