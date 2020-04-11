@@ -2,17 +2,27 @@
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $pale-grey;
-  background-image: url("../img/rates/rates@1x.png");
-  background-repeat: no-repeat;
-  background-position: 88.3% 10.5%;
-  background-size: 99px 99px;
 }
 
 .rates__wrapper {
-  padding-top: 52px;
-  padding-bottom: 35px;
-  padding-left: 24px;
-  padding-right: 27px;
+  position: relative;
+  padding: 52px 27px 35px 24px;
+
+  &::after {
+    position: absolute;
+    top: 37px;
+    right: 0;
+
+    width: 99px;
+    height: 99px;
+
+    content: "";
+
+    background-image: url("../img/rates/rates@1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
 }
 
 .rates__title {
