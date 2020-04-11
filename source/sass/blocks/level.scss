@@ -11,16 +11,9 @@
     }
 
     .level__progress {
+      font-size: 60px;
       stroke-width: 3px;
       fill: rgba(black, 0.6);
-
-      &--firsova {
-        stroke-dasharray: 169;
-      }
-
-      &--demin {
-        stroke-dasharray: 144;
-      }
     }
 
     .level__text {
@@ -64,23 +57,8 @@
     }
 
     .level__progress {
+      font-size: 45px;
       stroke-width: 2px;
-
-      &--firsova {
-        stroke-dasharray: 120;
-      }
-
-      &--demin {
-        stroke-dasharray: 100;
-      }
-
-      &--smolov {
-        stroke-dasharray: 68;
-      }
-
-      &--rogovaya {
-        stroke-dasharray: 68;
-      }
     }
 
     .level__text {
@@ -107,7 +85,6 @@
   fill: none;
   stroke: $mango;
   stroke-linecap: round;
-  stroke-dashoffset: 0;
 }
 
 .level__text {
