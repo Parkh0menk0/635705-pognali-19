@@ -11,7 +11,8 @@
     }
 
     .level__progress {
-      font-size: 60px;
+      font-size: 175px;
+
       stroke-width: 3px;
       fill: rgba(black, 0.6);
     }
@@ -33,16 +34,12 @@
 
         background-color: rgba(white, 0.3);
       }
+    }
 
-      &::after {
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 14px;
-
-        display: block;
-
-        content: "level";
-      }
+    .level__number {
+      display: block;
+      font-weight: bold;
+      line-height: 1.2;
     }
   }
 
@@ -57,13 +54,20 @@
     }
 
     .level__progress {
-      font-size: 45px;
+      font-size: 135px;
+
       stroke-width: 2px;
     }
 
     .level__text {
       font-size: 24px;
       color: $dark-slate-blue;
+    }
+
+    .level__number {
+      display: block;
+      font-weight: bold;
+      line-height: 1.2;
     }
   }
 
@@ -82,15 +86,13 @@
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 
+  stroke-dasharray: 1em;
   fill: none;
   stroke: $mango;
   stroke-linecap: round;
 }
 
 .level__text {
-  font-weight: bold;
-  line-height: 1.2;
-
   position: absolute;
   top: 12px;
   right: 0;
@@ -102,4 +104,11 @@
   text-align: center;
 
   color: white;
+}
+
+.level__description {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
 }
