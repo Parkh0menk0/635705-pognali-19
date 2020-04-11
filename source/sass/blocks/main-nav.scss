@@ -10,19 +10,13 @@
     background-image: linear-gradient(white);
   }
 
-  &--catalog {
+  &--inner {
     .main-nav__wrapper {
       margin-bottom: 53px;
     }
 
     .main-nav__contacts {
       display: none;
-    }
-  }
-
-  &--form {
-    .main-nav__wrapper {
-      margin-bottom: 53px;
     }
   }
 }

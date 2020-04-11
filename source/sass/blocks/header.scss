@@ -3,8 +3,7 @@
 
   background-color: $dark-two;
   background-image: linear-gradient(transparent 73.5%, $dark-blue-grey 73.5%),
-    linear-gradient(transparent 478px, $dark-two 478px),
-    url("../img/header/traveller-illustration-mobile@1x.png"),
+    linear-gradient(transparent 478px, $dark-two 478px), url("../img/header/traveller-illustration-mobile@1x.png"),
     url("../img/header/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0 0, 0 0, 62% 223px, 50% 0;
@@ -13,7 +12,7 @@
     background-image: linear-gradient(white 52.3%, transparent 52.3%);
   }
 
-  &--catalog {
+  &--inner {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-image: none;
@@ -28,46 +27,6 @@
     .header__title {
       position: relative;
 
-      width: 64%;
-      padding-bottom: 0;
-
-      text-align: left;
-
-      &::after {
-        position: absolute;
-        bottom: -11px;
-        left: 0;
-
-        width: 100%;
-        height: 5px;
-
-        content: "";
-
-        border-radius: 2px;
-        background-color: $mango;
-      }
-    }
-  }
-
-  &--form {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image: none;
-
-    .header__wrapper {
-      justify-content: flex-start;
-      padding-top: 19px;
-      padding-bottom: 9px;
-    }
-
-    .topmenu {
-      display: none;
-    }
-
-    .header__title {
-      position: relative;
-
-      width: 80%;
       padding-bottom: 0;
 
       text-align: left;
@@ -108,11 +67,11 @@
 }
 
 .header__title {
+  display: table;
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
 
-  width: 97%;
   margin: 0;
   padding-bottom: 244px;
 
