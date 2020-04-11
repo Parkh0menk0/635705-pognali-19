@@ -1,0 +1,50 @@
+.contacts {
+  list-style: none;
+}
+
+.contacts__link {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+
+  position: relative;
+
+  display: block;
+
+  padding: 12px;
+  padding-left: 61px;
+
+  text-transform: uppercase;
+
+  color: $dark-two;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 45px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $dark-blue-grey-two;
+  }
+
+  &:hover {
+    color: $mango-two;
+
+    svg {
+      fill: $mango-two;
+    }
+  }
+
+  &:active {
+    color: rgba($mango-two, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+}

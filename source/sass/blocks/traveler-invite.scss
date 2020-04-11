@@ -1,0 +1,284 @@
+.traveler-invite {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+
+  &--firsova {
+    .traveler-invite__list--wishes {
+      margin-bottom: 12px;
+    }
+  }
+
+  &--demin {
+    .traveler-invite__list--wishes {
+      margin-bottom: 17px;
+    }
+  }
+
+  &--smolov {
+    .traveler-invite__list--wishes {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--rogovaya {
+    .traveler-invite__list--wishes {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.traveler-invite__info {
+  padding: 15px 0 66px 0;
+}
+
+.traveler-invite__interests {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 13px;
+  padding: 0 26px 0 26px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.traveler-invite__preferences {
+  margin-bottom: 10px;
+}
+
+.traveler-invite__heading {
+  align-self: flex-end;
+  width: 64%;
+  margin-bottom: 6px;
+}
+
+.traveler-invite__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+
+  max-width: 106px;
+  margin: 0;
+
+  color: $dark-slate-blue;
+}
+
+.traveler-invite__add {
+  align-self: flex-end;
+  width: 64%;
+  margin-bottom: 18px;
+}
+
+.traveler-invite__call {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+}
+
+.traveler-invite__like {
+  button {
+    position: absolute;
+    left: 67px;
+    top: 55px;
+    z-index: 2;
+  }
+}
+
+.traveler-invite__hashtags {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 90%;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  a {
+    margin-right: 4px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+
+    color: $greyish-brown;
+  }
+}
+
+.traveler-invite__part {
+  &--visit {
+    .traveler-invite__subtitle {
+      margin-bottom: 17px;
+    }
+  }
+
+  &--vehicle {
+    width: 69%;
+
+    .traveler-invite__subtitle {
+      margin-bottom: 14px;
+    }
+  }
+
+  &--level {
+    width: 31%;
+
+    .traveler-invite__subtitle {
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.traveler-invite__subtitle {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
+
+  display: flex;
+
+  margin: 0;
+
+  color: $greyish-brown;
+
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+
+    width: 14px;
+    height: 1px;
+
+    background: $pale-grey;
+  }
+
+  &::before {
+    margin-right: 13px;
+  }
+
+  &::after {
+    margin-left: 13px;
+    flex-grow: 1;
+  }
+}
+
+.traveler-invite__list {
+  @include list-reset;
+
+  &--wishes {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 26px 0 26px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .traveler-invite__item {
+      width: 100%;
+      margin-bottom: 9.5px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .traveler-invite__country {
+      position: absolute;
+      top: -3px;
+      left: -1px;
+
+      width: 26px;
+      height: 18px;
+
+      border-radius: 2px;
+      background-color: $mango;
+
+      svg {
+        width: 26px;
+        height: 18px;
+      }
+    }
+
+    .traveler-invite__description {
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 18px;
+
+      margin: 0;
+      padding-left: 39px;
+
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+
+      color: $dark-slate-blue;
+    }
+  }
+
+  &--preferred {
+    padding-left: 25px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .traveler-invite__item {
+      width: 32px;
+      height: 32px;
+    }
+
+    .traveler-invite__link {
+      display: block;
+
+      width: 32px;
+      height: 32px;
+
+      border-radius: 50%;
+      background-color: $pale-grey;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.traveler-invite__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.traveler-invite__picture {
+  background-color: $pale-grey;
+}
+
+.traveler-invite__img {
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  z-index: 1;
+
+  width: 70px;
+  height: 70px;
+
+  img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}

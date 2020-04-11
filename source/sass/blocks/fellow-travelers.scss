@@ -1,0 +1,42 @@
+.fellow-travelers {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $dark-blue-grey;
+}
+
+.fellow-travelers__wrapper {
+  padding-top: 73px;
+  padding-bottom: 30px;
+}
+
+.fellow-travelers__lead {
+  margin: 0 auto;
+  width: 82%;
+  margin-bottom: 56px;
+}
+
+.fellow-travelers__title {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.fellow-travelers__content {
+  max-width: 97%;
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: white;
+}
+
+.fellow-travelers__list {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.fellow-travelers__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

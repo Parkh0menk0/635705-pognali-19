@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+// Глобальные стили
+
+@import "vendor/normalize.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+@import "global/container.scss";
+
+// Общие стили
+
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/topmenu.scss";
+@import "blocks/btn.scss";
+@import "blocks/show-all.scss";
+@import "blocks/quote.scss";
+@import "blocks/road-map.scss";
+@import "blocks/drop-down.scss";
+@import "blocks/site-list.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/section.scss";
+@import "blocks/about.scss";
+@import "blocks/destination.scss";
+@import "blocks/country.scss";
+@import "blocks/level.scss";
+@import "blocks/fellow-travelers.scss";
+@import "blocks/traveler-preview.scss";
+@import "blocks/traveler-invite.scss";
+@import "blocks/rates.scss";
+@import "blocks/feedback.scss";
+@import "blocks/filter-country.scss";
+@import "blocks/companion-form.scss";
+@import "blocks/catalog.scss";
+@import "blocks/like.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/business-rates.scss";

@@ -1,0 +1,27 @@
+.btn {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+
+  display: block;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $dark-two;
+  border-radius: 60px;
+  background-color: $light-gold;
+
+  &--invite {
+    width: calc(100% - 40px);
+    padding: 7px 23px 3px;
+  }
+
+  &:hover {
+    background-color: $mango-two;
+  }
+
+  &:active {
+    color: rgba($dark-two, 0.3);
+  }
+}

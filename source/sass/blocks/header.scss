@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+
+  background-color: $dark-two;
+  background-image: linear-gradient(transparent 73.5%, $dark-blue-grey 73.5%),
+    linear-gradient(transparent 478px, $dark-two 478px), url("../img/header/traveller-illustration-mobile@1x.png"),
+    url("../img/header/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 0 0, 62% 223px, 50% 0;
+
+  &.open {
+    background-image: linear-gradient(white 52.3%, transparent 52.3%);
+  }
+
+  &--inner {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: none;
+
+    .header__wrapper {
+      padding-top: 19px;
+      padding-bottom: 9px;
+
+      justify-content: flex-start;
+    }
+
+    .header__title {
+      position: relative;
+
+      padding-bottom: 0;
+
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+
+        width: 100%;
+        height: 5px;
+
+        content: "";
+
+        border-radius: 2px;
+        background-color: $mango;
+      }
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 19px;
+}
+
+.header__title {
+  display: table;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+
+  margin: 0;
+  padding-bottom: 244px;
+
+  text-align: center;
+
+  color: white;
+
+  order: 2;
+}
+
+.header__lead {
+  margin: 0;
+  margin-bottom: 30px;
+
+  order: 4;
+}
+
+.header__road-map {
+  width: 100%;
+  order: 5;
+}
+
+.header__drop-down {
+  position: absolute;
+  z-index: 3;
+  top: 49px;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+}

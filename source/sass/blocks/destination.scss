@@ -1,0 +1,41 @@
+.destination {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $pale-grey;
+}
+
+.destination__wrapper {
+  padding-top: 73px;
+  padding-bottom: 30px;
+}
+
+.destination__lead {
+  margin: 0 auto;
+  width: 82%;
+}
+
+.destination__title {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.destination__content {
+  max-width: 90%;
+  margin: 0;
+  margin-bottom: 60px;
+
+  color: $greyish-brown;
+}
+
+.destination__list {
+  @include list-reset;
+  margin-bottom: 26px;
+}
+
+.destination__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

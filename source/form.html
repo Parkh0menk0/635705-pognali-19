@@ -5,63 +5,115 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Погнали &mdash Форма</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/favicon-512x512.png">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <!-- Шапка -->
-  <header class="header">
+  <header class="header header--inner open">
     <div class="container">
-      <a class="header__logo" href="index.html">
-        <img src="http://placehold.it/100x19" alt="Логотип «Погнали»" width="100" height="19">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__site-list site-list">
+      <div class="header__wrapper">
+        <nav class="main-nav main-nav--inner">
+          <div class="main-nav__wrapper">
+            <a class="header__logo" href="index.html">
+              <img src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
+            </a>
+            <div class="main-nav__menu">
+              <button class="main-nav__toggle open" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+              <ul class="main-nav__site-list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">О сервисе</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--active">Направления</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-nav__contacts">
+            <ul class="topmenu">
+              <li class="topmenu__item">
+                <a class="topmenu__link topmenu__link--phone" href="tel:88005558628">
+                  <span class="visually-hidden">Позвонить нам</span>
+                </a>
+              </li>
+              <li class="topmenu__item">
+                <a class="topmenu__link topmenu__link--mail" href="mailto:mail@htmlacademy.ru">
+                  <span class="visually-hidden">Позвонить нам</span>
+                </a>
+              </li>
+            </ul>
+            <a class="topmenu__btn btn btn--authorization" href="#">Авторизация</a>
+          </div>
+        </nav>
+        <h1 class="header__title">Направления</h1>
+      </div>
+    </div>
+    <div class="header__drop-down drop-down open">
+      <div class="container">
+        <div class="drop-down__wrapper">
+          <ul class="drop-down__site-list site-list">
             <li class="site-list__item">
-              <a href="index.html">О сервисе</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a href="form.html">Направления</a>
+              <a class="site-list__link" href="index.html">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a>Попутчики</a>
+              <a class="site-list__link site-list__link--active">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="main-nav__authorization btn btn--authorization" href="#">Авторизация</a>
-          <ul class="main-nav__contacts contacts">
+          <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
+          <ul class="drop-down__contacts contacts">
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:88005558628">
+              <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+                <!-- <svg role="img" width="35" height="24">
+                  <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
+                </svg> -->
                 8 800 555-86-28
               </a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
+                <!-- <svg role="img" width="35" height="24">
+                  <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
+                </svg> -->
                 mail@htmlacademy.ru
               </a>
             </li>
           </ul>
           <ul class="main-nav__social social">
             <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+              <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"
+                rel="noreferrer">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/" target="_blank" rel="noreferrer">
+              <a class="social__link social__link--vk" href="https://vk.com/" target="_blank" rel="noreferrer">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              <a class="social__link social__link--insta" href="https://www.instagram.com/" target="_blank"
+                rel="noreferrer">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
           </ul>
         </div>
-      </nav>
-      <h1 class="header__title">Направления</h1>
+      </div>
     </div>
   </header>
 
@@ -85,29 +137,38 @@
       </fieldset>
       <fieldset>
         <legend>Транспорт</legend>
-        <ul class="vehicle">
-          <li class="vehicle__item" data-tooltip="Авиаперелёт">
-            <input id="plane" class="visually-hidden" type="checkbox" name="plane" checked>
-            <label for="plane">
-              <img src="http://placehold.it/19x21" alt="Авиаперелёт" width="19" height="21">
+        <ul class="vehicle" role="listbox">
+          <li class="vehicle__item" role="option" data-tooltip="Авиаперелёт">
+            <input id="vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
+            <label class="vehicle__label" for="vehicle-1">
+              <span class="visually-hidden">Авиаперелёт</span>
+              <!-- <svg role="img" width="19" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Автотранспорт">
-            <input id="car" class="visually-hidden" type="checkbox" name="car" checked>
-            <label for="car">
-              <img src="http://placehold.it/17x21" alt="Автотранспорт" width="17" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Автотранспорт">
+            <input id="vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
+            <label class="vehicle__label" for="vehicle-2">
+              <span class="visually-hidden">Автотранспорт</span>
+              <!-- <svg role="img" width="17" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Велосипед">
-            <input id="bicycle" class="visually-hidden" type="checkbox" name="bicycle">
-            <label for="bicycle">
-              <img src="http://placehold.it/24x21" alt="Велосипед" width="24" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Велосипед">
+            <input id="vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
+            <label class="vehicle__label" for="vehicle-3">
+              <span class="visually-hidden">Велосипед</span>
+              <!-- <svg role="img" width="24" height="21">
+                <use xlink:href="#icon-" x="0" y="0"></use>
+              </svg> -->
             </label>
           </li>
-          <li class="vehicle__item" data-tooltip="Пешком">
-            <input id="walk" class="visually-hidden" type="checkbox" name="walk" checked>
-            <label for="walk">
-              <img src="http://placehold.it/20x21" alt="Пешком" width="20" height="21">
+          <li class="vehicle__item" role="option" data-tooltip="Пешком">
+            <input id="vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
+            <label class="vehicle__label" for="vehicle-4">
+              <span class="visually-hidden">Пешком</span>
             </label>
           </li>
         </ul>
@@ -174,16 +235,11 @@
                   <ul class="slider__wrapper">
                     <li class="slider__item">Март 2019</li>
                   </ul>
-                  <div class="slider__controls">
-                    <button class="slider__control slider__control--prev" type="button">
-                      <span class="visually-hidden">Предыдущий месяц</span>
-                    </button>
-                    <button class="slider__control slider__control--next" type="button">
-                      <span class="visually-hidden">Следующий месяц</span>
-                    </button>
-                  </div>
                 </div>
                 <div class="calendar__content">
+                  <button class="slider__control slider__control--prev" type="button">
+                    <span class="visually-hidden">Предыдущий месяц</span>
+                  </button>
                   <table>
                     <thead>
                       <tr>
@@ -253,6 +309,9 @@
                       </tr>
                     </tbody>
                   </table>
+                  <button class="slider__control slider__control--next" type="button">
+                    <span class="visually-hidden">Следующий месяц</span>
+                  </button>
                 </div>
               </section>
               <a class="plans__link" href="#step-2">Следующий шаг</a>
@@ -433,37 +492,42 @@
   <!-- Подвал -->
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo">
-        <img src="http://placehold.it/96x15" alt="Логотип «Погнали»" width="96" height="15">
-      </a>
-      <ul class="footer__list social">
-        <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://vk.com/" target="_blank" rel="noreferrer">
-            <span class="visually-hidden">ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__codivyright copyright">
-        <p>Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="html academy">
-          <!-- <svg role="img" width="27" height="34">
-            <use xlink:href="#icon-" x="0" y="0"></use>
-          </svg> -->
+      <div class="footer__wrapper">
+        <a class="footer__logo">
+          <img src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
         </a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/" target="_blank" rel="noreferrer">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://www.instagram.com/" target="_blank"
+              rel="noreferrer">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <p class="copyright__content">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">html academy</span>
+            <!-- <svg role="img" width="27" height="34">
+              <use xlink:href="#icon-" x="0" y="0"></use>
+            </svg> -->
+          </a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>

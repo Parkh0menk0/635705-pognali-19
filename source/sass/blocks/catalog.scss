@@ -1,0 +1,141 @@
+.catalog {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $pale-grey;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.catalog__list {
+  @include list-reset;
+  margin-bottom: 20px;
+}
+
+.catalog__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__more {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+
+  position: relative;
+
+  display: block;
+
+  margin-bottom: 19px;
+  padding-left: 31px;
+
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+
+  color: $dark-slate-blue;
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -1px;
+
+    width: 18px;
+    height: 18px;
+
+    content: "";
+
+    background-image: url("../img/svg/qty-plus.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover {
+    color: rgba($dark-slate-blue, 0.6);
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog__switches {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.catalog__switch {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 49.82%;
+  background-color: white;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    width: 10px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 10px 20px;
+  }
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &::before {
+      background-image: url("../img/svg/triangle-arrow-left.svg");
+    }
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    &::before {
+      background-image: url("../img/svg/triangle-arrow-right.svg");
+    }
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}

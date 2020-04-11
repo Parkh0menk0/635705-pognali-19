@@ -1,0 +1,114 @@
+.level {
+  position: relative;
+
+  &--fill {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .level__progress {
+      font-size: 175px;
+
+      stroke-width: 3px;
+      fill: rgba(black, 0.6);
+    }
+
+    .level__text {
+      font-size: 24px;
+
+      width: 100%;
+
+      &::before {
+        position: absolute;
+        bottom: 23px;
+        left: 15px;
+
+        width: 31px;
+        height: 1px;
+
+        content: "";
+
+        background-color: rgba(white, 0.3);
+      }
+    }
+
+    .level__number {
+      display: block;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+  }
+
+  &--small {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+
+    .level__progress {
+      font-size: 135px;
+
+      stroke-width: 2px;
+    }
+
+    .level__text {
+      font-size: 24px;
+      color: $dark-slate-blue;
+    }
+
+    .level__number {
+      display: block;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+  }
+
+  &--big {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.level__progress {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+  stroke-dasharray: 1em;
+  fill: none;
+  stroke: $mango;
+  stroke-linecap: round;
+}
+
+.level__text {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: white;
+}
+
+.level__description {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+}

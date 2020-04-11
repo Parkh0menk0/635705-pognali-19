@@ -1,0 +1,26 @@
+.site-list {
+  flex-direction: column;
+
+  list-style: none;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.site-list__link {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+
+  text-transform: uppercase;
+
+  color: $dark-two;
+
+  &:hover:not(.site-list__link--active) {
+    color: $mango-two;
+  }
+
+  &:active:not(.site-list__link--active) {
+    color: rgba($mango-two, 0.3);
+  }
+}
