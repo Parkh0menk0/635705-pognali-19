@@ -1,8 +1,4 @@
-.contacts {
-  list-style: none;
-}
-
-.contacts__link {
+.contact-item {
   font-size: 16px;
   font-weight: bold;
   line-height: 22px;
@@ -20,6 +16,8 @@
 
   &::before {
     position: absolute;
+    margin: auto;
+    bottom: 0;
     top: 0;
     left: 0;
 
@@ -46,5 +44,9 @@
     svg {
       opacity: 0.3;
     }
+  }
+
+  &--feedback {
+    color: $light-gold;
   }
 }
