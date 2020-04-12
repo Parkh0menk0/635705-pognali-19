@@ -1,11 +1,16 @@
 .fellow-travelers {
+  position: relative;
+  z-index: 6;
+
+  margin-bottom: -23px;
+
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $dark-blue-grey;
 }
 
 .fellow-travelers__wrapper {
-  padding-top: 73px;
+  padding-top: 95px;
   padding-bottom: 30px;
 }
 
