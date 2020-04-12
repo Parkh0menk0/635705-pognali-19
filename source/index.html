@@ -407,7 +407,8 @@
                     </p>
                     <svg width="60" height="60">
                       <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
-                      <circle class="level__progress" style="stroke-dashoffset: 0.18em;" cx="30" cy="30" r="28"></circle>
+                      <circle class="level__progress" style="stroke-dashoffset: 0.18em;" cx="30" cy="30" r="28">
+                      </circle>
                     </svg>
                   </div>
                 </div>
@@ -435,53 +436,70 @@
     </section>
     <!-- /.rates -->
 
-    <section class="feedback">
-      <div class="container">
-        <h2 class="feedback__title">Заинтересовались?</h2>
-        <p class="feedback__lead">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a
-            href="authorization.html">Авторизуйтесь</a>.
-        </p>
-        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
-          <label id="label-mail" for="index-form-email">Ваш e-mail:</label>
-          <input id="index-form-email" aria-labelledby="label-mail" type="email" name="email"
-            placeholder="email@example.com" autocomplete="on" required>
-          <button type="submit">
-            <span class="visually-hidden">Отправить</span>
-          </button>
-        </form>
-        <p>Остались вопросы?</p>
-        <p>Мы с радостью на них ответим!</p>
-        <ul class="feedback__list contacts">
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--phone" href="tel:88005558628">
-              <!-- <svg role="img" width="35" height="24">
-                <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
-              </svg> -->
-              8 800 555-86-28
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
+    <section class="feedback section">
+      <div class="feedback__registration">
+        <div class="container">
+          <div class="feedback__wrapper feedback__wrapper--registration">
+            <h2 class="feedback__title section__title">Заинтересовались?</h2>
+            <div class="feedback__lead">
+              <p class="feedback__content section__content">Зарегистрируйтесь, это&nbsp;быстро и бесплатно!</p>
+              <p class="feedback__content section__content">Уже зарегистрированы? Тогда скорее <a
+                  href="authorization.html">авторизуйтесь</a>.</p>
+            </div>
+            <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+              <label id="label-mail" class="visually-hidden" for="feedback-email">Ваш e-mail:</label>
+              <input id="feedback-email" aria-labelledby="label-mail" type="email" name="email" placeholder="E-mail"
+                autocomplete="on" required>
+              <button type="submit">
+                <span class="visually-hidden">Отправить</span>
+              </button>
+            </form>
+            <div class="feedback__epilogue">
+              <p class="feedback__content section__content">Остались вопросы?</p>
+              <p class="feedback__content section__content">Мы с радостью на них ответим!</p>
+            </div>
+            <div class="feedback__contacts">
+              <a class="contact-item contact-item--feedback" href="tel:88005558628">
+                <!-- <svg role="img" width="35" height="24">
+                  <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
+                </svg> -->
+                8 800 555-86-28
+              </a>
+              <a class="contact-item contact-item--feedback" href="mailto:mail@htmlacademy.ru">
+                <!-- <svg role="img" width="35" height="24">
+                  <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
+                </svg> -->
+                mail@htmlacademy.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback__path">
+        <div class="container">
+          <div class="feedback__wrapper feedback__wrapper--path">
+            <a class="feedback__address contact-item"
+              href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
               <!-- <svg role="img" width="35" height="24">
                 <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
               </svg> -->
-              mail@htmlacademy.ru
+              ул. Большая Конюшенная, 19/8
             </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link"
-              href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
-              <img src="http://placehold.it/14x22" alt="Геолокация" width="14" height="22">
-              ул. Большая Конюшенная, 19/8</a>
-            <a class="contacts__link contacts__link--path"
-              href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">Проложить
-              маршрут</a>
-          </li>
-        </ul>
+            <a class="contacts__btn rect-btn rect-btn--border" href="#">
+              <!-- <svg role="img" width="10" height="14">
+                <use xlink:href="#icon-triangle-arrow-right" x="0" y="0"></use>
+              </svg> -->
+              Проложить маршрут
+            </a>
+          </div>
+        </div>
       </div>
-      <p>
-        <img src="http://placehold.it/320x546" alt="ул. Большая Конюшенная, 19/8" width="320" height="546">
-      </p>
+      <div class="feedback__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300288!2d30.320858715774055!3d59.938719169054544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1586707604652!5m2!1sru!2sua"
+          height="340" style="border:0;" allowfullscreen="" title="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </iframe>
+      </div>
     </section>
     <!-- /.feedback -->
 
