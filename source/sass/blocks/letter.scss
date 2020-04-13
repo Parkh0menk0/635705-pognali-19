@@ -1,0 +1,53 @@
+.letter__list {
+  @include list-reset;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.letter__item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  border: 1px solid $cloudy-blue;
+  width: 45px;
+  height: 42px;
+
+  &:nth-child(5n) {
+    width: 44px;
+  }
+
+  &--active {
+    z-index: 2;
+    background-color: $dark-slate-blue;
+    border-color: $dark-slate-blue;
+
+    .letter__title {
+      color: white;
+    }
+  }
+}
+
+.letter__link {
+  display: flex;
+  width: 45px;
+  height: 42px;
+
+  &:nth-child(5n) {
+    width: 44px;
+  }
+}
+
+.letter__title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  color: $dark-slate-blue;
+}
