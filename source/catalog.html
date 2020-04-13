@@ -116,89 +116,194 @@
   <!-- Основное содержимое -->
   <main>
 
-    <section class="filter-country">
-      <div class="filter-country__header">
-        <h2 class="filter-country__title">
-          <button class="filter-country__btn filter-country__btn--open" type="button">Фильтрация по странам</button>
-        </h2>
-      </div>
-      <div class="filter-country__content">
-        <div class="territory" role="menu">
-          <button type="button" class="territory__btn territory__btn--active" role="menuitemradio"
-            aria-checked="true">Европа</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Азия</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Америка</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Острова</button>
+    <section class="filter">
+      <div class="container">
+        <div class="filter__wrapper">
+          <div class="filter__heading">
+            <h2 class="filter__title">
+              <button class="filter__expand" type="button">Фильтрация по странам</button>
+            </h2>
+            <div class="filter__world-part world-part" role="menu">
+              <button type="button" class="world-part__btn world-part__btn--active" role="menuitemradio"
+                aria-checked="true">Европа</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Азия</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Америка</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Острова</button>
+            </div>
+          </div>
+          <div class="filter__content">
+            <div class="filter__letter letter">
+              <ul class="letter__list">
+                <li class="letter__item letter__item--active">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">А</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Б</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">В</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Г</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Д</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Е</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">З</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">И</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">К</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Л</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">М</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Н</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">О</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">П</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Р</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">С</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Т</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">У</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ф</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Х</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ч</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ш</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Э</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ю</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Я</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__countries">
+              <ul>
+                <li>
+                  <a href="islands/australia.html">Австралия</a>
+                </li>
+                <li>
+                  <a href="europe/austria.html">Австрия</a>
+                </li>
+                <li>
+                  <a href="asia/azerbaijan.html">Азербайджан</a>
+                </li>
+                <li>
+                  <a href="europe/albania.html">Албания</a>
+                </li>
+                <li>
+                  <a href="africa/algeria.html">Алжир</a>
+                </li>
+                <li>
+                  <a href="africa/angola.html">Ангола</a>
+                </li>
+                <li>
+                  <a href="europe/andorra.html">Андорра</a>
+                </li>
+                <li>
+                  <a href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
+                </li>
+                <li>
+                  <a href="america/argentina.html">Аргентина</a>
+                </li>
+                <li>
+                  <a href="asia/armenia.html">Армения</a>
+                </li>
+                <li>
+                  <a href="asia/afghanistan.html">Афганистан</a>
+                </li>
+              </ul>
+            </div>
+            <button class="filter__collapse">Свернуть</button>
+          </div>
         </div>
-        <div class="letter" role="menu">
-          <button type="button" class="letter__btn letter__btn--active" role="menuitemradio"
-            aria-checked="true">А</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Б</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">В</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Г</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Д</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Е</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">И</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">З</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">К</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Л</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">М</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Н</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">О</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">П</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Р</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">С</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Т</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">У</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ф</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Х</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ч</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ш</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Э</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ю</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Я</button>
-        </div>
-        <div class="country">
-          <ul class="country__list">
-            <li class="country__item">
-              <a class="country__link" href="islands/australia.html">Австралия</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/austria.html">Австрия</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/azerbaijan.html">Азербайджан</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/albania.html">Албания</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="africa/algeria.html">Алжир</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="africa/angola.html">Ангола</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/andorra.html">Андорра</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="america/argentina.html">Аргентина</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/armenia.html">Армения</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/afghanistan.html">Афганистан</a>
-            </li>
-          </ul>
-        </div>
-        <button class="filter-country__btn filter-country__btn--close">Свернуть</button>
       </div>
     </section>
-    <!-- /.filter-country -->
+    <!-- /.filter -->
 
     <form class="companion-form" method="get" action="https://echo.htmlacademy.ru" role="search">
       <h2 class="companion-form__title">Подберите идеального попутчика</h2>
