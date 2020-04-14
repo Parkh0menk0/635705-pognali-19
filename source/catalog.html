@@ -311,101 +311,131 @@
 
           <section class="traveler-positioner__traveler-filter traveler-filter">
             <h2 class="traveler-filter__title">Подберите идеального попутчика</h2>
-            <form class="traveler-filter-form" method="get" action="https://echo.htmlacademy.ru" role="search">
-              <fieldset class="traveler-filter-form__fieldset">
-                <legend class="traveler-filter-form__legend">
-                  <button type="button">Хобби</button>
+            <form class="traveler-filter-form accordion" method="get" action="https://echo.htmlacademy.ru"
+              role="search">
+              <fieldset class="traveler-filter-form__fieldset traveler-filter-form__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn" type="button">Хобби</button>
                 </legend>
-                <!-- Контент на макете отсутствует -->
-              </fieldset>
-              <fieldset class="traveler-filter-form__fieldset">
-                <legend class="traveler-filter-form__legend">
-                  <button type="button">Музыка</button>
-                </legend>
-                <ul class="traveler-filter-form__list" role="listbox">
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-music-1" class="visually-hidden" type="checkbox" name="hard-rock" checked>
-                    <label class="traveler-filter-form__label" for="companion-music-1">Тяжелый рок</label>
+                <ul class="accordion__panel">
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="gym" id="hobby-1" checked>
+                    <label for="hobby-1">Спортзал</label>
                   </li>
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-music-2" class="visually-hidden" type="checkbox" name="russian-rap">
-                    <label class="traveler-filter-form__label" for="companion-music-2">Русский рэп</label>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="hookah" id="hobby-2">
+                    <label for="hobby-2">Кальян</label>
                   </li>
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-music-3" class="visually-hidden" type="checkbox" name="eurodens">
-                    <label class="traveler-filter-form__label" for="companion-music-3">Евроденс</label>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="sofa" id="hobby-3">
+                    <label for="hobby-3">Диван</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="traveler-filter-form__fieldset">
-                <legend class="traveler-filter-form__legend">
-                  <button type="button">Еда</button>
+              <fieldset class="traveler-filter-form__fieldset traveler-filter-form__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn accordion__btn--open" type="button">Музыка</button>
                 </legend>
-                <!-- Контент на макете отсутствует -->
+                <ul class="accordion__panel accordion__panel--open" role="listbox">
+                  <li role="option">
+                    <input id="music-1" class="visually-hidden" type="checkbox" name="hard-rock" checked>
+                    <label for="music-1">Тяжелый рок</label>
+                  </li>
+                  <li role="option">
+                    <input id="music-2" class="visually-hidden" type="checkbox" name="russian-rap">
+                    <label for="music-2">Русский рэп</label>
+                  </li>
+                  <li role="option">
+                    <input id="music-3" class="visually-hidden" type="checkbox" name="eurodens">
+                    <label for="music-3">Евроденс</label>
+                  </li>
+                </ul>
               </fieldset>
-              <fieldset class="traveler-filter-form__fieldset">
-                <legend class="traveler-filter-form__legend">
-                  <button type="button">Транспорт</button>
+              <fieldset class="traveler-filter-form__fieldset traveler-filter-form__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn" type="button">Еда</button>
                 </legend>
-                <ul class="traveler-filter-form__list" role="listbox">
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
-                    <label class="traveler-filter-form__label" for="companion-vehicle-1">
+                <ul class="accordion__panel">
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="carnivore" id="food-1" checked>
+                    <label for="food-1">Мясоед</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="proper-nutrition" id="food-2">
+                    <label for="food-2">Сидит на ПП</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="vegetarian" id="food-3">
+                    <label for="food-3">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="traveler-filter-form__fieldset traveler-filter-form__fieldset--vehicle">
+                <legend>
+                  <button class="accordion__btn accordion__btn--open" type="button">Транспорт</button>
+                </legend>
+                <ul class="accordion__panel accordion__panel--open" role="listbox">
+                  <li role="option">
+                    <input id="vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
+                    <label for="vehicle-1">
                       <span class="visually-hidden">Авиаперелёт</span>
                       <!-- <svg role="img" width="19" height="21">
-                  <use xlink:href="#icon-" x="0" y="0"></use>
-                </svg> -->
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
                     </label>
                   </li>
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
-                    <label class="traveler-filter-form__label" for="companion-vehicle-2">
+                  <li role="option">
+                    <input id="vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
+                    <label for="vehicle-2">
                       <span class="visually-hidden">Автотранспорт</span>
                       <!-- <svg role="img" width="17" height="21">
-                  <use xlink:href="#icon-" x="0" y="0"></use>
-                </svg> -->
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
                     </label>
                   </li>
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
-                    <label class="traveler-filter-form__label" for="companion-vehicle-3">
+                  <li role="option">
+                    <input id="vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
+                    <label for="vehicle-3">
                       <span class="visually-hidden">Велосипед</span>
                       <!-- <svg role="img" width="24" height="21">
-                  <use xlink:href="#icon-" x="0" y="0"></use>
-                </svg> -->
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
                     </label>
                   </li>
-                  <li class="traveler-filter-form__item" role="option">
-                    <input id="companion-vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
-                    <label class="traveler-filter-form__label" for="companion-vehicle-4">
+                  <li role="option">
+                    <input id="vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
+                    <label for="vehicle-4">
                       <span class="visually-hidden">Пешком</span>
+                      <!-- <svg role="img" width="24" height="21">
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="traveler-filter-form__fieldset double-range">
-                <legend class="traveler-filter-form__legend double-range__legend">
-                  <button type="button">Левел</button>
+                <legend class="double-range__legend">
+                  <button class="accordion__btn accordion__btn--open" type="button">Левел</button>
                 </legend>
-                <div class="double-range__range">
+                <div class="double-range__range accordion__panel accordion__panel--open">
+                  <div class="double-range__price">
+                    <p class="double-range__wrapper double-range__wrapper--min">
+                      <label class="visually-hidden" for="min-value">от</label>
+                      <input id="min-value" class="double-range__input double-range__input--min" name="min-value"
+                        type="text" value="30">
+                    </p>
+                    <p class="double-range__wrapper double-range__wrapper--max">
+                      <label class="visually-hidden" for="max-value">до</label>
+                      <input id="max-value" class="double-range__input double-range__input--max" name="max-value"
+                        type="text" value="100">
+                    </p>
+                  </div>
                   <div class="double-range__controls">
                     <div class="double-range__scale">
                       <div class="double-range__bar"></div>
                     </div>
-                    <div class="double-range__toggle double-range__toggle--min"></div>
-                    <div class="double-range__toggle double-range__toggle--max"></div>
-                  </div>
-                  <div class="double-range__price">
-                    <p class="double-range__wrapper">
-                      <label class="visually-hidden" for="min-value">от</label>
-                      <input id="min-value" class="double-range__input" name="min-value" type="number" value="30"
-                        min="0" max="100">
-                    </p>
-                    <p class="double-range__wrapper">
-                      <label class="visually-hidden" for="max-value">до</label>
-                      <input id="max-value" class="double-range__input" name="max-value" type="number" value="100"
-                        min="1" max="100">
-                    </p>
+                    <div class="double-range__toggle double-range__toggle--min" tabindex="0"></div>
+                    <div class="double-range__toggle double-range__toggle--max" tabindex="0"></div>
                   </div>
                 </div>
               </fieldset>
