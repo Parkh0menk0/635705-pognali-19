@@ -8,6 +8,7 @@
 @import "global/fonts.scss";
 @import "global/common.scss";
 @import "global/container.scss";
+@import "global/accordion.scss";
 
 // Общие стили
 
@@ -33,11 +34,13 @@
 @import "blocks/rates.scss";
 @import "blocks/feedback.scss";
 @import "blocks/filter.scss";
-@import "blocks/companion-form.scss";
+@import "blocks/traveler-positioner.scss";
+@import "blocks/traveler-filter.scss";
 @import "blocks/catalog.scss";
 @import "blocks/like.scss";
 @import "blocks/world-part.scss";
 @import "blocks/letter.scss";
+@import "blocks/double-range.scss";
 @import "blocks/footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/business-rates.scss";
