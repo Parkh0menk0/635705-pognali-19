@@ -20,26 +20,21 @@
     .level__text {
       font-size: 24px;
 
-      width: 100%;
+      padding-top: 12px;
 
+      color: white;
+    }
+
+    .level__number {
       &::before {
-        position: absolute;
-        bottom: 23px;
-        left: 15px;
-
-        width: 31px;
         height: 1px;
-
-        content: "";
 
         background-color: rgba(white, 0.3);
       }
     }
 
-    .level__number {
-      display: block;
-      font-weight: bold;
-      line-height: 1.2;
+    .level__description {
+      font-size: 14px;
     }
   }
 
@@ -60,14 +55,18 @@
     }
 
     .level__text {
+      padding-top: 5px;
       font-size: 24px;
+
       color: $dark-slate-blue;
     }
 
     .level__number {
-      display: block;
-      font-weight: bold;
-      line-height: 1.2;
+      margin: auto;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
@@ -78,6 +77,33 @@
     svg {
       width: 100px;
       height: 100px;
+    }
+
+    .level__progress {
+      font-size: 250px;
+
+      stroke-width: 3px;
+    }
+
+    .level__text {
+      padding-top: 10px;
+      font-size: 38px;
+
+      color: $dark-two;
+    }
+
+    .level__number {
+      &::before {
+        height: 2px;
+
+        background-color: $cloudy-blue;
+      }
+    }
+
+    .level__description {
+      font-size: 18px;
+
+      color: $greyish-brown;
     }
   }
 }
@@ -94,21 +120,45 @@
 
 .level__text {
   position: absolute;
-  top: 12px;
+  top: 0;
   right: 0;
   bottom: 0;
-  left: -1px;
+  left: 0;
 
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
 
   text-align: center;
 
-  color: white;
+  align-items: center;
+}
+
+.level__number {
+  font-weight: bold;
+  line-height: 0.95;
+
+  position: relative;
+
+  margin-top: auto;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: -7%;
+
+    width: 118%;
+
+    content: "";
+
+    background-color: $cloudy-blue;
+  }
 }
 
 .level__description {
-  display: block;
-  font-size: 14px;
   font-weight: normal;
-  line-height: 14px;
+  line-height: 1.4;
+
+  margin-bottom: auto;
 }
