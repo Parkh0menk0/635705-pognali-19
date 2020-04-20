@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  let form = document.querySelector('.traveler-filter-form');
+  let form = document.querySelector('.traveler-filter__form');
   let btn = form.querySelectorAll('.accordion__btn');
   let panel = form.querySelectorAll('.accordion__panel');
 
