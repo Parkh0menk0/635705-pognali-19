@@ -148,41 +148,41 @@
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--vehicle">
               <legend>Транспорт</legend>
-              <ul role="listbox">
+              <ul class="form__list" role="listbox">
                 <li role="option" data-tooltip="Авиаперелёт">
-                  <input id="vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
-                  <label for="vehicle-1">
+                  <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Авиаперелёт</span>
+                    <input class="visually-hidden" type="checkbox" name="plane" checked>
                     <!-- <svg role="img" width="19" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                      <use xlink:href="#icon-" x="0" y="0"></use>
+                    </svg> -->
                   </label>
                 </li>
                 <li role="option" data-tooltip="Автотранспорт">
-                  <input id="vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
-                  <label for="vehicle-2">
+                  <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Автотранспорт</span>
+                    <input class="visually-hidden" type="checkbox" name="car" checked>
                     <!-- <svg role="img" width="17" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                      <use xlink:href="#icon-" x="0" y="0"></use>
+                    </svg> -->
                   </label>
                 </li>
                 <li role="option" data-tooltip="Велосипед">
-                  <input id="vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
-                  <label for="vehicle-3">
+                  <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Велосипед</span>
+                    <input class="visually-hidden" type="checkbox" name="bicycle">
                     <!-- <svg role="img" width="24" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                      <use xlink:href="#icon-" x="0" y="0"></use>
+                    </svg> -->
                   </label>
                 </li>
                 <li role="option" data-tooltip="Пешком">
-                  <input id="vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
-                  <label for="vehicle-4">
+                  <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Пешком</span>
+                    <input class="visually-hidden" type="checkbox" name="walk" checked>
                     <!-- <svg role="img" width="24" height="21">
-                        <use xlink:href="#icon-" x="0" y="0"></use>
-                      </svg> -->
+                      <use xlink:href="#icon-" x="0" y="0"></use>
+                    </svg> -->
                   </label>
                 </li>
               </ul>
@@ -501,7 +501,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="add__link btn" type="submit">Отправить</button>
+                <button class="form__send" type="submit">Отправить</button>
                 <a class="add__link add__link--back btn" href="#step-2">На шаг назад</a>
               </li>
             </ol>
