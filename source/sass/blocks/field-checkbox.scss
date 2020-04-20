@@ -1,0 +1,99 @@
+.field-checkbox {
+  cursor: pointer;
+  user-select: none;
+
+  &--typical {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+
+    position: relative;
+
+    padding-left: 27px;
+
+    color: $greyish-brown;
+
+    &:hover {
+      color: rgba($greyish-brown, 0.6);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--vehicle {
+    display: flex;
+    width: 32.5px;
+    height: 32.5px;
+
+    border-radius: 50%;
+    background-color: white;
+
+    svg {
+      margin: auto;
+
+      fill: rgba($greyish-brown, 0.15);
+    }
+
+    &:active {
+      background-color: $pale-grey-three;
+    }
+
+    input[type="checkbox"] + svg {
+      fill: $dark-slate-blue;
+    }
+
+    input[type="checkbox"]:hover + svg {
+      fill: rgba($greyish-brown, 0.3);
+    }
+
+    input[type="checkbox"]:active + svg {
+      fill: rgba($greyish-brown, 0.1);
+    }
+
+    input[type="checkbox"]:checked + svg {
+      fill: $dark-slate-blue;
+    }
+
+    input[type="checkbox"]:checked:hover + svg {
+      fill: rgba($dark-slate-blue, 0.7);
+    }
+
+    input[type="checkbox"]:checked:active + svg {
+      fill: rgba($dark-slate-blue, 0.3);
+    }
+  }
+}
+
+.field-checkbox__box {
+  position: absolute;
+  top: -1px;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  content: "";
+
+  border-radius: 4px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 9px;
+}
+
+input[type="checkbox"]:checked + .field-checkbox__box {
+  background-image: url("../img/svg/tick.svg");
+}
+
+input[type="checkbox"]:focus + .field-checkbox__box {
+  background-image: none;
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:checked:focus + .field-checkbox__box {
+  background-image: url("../img/svg/tick.svg");
+  opacity: 0.6;
+}
