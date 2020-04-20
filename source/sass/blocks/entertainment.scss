@@ -1,28 +1,26 @@
-.entertainment {
-  label {
-    display: flex;
-    flex-direction: row;
+.entertainment label {
+  display: flex;
+  flex-direction: row;
 
-    margin-bottom: 12px;
-    padding-left: 11px;
+  margin-bottom: 12px;
+  padding-left: 11px;
 
-    justify-content: space-between;
-    align-items: center;
-  }
+  justify-content: space-between;
+  align-items: center;
+}
 
-  textarea {
-    line-height: 1.3;
+.entertainment textarea {
+  line-height: 1.3;
 
-    width: 100%;
-    height: 220px;
-    padding: 10px 13px;
+  width: 100%;
+  height: 220px;
+  padding: 10px 13px;
 
-    resize: none;
+  resize: none;
 
-    border: 1px solid $cloudy-blue;
-    border-radius: 4px;
-    background-color: transparent;
-  }
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .entertainment__list {
