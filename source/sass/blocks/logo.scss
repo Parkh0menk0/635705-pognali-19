@@ -1,0 +1,26 @@
+.logo {
+  &--open {
+    .logo__img {
+      &--blue {
+        display: block;
+      }
+
+      &--white {
+        display: none;
+      }
+    }
+  }
+}
+
+.logo__img {
+  width: 100px;
+  height: 19px;
+
+  &--blue {
+    display: none;
+  }
+
+  &--white {
+    display: block;
+  }
+}
