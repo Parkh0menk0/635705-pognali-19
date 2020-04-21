@@ -8,6 +8,7 @@
 @import "global/fonts.scss";
 @import "global/common.scss";
 @import "global/container.scss";
+@import "global/accordion.scss";
 
 // Общие стили
 
@@ -15,12 +16,12 @@
 @import "blocks/main-nav.scss";
 @import "blocks/topmenu.scss";
 @import "blocks/btn.scss";
-@import "blocks/show-all.scss";
+@import "blocks/rect-btn.scss";
 @import "blocks/quote.scss";
 @import "blocks/road-map.scss";
 @import "blocks/drop-down.scss";
 @import "blocks/site-list.scss";
-@import "blocks/contacts.scss";
+@import "blocks/contact-item.scss";
 @import "blocks/social.scss";
 @import "blocks/section.scss";
 @import "blocks/about.scss";
@@ -32,10 +33,25 @@
 @import "blocks/traveler-invite.scss";
 @import "blocks/rates.scss";
 @import "blocks/feedback.scss";
-@import "blocks/filter-country.scss";
-@import "blocks/companion-form.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/filter.scss";
+@import "blocks/traveler-positioner.scss";
+@import "blocks/traveler-filter.scss";
 @import "blocks/catalog.scss";
 @import "blocks/like.scss";
+@import "blocks/world-part.scss";
+@import "blocks/letter.scss";
+@import "blocks/double-range.scss";
+@import "blocks/form.scss";
+@import "blocks/user.scss";
+@import "blocks/plans.scss";
+@import "blocks/add.scss";
+@import "blocks/dates.scss";
+@import "blocks/calendar.scss";
+@import "blocks/slider.scss";
+@import "blocks/visit.scss";
+@import "blocks/select-menu.scss";
+@import "blocks/entertainment.scss";
 @import "blocks/footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/business-rates.scss";

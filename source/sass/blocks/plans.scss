@@ -1,0 +1,89 @@
+.plans {
+  position: relative;
+  z-index: 1;
+  top: -27px;
+  background-color: $pale-grey-two;
+  background-image: linear-gradient($pale-grey-two, $pale-grey);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.plans__wrapper {
+  padding-top: 29px;
+  padding-bottom: 60px;
+}
+
+.plans__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: $dark-slate-blue;
+}
+
+.plans__list {
+  @include list-reset;
+  counter-reset: myCounter;
+}
+
+.plans__item {
+  color: $dark-slate-blue;
+  background-color: white;
+  border-radius: 10px;
+  padding: 21px 24px 19px;
+  margin-bottom: 10px;
+
+  &::before {
+    counter-increment: myCounter;
+    content: counter(myCounter) ".";
+    display: inline;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.plans__subtitle {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.plans__content {
+  margin-bottom: 17px;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+}
+
+.plans__link {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: rgba(black, 0.3);
+
+  &:hover {
+    color: rgba(black, 0.6);
+  }
+
+  &:active {
+    color: rgba(black, 0.1);
+  }
+}

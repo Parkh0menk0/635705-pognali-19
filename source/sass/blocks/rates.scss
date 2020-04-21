@@ -1,4 +1,9 @@
 .rates {
+  position: relative;
+  z-index: 5;
+
+  margin-bottom: -23px;
+
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $pale-grey;
@@ -6,11 +11,11 @@
 
 .rates__wrapper {
   position: relative;
-  padding: 52px 27px 35px 24px;
+  padding: 76px 27px 35px 24px;
 
   &::after {
     position: absolute;
-    top: 37px;
+    top: 61px;
     right: 0;
 
     width: 99px;

@@ -75,24 +75,20 @@
             </li>
           </ul>
           <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
-          <ul class="drop-down__contacts contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--phone" href="tel:88005558628">
-                <!-- <svg role="img" width="35" height="24">
+          <div class="drop-down__contacts">
+            <a class="contact-item" href="tel:88005558628">
+              <!-- <svg role="img" width="35" height="24">
                   <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
                 </svg> -->
-                8 800 555-86-28
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">
-                <!-- <svg role="img" width="35" height="24">
+              8 800 555-86-28
+            </a>
+            <a class="contact-item" href="mailto:mail@htmlacademy.ru">
+              <!-- <svg role="img" width="35" height="24">
                   <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
                 </svg> -->
-                mail@htmlacademy.ru
-              </a>
-            </li>
-          </ul>
+              mail@htmlacademy.ru
+            </a>
+          </div>
           <ul class="main-nav__social social">
             <li class="social__item">
               <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"
@@ -120,654 +116,830 @@
   <!-- Основное содержимое -->
   <main>
 
-    <section class="filter-country">
-      <div class="filter-country__header">
-        <h2 class="filter-country__title">
-          <button class="filter-country__btn filter-country__btn--open" type="button">Фильтрация по странам</button>
-        </h2>
-      </div>
-      <div class="filter-country__content">
-        <div class="territory" role="menu">
-          <button type="button" class="territory__btn territory__btn--active" role="menuitemradio"
-            aria-checked="true">Европа</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Азия</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Америка</button>
-          <button type="button" class="territory__btn" role="menuitemradio" aria-checked="false">Острова</button>
-        </div>
-        <div class="letter" role="menu">
-          <button type="button" class="letter__btn letter__btn--active" role="menuitemradio"
-            aria-checked="true">А</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Б</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">В</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Г</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Д</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Е</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">И</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">З</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">К</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Л</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">М</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Н</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">О</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">П</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Р</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">С</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Т</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">У</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ф</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Х</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ч</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ш</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Э</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ю</button>
-          <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Я</button>
-        </div>
-        <div class="country">
-          <ul class="country__list">
-            <li class="country__item">
-              <a class="country__link" href="islands/australia.html">Австралия</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/austria.html">Австрия</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/azerbaijan.html">Азербайджан</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/albania.html">Албания</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="africa/algeria.html">Алжир</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="africa/angola.html">Ангола</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="europe/andorra.html">Андорра</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="america/argentina.html">Аргентина</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/armenia.html">Армения</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="asia/afghanistan.html">Афганистан</a>
-            </li>
-          </ul>
-        </div>
-        <button class="filter-country__btn filter-country__btn--close">Свернуть</button>
-      </div>
-    </section>
-    <!-- /.filter-country -->
-
-    <form class="companion-form" method="get" action="https://echo.htmlacademy.ru" role="search">
-      <h2 class="companion-form__title">Подберите идеального попутчика</h2>
-      <fieldset class="companion-form__fieldset">
-        <legend class="companion-form__legend">
-          <button type="button">Хобби</button>
-        </legend>
-        <!-- Контент на макете отсутствует -->
-      </fieldset>
-      <fieldset class="companion-form__fieldset">
-        <legend class="companion-form__legend">
-          <button type="button">Музыка</button>
-        </legend>
-        <ul class="companion-form__list" role="listbox">
-          <li class="companion-form__item" role="option">
-            <input id="companion-music-1" class="visually-hidden" type="checkbox" name="hard-rock" checked>
-            <label class="companion-form__label" for="companion-music-1">Тяжелый рок</label>
-          </li>
-          <li class="companion-form__item" role="option">
-            <input id="companion-music-2" class="visually-hidden" type="checkbox" name="russian-rap">
-            <label class="companion-form__label" for="companion-music-2">Русский рэп</label>
-          </li>
-          <li class="companion-form__item" role="option">
-            <input id="companion-music-3" class="visually-hidden" type="checkbox" name="eurodens">
-            <label class="companion-form__label" for="companion-music-3">Евроденс</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="companion-form__fieldset">
-        <legend class="companion-form__legend">
-          <button type="button">Еда</button>
-        </legend>
-        <!-- Контент на макете отсутствует -->
-      </fieldset>
-      <fieldset class="companion-form__fieldset">
-        <legend class="companion-form__legend">
-          <button type="button">Транспорт</button>
-        </legend>
-        <ul class="companion-form__list" role="listbox">
-          <li class="companion-form__item" role="option">
-            <input id="companion-vehicle-1" class="visually-hidden" type="checkbox" name="plane" checked>
-            <label class="companion-form__label" for="companion-vehicle-1">
-              <span class="visually-hidden">Авиаперелёт</span>
-              <!-- <svg role="img" width="19" height="21">
-                <use xlink:href="#icon-" x="0" y="0"></use>
-              </svg> -->
-            </label>
-          </li>
-          <li class="companion-form__item" role="option">
-            <input id="companion-vehicle-2" class="visually-hidden" type="checkbox" name="car" checked>
-            <label class="companion-form__label" for="companion-vehicle-2">
-              <span class="visually-hidden">Автотранспорт</span>
-              <!-- <svg role="img" width="17" height="21">
-                <use xlink:href="#icon-" x="0" y="0"></use>
-              </svg> -->
-            </label>
-          </li>
-          <li class="companion-form__item" role="option">
-            <input id="companion-vehicle-3" class="visually-hidden" type="checkbox" name="bicycle">
-            <label class="companion-form__label" for="companion-vehicle-3">
-              <span class="visually-hidden">Велосипед</span>
-              <!-- <svg role="img" width="24" height="21">
-                <use xlink:href="#icon-" x="0" y="0"></use>
-              </svg> -->
-            </label>
-          </li>
-          <li class="companion-form__item" role="option">
-            <input id="companion-vehicle-4" class="visually-hidden" type="checkbox" name="walk" checked>
-            <label class="companion-form__label" for="companion-vehicle-4">
-              <span class="visually-hidden">Пешком</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="companion-form__fieldset double-range">
-        <legend class="companion-form__legend double-range__legend">
-          <button type="button">Левел</button>
-        </legend>
-        <div class="double-range__range">
-          <div class="double-range__controls">
-            <div class="double-range__scale">
-              <div class="double-range__bar"></div>
-            </div>
-            <div class="double-range__toggle double-range__toggle--min"></div>
-            <div class="double-range__toggle double-range__toggle--max"></div>
-          </div>
-          <div class="double-range__price">
-            <p class="double-range__wrapper">
-              <label class="visually-hidden" for="min-value">от</label>
-              <input id="min-value" class="double-range__input" name="min-value" type="number" value="30" min="0"
-                max="100">
-            </p>
-            <p class="double-range__wrapper">
-              <label class="visually-hidden" for="max-value">до</label>
-              <input id="max-value" class="double-range__input" name="max-value" type="number" value="100" min="1"
-                max="100">
-            </p>
-          </div>
-        </div>
-      </fieldset>
-      <button class="companion-form__btn" type="submit">Показать</button>
-    </form>
-    <!-- /.companion-form -->
-
-    <section class="catalog">
+    <section class="filter">
       <div class="container">
-        <div class="catalog__wrapper">
-          <h2 class="visually-hidden">Каталог попутчиков</h2>
-          <ul class="catalog__list">
-            <!-- Таня Фирсова -->
-            <li class="catalog__item traveler-invite traveler-invite--firsova">
-              <div class="traveler-invite__info">
-                <div class="traveler-invite__interests">
-                  <a class="traveler-invite__heading" href="profile.html">
-                    <h3 class="traveler-invite__title">Таня Фирсова</h3>
+        <div class="filter__wrapper">
+          <div class="filter__heading">
+            <h2 class="filter__title">
+              <button class="filter__expand" type="button">Фильтрация по странам</button>
+            </h2>
+            <div class="filter__world-part world-part" role="menu">
+              <button type="button" class="world-part__btn world-part__btn--active" role="menuitemradio"
+                aria-checked="true">Европа</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Азия</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Америка</button>
+              <button type="button" class="world-part__btn" role="menuitemradio" aria-checked="false">Острова</button>
+            </div>
+          </div>
+          <div class="filter__content">
+            <div class="filter__letter letter">
+              <ul class="letter__list">
+                <li class="letter__item letter__item--active">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">А</h3>
                   </a>
-                  <div class="traveler-invite__add">
-                    <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
-                    <div class="traveler-invite__like like">
-                      <button class="like__btn like__btn--active" aria-pressed="true" type="button">
-                        <span class="visually-hidden">Лайк</span>
-                      </button>
-                      <p class="like__count">1,5 M</p>
-                    </div>
-                  </div>
-                  <div class="traveler-invite__hashtags">
-                    <a href="#">#ЗОЖ</a>
-                    <a href="#">#ПП</a>
-                    <a href="#">#Фитнес</a>
-                    <a href="#">#пляж</a>
-                    <a href="#">#авокадо</a>
-                    <a href="#">#смузи</a>
-                  </div>
-                </div>
-                <div class="traveler-invite__preferences">
-                  <div class="traveler-invite__part traveler-invite__part--visit">
-                    <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
-                    <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="island/srilanka.html">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Шри-Ланка</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="asia/thailand.html">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Таиланд</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="island/seychelles.html">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Сейшелы</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="traveler-invite__wrapper">
-                    <div class="traveler-invite__part traveler-invite__part--vehicle">
-                      <h4 class="traveler-invite__subtitle">транспорт:</h4>
-                      <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Авиаперелёт</span>
-                            <!-- <svg role="img" width="19" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Автотранспорт</span>
-                            <!-- <svg role="img" width="17" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Велосипед</span>
-                            <!-- <svg role="img" width="24" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Пешком</span>
-                            <!-- <svg role="img" width="20" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="traveler-invite__part traveler-invite__part--level">
-                      <h4 class="traveler-invite__subtitle">левел:</h4>
-                      <div class="traveler-invite__level level level--small">
-                        <p class="level__text">
-                          <span class="level__number">99</span>
-                        </p>
-                        <svg width="45" height="45">
-                          <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
-                          <circle class="level__progress" style="stroke-dashoffset: 0.03em;" cx="22.5" cy="22.5"
-                            r="21.5">
-                          </circle>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-invite__picture">
-                <a class="traveler-invite__img" href="profile.html">
-                  <img src="img/travellers/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="70" height="70">
-                </a>
-              </div>
-            </li>
-            <!-- Петя Демин -->
-            <li class="catalog__item traveler-invite traveler-invite--demin">
-              <div class="traveler-invite__info">
-                <div class="traveler-invite__interests">
-                  <a class="traveler-invite__heading" href="profile.html">
-                    <h3 class="traveler-invite__title">Петя Демин</h3>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Б</h3>
                   </a>
-                  <div class="traveler-invite__add">
-                    <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
-                    <div class="traveler-invite__like like">
-                      <button class="like__btn" aria-pressed="false" type="button">
-                        <span class="visually-hidden">Лайк</span>
-                      </button>
-                      <p class="like__count">1500</p>
-                    </div>
-                  </div>
-                  <div class="traveler-invite__hashtags">
-                    <a href="#">#бургер</a>
-                    <a href="#">#бар</a>
-                    <a href="#">#футбол</a>
-                    <a href="#">#концерт</a>
-                    <a href="#">#крафт</a>
-                  </div>
-                </div>
-                <div class="traveler-invite__preferences">
-                  <div class="traveler-invite__part traveler-invite__part--visit">
-                    <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
-                    <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Германия">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Германия</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Чехия">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Чехия</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="traveler-invite__wrapper">
-                    <div class="traveler-invite__part traveler-invite__part--vehicle">
-                      <h4 class="traveler-invite__subtitle">транспорт:</h4>
-                      <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Авиаперелёт</span>
-                            <!-- <svg role="img" width="19" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Автотранспорт</span>
-                            <!-- <svg role="img" width="17" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Велосипед</span>
-                            <!-- <svg role="img" width="24" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Пешком</span>
-                            <!-- <svg role="img" width="20" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="traveler-invite__part traveler-invite__part--level">
-                      <h4 class="traveler-invite__subtitle">левел:</h4>
-                      <div class="traveler-invite__level level level--small">
-                        <p class="level__text">
-                          <span class="level__number">80</span>
-                        </p>
-                        <svg width="45" height="45">
-                          <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
-                          <circle class="level__progress" style="stroke-dashoffset: 0.14em;" cx="22.5" cy="22.5"
-                            r="21.5"></circle>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-invite__picture">
-                <a class="traveler-invite__img" href="profile.html">
-                  <img src="img/travellers/demin-mobile@1x.jpg" alt="Петя Демин" width="70" height="70">
-                </a>
-              </div>
-            </li>
-            <!-- Марк Смолов -->
-            <li class="catalog__item traveler-invite traveler-invite--smolov">
-              <div class="traveler-invite__info">
-                <div class="traveler-invite__interests">
-                  <a class="traveler-invite__heading" href="profile.html">
-                    <h3 class="traveler-invite__title">Марк Смолов</h3>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">В</h3>
                   </a>
-                  <div class="traveler-invite__add">
-                    <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
-                    <div class="traveler-invite__like like">
-                      <button class="like__btn" aria-pressed="false" type="button">
-                        <span class="visually-hidden">Лайк</span>
-                      </button>
-                      <p class="like__count">170</p>
-                    </div>
-                  </div>
-                  <div class="traveler-invite__hashtags">
-                    <a href="#">#рэп</a>
-                    <a href="#">#тату</a>
-                    <a href="#">#хайпбист</a>
-                    <a href="#">#кроссовки</a>
-                    <a href="#">#суприм</a>
-                  </div>
-                </div>
-                <div class="traveler-invite__preferences">
-                  <div class="traveler-invite__part traveler-invite__part--visit">
-                    <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
-                    <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="США">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">США</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Австралия">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Австралия</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Доминикана">
-                          <!-- <svg role="img" width="35" height="24">
-                          <use xlink:href="#icon-" x="0" y="0"></use>
-                        </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Доминикана</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="traveler-invite__wrapper">
-                    <div class="traveler-invite__part traveler-invite__part--vehicle">
-                      <h4 class="traveler-invite__subtitle">транспорт:</h4>
-                      <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Авиаперелёт</span>
-                            <!-- <svg role="img" width="19" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Автотранспорт</span>
-                            <!-- <svg role="img" width="17" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Велосипед</span>
-                            <!-- <svg role="img" width="24" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Пешком</span>
-                            <!-- <svg role="img" width="20" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="traveler-invite__part traveler-invite__part--level">
-                      <h4 class="traveler-invite__subtitle">левел:</h4>
-                      <div class="traveler-invite__level level level--small">
-                        <p class="level__text">
-                          <span class="level__number">25</span>
-                        </p>
-                        <svg width="45" height="45">
-                          <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
-                          <circle class="level__progress" style="stroke-dashoffset: 0.77em;" cx="22.5" cy="22.5"
-                            r="21.5"></circle>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-invite__picture">
-                <a class="traveler-invite__img" href="profile.html">
-                  <img src="img/travellers/smolov-mobile@1x.jpg" alt="Марк Смолов" width="70" height="70">
-                </a>
-              </div>
-            </li>
-            <!-- Лариса Роговая -->
-            <li class="catalog__item traveler-invite traveler-invite--rogovaya">
-              <div class="traveler-invite__info">
-                <div class="traveler-invite__interests">
-                  <a class="traveler-invite__heading" href="profile.html">
-                    <h3 class="traveler-invite__title traveler-invite__title--active">Лариса Роговая</h3>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Г</h3>
                   </a>
-                  <div class="traveler-invite__add">
-                    <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
-                    <div class="traveler-invite__like like">
-                      <button class="like__btn" aria-pressed="false" type="button">
-                        <span class="visually-hidden">Лайк</span>
-                      </button>
-                      <p class="like__count">23</p>
-                    </div>
-                  </div>
-                  <div class="traveler-invite__hashtags">
-                    <a href="#">#образование</a>
-                    <a href="#">#карьера</a>
-                    <a href="#">#учеба</a>
-                    <a href="#">#линкедин</a>
-                  </div>
-                </div>
-                <div class="traveler-invite__preferences">
-                  <div class="traveler-invite__part traveler-invite__part--visit">
-                    <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
-                    <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Великобритания">
-                          <!-- <svg role="img" width="35" height="24">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Великобритания</p>
-                      </li>
-                      <li class="traveler-invite__item">
-                        <a class="traveler-invite__country" href="#" aria-label="Германия">
-                          <!-- <svg role="img" width="35" height="24">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                        </a>
-                        <p class="traveler-invite__description">Германия</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="traveler-invite__wrapper">
-                    <div class="traveler-invite__part traveler-invite__part--vehicle">
-                      <h4 class="traveler-invite__subtitle">транспорт:</h4>
-                      <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Авиаперелёт</span>
-                            <!-- <svg role="img" width="19" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Автотранспорт</span>
-                            <!-- <svg role="img" width="17" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Велосипед</span>
-                            <!-- <svg role="img" width="24" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
-                          <a class="traveler-invite__link" href="#">
-                            <span class="visually-hidden">Пешком</span>
-                            <!-- <svg role="img" width="20" height="21">
-                            <use xlink:href="#icon-" x="0" y="0"></use>
-                          </svg> -->
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="traveler-invite__part traveler-invite__part--level">
-                      <h4 class="traveler-invite__subtitle">левел:</h4>
-                      <div class="traveler-invite__level level level--small">
-                        <p class="level__text">
-                          <span class="level__number">50</span>
-                        </p>
-                        <svg width="45" height="45">
-                          <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
-                          <circle class="level__progress" style="stroke-dashoffset: 0.5em;" cx="22.5" cy="22.5"
-                            r="21.5">
-                          </circle>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="traveler-invite__picture">
-                <a class="traveler-invite__img" href="profile.html">
-                  <img src="img/travellers/rogovaya-mobile@1x.jpg" alt="Лариса Роговая" width="70" height="70">
-                </a>
-              </div>
-            </li>
-          </ul>
-          <a class="catalog__more" href="#">Показать ещё</a>
-          <div class="catalog__switches">
-            <a class="catalog__switch catalog__switch--prev" href="#">
-              <span class="visually-hidden">Предыдущая страница</span>
-            </a>
-            <a class="catalog__switch catalog__switch--next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Д</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Е</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">З</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">И</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">К</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Л</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">М</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Н</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">О</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">П</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Р</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">С</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Т</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">У</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ф</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Х</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ч</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ш</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Э</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Ю</h3>
+                  </a>
+                </li>
+                <li class="letter__item">
+                  <a class="letter__link" href="#">
+                    <h3 class="letter__title">Я</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter__countries">
+              <ul>
+                <li>
+                  <a href="islands/australia.html">Австралия</a>
+                </li>
+                <li>
+                  <a href="europe/austria.html">Австрия</a>
+                </li>
+                <li>
+                  <a href="asia/azerbaijan.html">Азербайджан</a>
+                </li>
+                <li>
+                  <a href="europe/albania.html">Албания</a>
+                </li>
+                <li>
+                  <a href="africa/algeria.html">Алжир</a>
+                </li>
+                <li>
+                  <a href="africa/angola.html">Ангола</a>
+                </li>
+                <li>
+                  <a href="europe/andorra.html">Андорра</a>
+                </li>
+                <li>
+                  <a href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
+                </li>
+                <li>
+                  <a href="america/argentina.html">Аргентина</a>
+                </li>
+                <li>
+                  <a href="asia/armenia.html">Армения</a>
+                </li>
+                <li>
+                  <a href="asia/afghanistan.html">Афганистан</a>
+                </li>
+              </ul>
+            </div>
+            <button class="filter__collapse" type="button">Свернуть</button>
           </div>
         </div>
       </div>
     </section>
-    <!-- /.catalog -->
+    <!-- /.filter -->
+
+    <div class="traveler-positioner">
+      <div class="container">
+        <div class="traveler-positioner__wrapper">
+
+          <section class="traveler-positioner__traveler-filter traveler-filter">
+            <h2 class="traveler-filter__title">Подберите идеального попутчика</h2>
+            <form class="traveler-filter__form accordion" method="get" action="https://echo.htmlacademy.ru"
+              role="search">
+              <fieldset class="traveler-filter__fieldset traveler-filter__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn" type="button">Хобби</button>
+                </legend>
+                <ul class="accordion__panel">
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="gym" checked>
+                      <span class="field-checkbox__box"></span>
+                      Спортзал
+                    </label>
+                  </li>
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="hookah">
+                      <span class="field-checkbox__box"></span>
+                      Кальян
+                    </label>
+                  </li>
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="sofa">
+                      <span class="field-checkbox__box"></span>
+                      Диван
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="traveler-filter__fieldset traveler-filter__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn accordion__btn--open" type="button">Музыка</button>
+                </legend>
+                <ul class="accordion__panel accordion__panel--open" role="listbox">
+                  <li role="option">
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="hard-rock" checked>
+                      <span class="field-checkbox__box"></span>
+                      Тяжелый рок
+                    </label>
+                  </li>
+                  <li role="option">
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="russian-rap">
+                      <span class="field-checkbox__box"></span>
+                      Русский рэп
+                    </label>
+                  </li>
+                  <li role="option">
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="eurodens">
+                      <span class="field-checkbox__box"></span>
+                      Евроденс
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="traveler-filter__fieldset traveler-filter__fieldset--typical">
+                <legend>
+                  <button class="accordion__btn" type="button">Еда</button>
+                </legend>
+                <ul class="accordion__panel">
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="carnivore" checked>
+                      <span class="field-checkbox__box"></span>
+                      Мясоед
+                    </label>
+                  </li>
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="proper-nutrition">
+                      <span class="field-checkbox__box"></span>
+                      Сидит на ПП
+                    </label>
+                  </li>
+                  <li>
+                    <label class="field-checkbox field-checkbox--typical">
+                      <input class="visually-hidden" type="checkbox" name="vegetarian">
+                      <span class="field-checkbox__box"></span>
+                      Веган-сыроед
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="traveler-filter__fieldset traveler-filter__fieldset--vehicle">
+                <legend>
+                  <button class="accordion__btn accordion__btn--open" type="button">Транспорт</button>
+                </legend>
+                <ul class="accordion__panel accordion__panel--open" role="listbox">
+                  <li role="option" data-tooltip="Авиаперелёт">
+                    <label class="field-checkbox field-checkbox--vehicle">
+                      <span class="visually-hidden">Авиаперелёт</span>
+                      <input class="visually-hidden" type="checkbox" name="plane" checked>
+                      <!-- <svg role="img" width="19" height="21">
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
+                    </label>
+                  </li>
+                  <li role="option" data-tooltip="Автотранспорт">
+                    <label class="field-checkbox field-checkbox--vehicle">
+                      <span class="visually-hidden">Автотранспорт</span>
+                      <input class="visually-hidden" type="checkbox" name="car" checked>
+                      <!-- <svg role="img" width="17" height="21">
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
+                    </label>
+                  </li>
+                  <li role="option" data-tooltip="Велосипед">
+                    <label class="field-checkbox field-checkbox--vehicle">
+                      <span class="visually-hidden">Велосипед</span>
+                      <input class="visually-hidden" type="checkbox" name="bicycle">
+                      <!-- <svg role="img" width="24" height="21">
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
+                    </label>
+                  </li>
+                  <li role="option" data-tooltip="Пешком">
+                    <label class="field-checkbox field-checkbox--vehicle">
+                      <span class="visually-hidden">Пешком</span>
+                      <input class="visually-hidden" type="checkbox" name="walk" checked>
+                      <!-- <svg role="img" width="24" height="21">
+                        <use xlink:href="#icon-" x="0" y="0"></use>
+                      </svg> -->
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="traveler-filter__fieldset double-range">
+                <legend class="double-range__legend">
+                  <button class="accordion__btn accordion__btn--open" type="button">Левел</button>
+                </legend>
+                <div class="double-range__range accordion__panel accordion__panel--open">
+                  <div class="double-range__price">
+                    <p class="double-range__wrapper double-range__wrapper--min">
+                      <label class="visually-hidden" for="min-value">от</label>
+                      <input id="min-value" class="double-range__input double-range__input--min" name="min-value"
+                        type="text" value="30">
+                    </p>
+                    <p class="double-range__wrapper double-range__wrapper--max">
+                      <label class="visually-hidden" for="max-value">до</label>
+                      <input id="max-value" class="double-range__input double-range__input--max" name="max-value"
+                        type="text" value="100">
+                    </p>
+                  </div>
+                  <div class="double-range__controls">
+                    <div class="double-range__scale">
+                      <div class="double-range__bar"></div>
+                    </div>
+                    <div class="double-range__toggle double-range__toggle--min" tabindex="0"></div>
+                    <div class="double-range__toggle double-range__toggle--max" tabindex="0"></div>
+                  </div>
+                </div>
+              </fieldset>
+              <button class="traveler-filter__btn" type="submit">Показать</button>
+            </form>
+          </section>
+          <!-- /.traveler-filter -->
+
+          <section class="traveler-positioner__catalog catalog">
+            <h2 class="visually-hidden">Каталог попутчиков</h2>
+            <ul class="catalog__list">
+              <!-- Таня Фирсова -->
+              <li class="catalog__item">
+                <article class="traveler-invite traveler-invite--firsova">
+                  <div class="traveler-invite__info">
+                    <div class="traveler-invite__interests">
+                      <a class="traveler-invite__heading" href="profile.html">
+                        <h3 class="traveler-invite__title">Таня Фирсова</h3>
+                      </a>
+                      <div class="traveler-invite__add">
+                        <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
+                        <div class="traveler-invite__like like">
+                          <button class="like__btn like__btn--active" aria-pressed="true" type="button">
+                            <span class="visually-hidden">Лайк</span>
+                          </button>
+                          <p class="like__count">1,5 M</p>
+                        </div>
+                      </div>
+                      <div class="traveler-invite__hashtags">
+                        <a href="#">#ЗОЖ</a>
+                        <a href="#">#ПП</a>
+                        <a href="#">#Фитнес</a>
+                        <a href="#">#пляж</a>
+                        <a href="#">#авокадо</a>
+                        <a href="#">#смузи</a>
+                      </div>
+                    </div>
+                    <div class="traveler-invite__preferences">
+                      <div class="traveler-invite__part traveler-invite__part--visit">
+                        <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
+                        <ul class="traveler-invite__list traveler-invite__list--wishes">
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="island/srilanka.html">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Шри-Ланка</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="asia/thailand.html">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Таиланд</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="island/seychelles.html">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Сейшелы</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="traveler-invite__wrapper">
+                        <div class="traveler-invite__part traveler-invite__part--vehicle">
+                          <h4 class="traveler-invite__subtitle">транспорт:</h4>
+                          <ul class="traveler-invite__list traveler-invite__list--preferred">
+                            <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Авиаперелёт</span>
+                                <!-- <svg role="img" width="19" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Автотранспорт</span>
+                                <!-- <svg role="img" width="17" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Велосипед">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Велосипед</span>
+                                <!-- <svg role="img" width="24" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Пешком">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Пешком</span>
+                                <!-- <svg role="img" width="20" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="traveler-invite__part traveler-invite__part--level">
+                          <h4 class="traveler-invite__subtitle">левел:</h4>
+                          <div class="traveler-invite__level level level--small">
+                            <p class="level__text">
+                              <span class="level__number">99</span>
+                            </p>
+                            <svg width="45" height="45">
+                              <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
+                              <circle class="level__progress" style="stroke-dashoffset: 0.03em;" cx="22.5" cy="22.5"
+                                r="21.5">
+                              </circle>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="traveler-invite__picture">
+                    <a class="traveler-invite__img" href="profile.html">
+                      <img src="img/travellers/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="70" height="70">
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <!-- Петя Демин -->
+              <li class="catalog__item">
+                <article class="traveler-invite traveler-invite--demin">
+                  <div class="traveler-invite__info">
+                    <div class="traveler-invite__interests">
+                      <a class="traveler-invite__heading" href="profile.html">
+                        <h3 class="traveler-invite__title">Петя Демин</h3>
+                      </a>
+                      <div class="traveler-invite__add">
+                        <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
+                        <div class="traveler-invite__like like">
+                          <button class="like__btn" aria-pressed="false" type="button">
+                            <span class="visually-hidden">Лайк</span>
+                          </button>
+                          <p class="like__count">1500</p>
+                        </div>
+                      </div>
+                      <div class="traveler-invite__hashtags">
+                        <a href="#">#бургер</a>
+                        <a href="#">#бар</a>
+                        <a href="#">#футбол</a>
+                        <a href="#">#концерт</a>
+                        <a href="#">#крафт</a>
+                      </div>
+                    </div>
+                    <div class="traveler-invite__preferences">
+                      <div class="traveler-invite__part traveler-invite__part--visit">
+                        <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
+                        <ul class="traveler-invite__list traveler-invite__list--wishes">
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Германия">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Германия</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Чехия">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Чехия</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="traveler-invite__wrapper">
+                        <div class="traveler-invite__part traveler-invite__part--vehicle">
+                          <h4 class="traveler-invite__subtitle">транспорт:</h4>
+                          <ul class="traveler-invite__list traveler-invite__list--preferred">
+                            <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Авиаперелёт</span>
+                                <!-- <svg role="img" width="19" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Автотранспорт</span>
+                                <!-- <svg role="img" width="17" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Велосипед">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Велосипед</span>
+                                <!-- <svg role="img" width="24" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Пешком">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Пешком</span>
+                                <!-- <svg role="img" width="20" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="traveler-invite__part traveler-invite__part--level">
+                          <h4 class="traveler-invite__subtitle">левел:</h4>
+                          <div class="traveler-invite__level level level--small">
+                            <p class="level__text">
+                              <span class="level__number">80</span>
+                            </p>
+                            <svg width="45" height="45">
+                              <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
+                              <circle class="level__progress" style="stroke-dashoffset: 0.14em;" cx="22.5" cy="22.5"
+                                r="21.5"></circle>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="traveler-invite__picture">
+                    <a class="traveler-invite__img" href="profile.html">
+                      <img src="img/travellers/demin-mobile@1x.jpg" alt="Петя Демин" width="70" height="70">
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <!-- Марк Смолов -->
+              <li class="catalog__item">
+                <article class="traveler-invite traveler-invite--smolov">
+                  <div class="traveler-invite__info">
+                    <div class="traveler-invite__interests">
+                      <a class="traveler-invite__heading" href="profile.html">
+                        <h3 class="traveler-invite__title">Марк Смолов</h3>
+                      </a>
+                      <div class="traveler-invite__add">
+                        <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
+                        <div class="traveler-invite__like like">
+                          <button class="like__btn" aria-pressed="false" type="button">
+                            <span class="visually-hidden">Лайк</span>
+                          </button>
+                          <p class="like__count">170</p>
+                        </div>
+                      </div>
+                      <div class="traveler-invite__hashtags">
+                        <a href="#">#рэп</a>
+                        <a href="#">#тату</a>
+                        <a href="#">#хайпбист</a>
+                        <a href="#">#кроссовки</a>
+                        <a href="#">#суприм</a>
+                      </div>
+                    </div>
+                    <div class="traveler-invite__preferences">
+                      <div class="traveler-invite__part traveler-invite__part--visit">
+                        <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
+                        <ul class="traveler-invite__list traveler-invite__list--wishes">
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="США">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">США</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Австралия">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Австралия</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Доминикана">
+                              <!-- <svg role="img" width="35" height="24">
+                          <use xlink:href="#icon-" x="0" y="0"></use>
+                        </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Доминикана</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="traveler-invite__wrapper">
+                        <div class="traveler-invite__part traveler-invite__part--vehicle">
+                          <h4 class="traveler-invite__subtitle">транспорт:</h4>
+                          <ul class="traveler-invite__list traveler-invite__list--preferred">
+                            <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Авиаперелёт</span>
+                                <!-- <svg role="img" width="19" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Автотранспорт</span>
+                                <!-- <svg role="img" width="17" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Велосипед">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Велосипед</span>
+                                <!-- <svg role="img" width="24" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Пешком">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Пешком</span>
+                                <!-- <svg role="img" width="20" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="traveler-invite__part traveler-invite__part--level">
+                          <h4 class="traveler-invite__subtitle">левел:</h4>
+                          <div class="traveler-invite__level level level--small">
+                            <p class="level__text">
+                              <span class="level__number">25</span>
+                            </p>
+                            <svg width="45" height="45">
+                              <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
+                              <circle class="level__progress" style="stroke-dashoffset: 0.77em;" cx="22.5" cy="22.5"
+                                r="21.5"></circle>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="traveler-invite__picture">
+                    <a class="traveler-invite__img" href="profile.html">
+                      <img src="img/travellers/smolov-mobile@1x.jpg" alt="Марк Смолов" width="70" height="70">
+                    </a>
+                  </div>
+                </article>
+              </li>
+              <!-- Лариса Роговая -->
+              <li class="catalog__item">
+                <article class="traveler-invite traveler-invite--rogovaya">
+                  <div class="traveler-invite__info">
+                    <div class="traveler-invite__interests">
+                      <a class="traveler-invite__heading" href="profile.html">
+                        <h3 class="traveler-invite__title traveler-invite__title--active">Лариса Роговая</h3>
+                      </a>
+                      <div class="traveler-invite__add">
+                        <a class="traveler-invite__call btn btn--invite" href="#">Позвать!</a>
+                        <div class="traveler-invite__like like">
+                          <button class="like__btn" aria-pressed="false" type="button">
+                            <span class="visually-hidden">Лайк</span>
+                          </button>
+                          <p class="like__count">23</p>
+                        </div>
+                      </div>
+                      <div class="traveler-invite__hashtags">
+                        <a href="#">#образование</a>
+                        <a href="#">#карьера</a>
+                        <a href="#">#учеба</a>
+                        <a href="#">#линкедин</a>
+                      </div>
+                    </div>
+                    <div class="traveler-invite__preferences">
+                      <div class="traveler-invite__part traveler-invite__part--visit">
+                        <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
+                        <ul class="traveler-invite__list traveler-invite__list--wishes">
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Великобритания">
+                              <!-- <svg role="img" width="35" height="24">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Великобритания</p>
+                          </li>
+                          <li class="traveler-invite__item">
+                            <a class="traveler-invite__country" href="#" aria-label="Германия">
+                              <!-- <svg role="img" width="35" height="24">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                            </a>
+                            <p class="traveler-invite__description">Германия</p>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="traveler-invite__wrapper">
+                        <div class="traveler-invite__part traveler-invite__part--vehicle">
+                          <h4 class="traveler-invite__subtitle">транспорт:</h4>
+                          <ul class="traveler-invite__list traveler-invite__list--preferred">
+                            <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Авиаперелёт</span>
+                                <!-- <svg role="img" width="19" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Автотранспорт</span>
+                                <!-- <svg role="img" width="17" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Велосипед">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Велосипед</span>
+                                <!-- <svg role="img" width="24" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                            <li class="traveler-invite__item" data-tooltip="Пешком">
+                              <a class="traveler-invite__link" href="#">
+                                <span class="visually-hidden">Пешком</span>
+                                <!-- <svg role="img" width="20" height="21">
+                            <use xlink:href="#icon-" x="0" y="0"></use>
+                          </svg> -->
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="traveler-invite__part traveler-invite__part--level">
+                          <h4 class="traveler-invite__subtitle">левел:</h4>
+                          <div class="traveler-invite__level level level--small">
+                            <p class="level__text">
+                              <span class="level__number">50</span>
+                            </p>
+                            <svg width="45" height="45">
+                              <!-- stroke-dashoffset = 1em - [значение заполнения шкалы от 0 до 1] -->
+                              <circle class="level__progress" style="stroke-dashoffset: 0.5em;" cx="22.5" cy="22.5"
+                                r="21.5">
+                              </circle>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="traveler-invite__picture">
+                    <a class="traveler-invite__img" href="profile.html">
+                      <img src="img/travellers/rogovaya-mobile@1x.jpg" alt="Лариса Роговая" width="70" height="70">
+                    </a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <a class="catalog__more" href="#">Показать ещё</a>
+            <div class="catalog__switches">
+              <a class="catalog__switch catalog__switch--prev" href="#">
+                <span class="visually-hidden">Предыдущая страница</span>
+              </a>
+              <a class="catalog__switch catalog__switch--next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </div>
+          </section>
+          <!-- /.catalog -->
+
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -811,6 +983,8 @@
 
   <script src="js/mobile-menu.js"></script>
   <script src="js/like.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/accordion.js"></script>
 </body>
 
 </html>

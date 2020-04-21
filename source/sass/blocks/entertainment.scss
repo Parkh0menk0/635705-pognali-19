@@ -1,0 +1,75 @@
+.entertainment label {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 12px;
+  padding-left: 11px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entertainment textarea {
+  line-height: 1.3;
+
+  width: 100%;
+  height: 220px;
+  padding: 10px 13px;
+
+  resize: none;
+
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.entertainment__list {
+  @include list-reset;
+
+  margin-bottom: 15px;
+}
+
+.entertainment__item {
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entertainment__country {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+
+  position: relative;
+
+  white-space: nowrap;
+
+  color: $dark-slate-blue;
+
+  flex-grow: 1;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+
+    background-image: linear-gradient(to left, white 30px, transparent 40px);
+  }
+}
+
+.entertainment__flag {
+  width: 35px;
+  height: 24px;
+
+  svg {
+    width: 35px;
+    height: 24px;
+  }
+}

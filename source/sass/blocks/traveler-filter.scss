@@ -1,0 +1,104 @@
+.traveler-filter {
+  background-color: $light-gold;
+  padding: 26px 25px 22px;
+  border-radius: 20px;
+}
+
+.traveler-filter__title {
+  margin: 0;
+  font-size: 22.5px;
+  font-weight: bold;
+  line-height: 23px;
+
+  color: $dark-slate-blue;
+  margin-bottom: 19px;
+}
+
+.traveler-filter__form {
+  legend {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  button[type="button"] {
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 9px;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    color: $dark-slate-blue;
+    border-top: 1px solid $macaroni-and-cheese;
+  }
+
+  ul {
+    @include list-reset;
+
+    flex-direction: column;
+
+    margin-top: 5px;
+    margin-bottom: 16px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  button[type="submit"] {
+    @include btn-res;
+
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+
+    display: block;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $dark-two;
+    border-radius: 60px;
+    background-color: white;
+    width: 100%;
+    padding: 7px 10px 3px;
+
+    &:active {
+      background-color: $macaroni-and-cheese;
+      color: rgba($dark-two, 0.3);
+    }
+  }
+}
+
+.traveler-filter__fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &--typical {
+    li {
+      margin-bottom: 9px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--vehicle {
+    ul {
+      flex-direction: row;
+
+      margin-bottom: 19px;
+    }
+  }
+}
