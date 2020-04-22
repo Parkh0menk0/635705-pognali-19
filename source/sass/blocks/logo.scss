@@ -24,3 +24,39 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .logo__img {
+    width: 166px;
+    height: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    &--open {
+      .logo__img {
+        &--blue {
+          display: none;
+        }
+
+        &--white {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .logo__img {
+    width: 200px;
+    height: 52px;
+
+    &--blue {
+      display: block;
+    }
+
+    &--white {
+      display: none;
+    }
+  }
+}

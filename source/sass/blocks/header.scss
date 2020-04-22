@@ -1,39 +1,50 @@
 .header {
   position: relative;
+  z-index: 8;
 
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: -28px;
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: $dark-two;
   background-image: linear-gradient(transparent 73.5%, $dark-blue-grey 73.5%),
     linear-gradient(transparent 478px, $dark-two 478px),
-    url("../img/header/traveller-illustration-mobile@1x.png"),
     url("../img/header/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 0 0, 62% 223px, 50% 0;
+  background-position: 0 0, 0 0, 50% 0;
 
-  &.open {
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &--open {
     background-image: linear-gradient(white 52.3%, transparent 52.3%);
   }
 
   &--inner {
-    position: relative;
-    z-index: 8;
-
     margin-bottom: -15px;
+    padding-top: 19px;
+    padding-bottom: 9px;
 
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-image: none;
 
-    .header__wrapper {
-      padding-top: 19px;
-      padding-bottom: 9px;
+    justify-content: flex-start;
 
-      justify-content: flex-start;
+    .header__wrapper {
+      align-items: flex-start;
     }
 
     .header__title {
       position: relative;
 
-      padding-bottom: 0;
+      margin-bottom: 0;
 
       text-align: left;
 
@@ -54,50 +65,58 @@
   }
 }
 
+.header__content {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .header__wrapper {
+  position: relative;
+
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
-  padding-top: 27px;
-  padding-bottom: 39px;
+  padding: 0 25px;
+  width: 100%;
 
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.header__logo {
-  display: block;
-  width: 100px;
-  height: 19px;
-}
-
 .header__title {
-  display: table;
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
 
+  max-width: 270px;
   margin: 0;
-  padding-bottom: 244px;
+  margin-bottom: 312px;
 
   text-align: center;
 
   color: white;
+}
 
-  order: 2;
+.header__picture {
+  position: absolute;
+  top: 129px;
+  right: 15%;
+}
+
+.header__img {
+  width: 192px;
+  height: 255px;
 }
 
 .header__lead {
+  width: 82%;
   margin: 0;
   margin-bottom: 30px;
-
-  order: 4;
 }
 
 .header__road-map {
   width: 100%;
-  order: 5;
 }
 
 .header__drop-down {
@@ -108,4 +127,106 @@
   left: 0;
 
   margin: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 40px;
+
+    background-color: $dark-blue-grey;
+    background-image: url('../img/header/globe-back-tablet@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 382px;
+
+    &--open {
+      background-image: linear-gradient(white 910px, transparent 910px), url("../img/header/globe-back-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 0 0, 50% 382px;
+    }
+  }
+
+  .header__content {
+    width: auto;
+    margin: 0;
+  }
+
+  .header__wrapper {
+    width: 688px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header__title {
+    max-width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+
+    margin-bottom: 85px;
+  }
+
+  .header__picture {
+    top: 240px;
+    right: 10%;
+  }
+
+  .header__img {
+    width: 372px;
+    height: 451px;
+  }
+
+  .header__lead {
+    width: 90%;
+    margin-bottom: 211px;
+  }
+
+  .header__drop-down {
+    top: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 47px;
+    padding-bottom: 123px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-color: $dark-blue-grey;
+    background-image: url('../img/header/globe-back-desktop@1x.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  .header__wrapper {
+    flex-direction: row;
+
+    padding: 0;
+    width: 1320px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .header__title {
+    text-align: left;
+    max-width: 470px;
+    padding-left: 68px;
+  }
+
+  .header__picture {
+    top: -99px;
+    right: 26%;
+  }
+
+  .header__img {
+    width: 434px;
+    height: 640px;
+  }
+
+  .header__lead {
+    width: 286px;
+    margin-bottom: 114px;
+    margin-left: auto;
+    padding-top: 12px;
+  }
 }

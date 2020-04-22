@@ -1,17 +1,18 @@
 .about {
   margin-top: -1px;
+
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $dark-blue-grey;
   background-image: url("../img/about/about-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 30px;
 }
 
 .about__wrapper {
   width: 82%;
   margin: 0 auto;
-  padding-top: 33px;
+  padding-top: 61px;
   padding-bottom: 81px;
 }
 

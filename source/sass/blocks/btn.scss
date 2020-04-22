@@ -25,3 +25,10 @@
     color: rgba($dark-two, 0.3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 20px;
+    padding: 12px 6px 8px;
+  }
+}

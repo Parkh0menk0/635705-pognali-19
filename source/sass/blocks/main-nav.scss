@@ -4,15 +4,16 @@
 
   display: contents;
 
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
 
-  .open {
+  &--open {
     background-image: linear-gradient(white);
   }
 
   &--inner {
     .main-nav__wrapper {
-      margin-bottom: 53px;
+      margin-bottom: 57px;
     }
 
     .main-nav__contacts {
@@ -28,14 +29,15 @@
   width: 100%;
   margin-bottom: 45px;
 
-  order: 1;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  padding: 0 25px;
 }
 
 .main-nav__menu {
   width: 25px;
+  max-height: 19px;
 }
 
 .main-nav__toggle {
@@ -54,12 +56,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &.open {
+  &--open {
     width: 19px;
     height: 19px;
 
     opacity: 0.2;
-    background-image: url("../img/svg/close.svg");
+    background-image: url("../img/svg/menu-close.svg");
 
     &:hover {
       opacity: 0.4;
@@ -76,12 +78,76 @@
 }
 
 .main-nav__contacts {
+  position: absolute;
+  z-index: 1;
+  top: 458px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
   display: flex;
-  order: 3;
-  margin-bottom: 27px;
+  flex-direction: row;
+
+  width: 270px;
+  margin: auto;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.main-nav__social {
-  margin: 0;
-  padding: 0;
+.main-nav__btn {
+  padding: 7px 6px 3px;
+  width: 189px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    align-items: center;
+    width: 688px;
+    margin: 0 auto;
+    margin-bottom: 73px;
+    padding: 0;
+  }
+
+  .main-nav__menu {
+    max-height: none;
+  }
+
+  .main-nav__contacts {
+    position: static;
+
+    width: 188px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1320px;
+    margin-bottom: 110px;
+  }
+
+  .main-nav__menu {
+    width: 540px;
+    max-height: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__site-list {
+    display: block;
+    padding-top: 8px;
+  }
+
+  .main-nav__contacts {
+    width: 290px;
+  }
 }
