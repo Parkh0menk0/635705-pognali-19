@@ -16,54 +16,67 @@
 <body>
 
   <!-- Шапка -->
-  <header class="header header--inner open">
-    <div class="container">
-      <div class="header__wrapper">
-        <nav class="main-nav main-nav--inner">
-          <div class="main-nav__wrapper">
-            <a class="header__logo" href="index.html">
-              <img src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»" width="100" height="19">
-            </a>
-            <div class="main-nav__menu">
-              <button class="main-nav__toggle open" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-              </button>
-              <ul class="main-nav__site-list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__link" href="index.html">О сервисе</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link site-list__link--active">Направления</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__link" href="catalog.html">Попутчики</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="main-nav__contacts">
-            <ul class="topmenu">
-              <li class="topmenu__item">
-                <a class="topmenu__link topmenu__link--phone" href="tel:88005558628">
-                  <span class="visually-hidden">Позвонить нам</span>
-                </a>
+  <header class="header header--inner header--open">
+    <nav class="main-nav main-nav--inner">
+      <div class="main-nav__wrapper">
+        <a class="header__logo logo logo--open">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop-blue@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png">
+            <img class="logo__img logo__img--blue" src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»"
+              width="100" height="19">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop-white@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-white@1x.png">
+            <img class="logo__img logo__img--white" src="img/logo/logo-mobile-white@1x.png" alt="Логотип «Погнали»"
+              width="100" height="19">
+          </picture>
+        </a>
+        <div class="main-nav__menu">
+          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__site-list">
+            <ul class="site-list site-list--main-nav">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">О сервисе</a>
               </li>
-              <li class="topmenu__item">
-                <a class="topmenu__link topmenu__link--mail" href="mailto:mail@htmlacademy.ru">
-                  <span class="visually-hidden">Позвонить нам</span>
-                </a>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Направления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Попутчики</a>
               </li>
             </ul>
-            <a class="topmenu__btn btn btn--authorization" href="#">Авторизация</a>
           </div>
-        </nav>
+        </div>
+        <div class="main-nav__contacts">
+          <ul class="topmenu">
+            <li class="topmenu__item">
+              <a class="topmenu__link topmenu__link--phone" href="tel:88005558628">
+                <span class="visually-hidden">Позвонить нам</span>
+              </a>
+            </li>
+            <li class="topmenu__item">
+              <a class="topmenu__link topmenu__link--mail" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">Позвонить нам</span>
+              </a>
+            </li>
+          </ul>
+          <a class="main-nav__btn btn btn--authorization" href="#">Авторизация</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header__content">
+      <div class="header__wrapper">
         <h1 class="header__title">Направления</h1>
       </div>
     </div>
-    <div class="header__drop-down drop-down open">
-      <div class="container">
-        <div class="drop-down__wrapper">
-          <ul class="drop-down__site-list site-list">
+    <div class="header__drop-down drop-down drop-down--open">
+      <div class="drop-down__wrapper">
+        <div class="drop-down__site-list">
+          <ul class="site-list site-list--drop-down">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">О сервисе</a>
             </li>
@@ -74,22 +87,28 @@
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
-          <div class="drop-down__contacts">
-            <a class="contact-item" href="tel:88005558628">
+        </div>
+        <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
+        <div class="drop-down__contacts">
+          <a class="contact-item" href="tel:88005558628">
+            <p class="contact-item__icon">
               <!-- <svg role="img" width="35" height="24">
-                  <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
-                </svg> -->
-              8 800 555-86-28
-            </a>
-            <a class="contact-item" href="mailto:mail@htmlacademy.ru">
+                <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
+              </svg> -->
+            </p>
+            <span class="contact-item__text">8 800 555-86-28</span>
+          </a>
+          <a class="contact-item" href="mailto:mail@htmlacademy.ru">
+            <p class="contact-item__icon">
               <!-- <svg role="img" width="35" height="24">
-                  <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
-                </svg> -->
-              mail@htmlacademy.ru
-            </a>
-          </div>
-          <ul class="main-nav__social social">
+                <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
+              </svg> -->
+            </p>
+            <span class="contact-item__text">mail@htmlacademy.ru</span>
+          </a>
+        </div>
+        <div class="drop-down__social">
+          <ul class="social social--drop-down">
             <li class="social__item">
               <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"
                 rel="noreferrer">
