@@ -6,12 +6,132 @@
   color: $mango;
 }
 
-.section__content {
+.section__plain-text {
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+}
 
-  &--bold {
-    font-weight: bold;
+.section__bold-text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.section__btn {
+  word-break: break-word;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+
+  position: relative;
+
+  display: block;
+
+  text-align: left;
+  text-transform: none;
+
+  color: $dark-slate-blue;
+  border-radius: 10px;
+
+  &--no-border {
+    padding: 17px 23px 15px;
+    background-color: $light-gold;
+
+    &::after {
+      position: absolute;
+      right: 23px;
+      top: 0;
+      bottom: 0;
+
+      width: 10px;
+      height: 14px;
+      margin: auto;
+
+      content: "";
+
+      background-image: url("../img/svg/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &:hover {
+      background-color: $mango-two;
+    }
+
+    &:active {
+      color: rgba($dark-two, 0.3);
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--border {
+    padding: 14px 21px 13px;
+    background-color: transparent;
+    border: 3px solid $dark-blue-grey;
+
+    svg {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      bottom: 0;
+
+      width: 10px;
+      height: 14px;
+      margin: auto;
+
+      content: "";
+    }
+
+    &:hover {
+      background-color: $dark-blue-grey;
+      color: white;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+
+      svg {
+        fill: rgba(white, 0.3);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .section__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .section__plain-text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .section__bold-text {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .section__btn {
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+
+    &--no-border {
+      padding: 30px 34px 27px;
+
+      &::after {
+        right: 36px;
+      }
+    }
   }
 }

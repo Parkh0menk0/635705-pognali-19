@@ -5,14 +5,14 @@
   display: flex;
   flex-direction: row;
 
-  margin-bottom: -28px;
+  margin-bottom: -30px;
   padding-top: 27px;
   padding-bottom: 39px;
 
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  background-color: $dark-two;
-  background-image: linear-gradient(transparent 73.5%, $dark-blue-grey 73.5%),
+  background-color: $dark-blue-grey;
+  background-image: linear-gradient(transparent 762px, $dark-blue-grey 762px),
     linear-gradient(transparent 478px, $dark-two 478px),
     url("../img/header/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 
   &--open {
-    background-image: linear-gradient(white 52.3%, transparent 52.3%);
+    background-image: linear-gradient(white 568px, transparent 568px), url("../img/header/globe-back-mobile@1x.jpg");
   }
 
   &--inner {
@@ -132,6 +132,8 @@
 @media (min-width: $tablet-width) {
   .header {
     padding-top: 40px;
+    padding-bottom: 96px;
+    margin-bottom: -60px;
 
     background-color: $dark-blue-grey;
     background-image: url("../img/header/globe-back-tablet@1x.jpg");
