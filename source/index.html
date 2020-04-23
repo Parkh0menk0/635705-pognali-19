@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="img/favicon/favicon-512x512.png">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -21,14 +21,14 @@
       <div class="main-nav__wrapper">
         <a class="header__logo logo logo--open">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop-blue@1x.png">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-blue@1x.png">
+            <source media="(min-width: 1320px)" srcset="img/logo/logo-desktop-blue@1x.png">
+            <source media="(min-width: 688px)" srcset="img/logo/logo-tablet-blue@1x.png">
             <img class="logo__img logo__img--blue" src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»"
               width="100" height="19">
           </picture>
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop-white@1x.png">
-            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet-white@1x.png">
+            <source media="(min-width: 1320px)" srcset="img/logo/logo-desktop-white@1x.png">
+            <source media="(min-width: 688px)" srcset="img/logo/logo-tablet-white@1x.png">
             <img class="logo__img logo__img--white" src="img/logo/logo-mobile-white@1x.png" alt="Логотип «Погнали»"
               width="100" height="19">
           </picture>
@@ -73,9 +73,10 @@
         <h1 class="header__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
         <div class="header__picture">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/header/traveller-illustration-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/header/traveller-illustration-tablet@1x.png">
-            <img class="header__img" src="img/header/traveller-illustration-mobile@1x.png" alt="Попутчик" width="192" height="255">
+            <source media="(min-width: 1320px)" srcset="img/header/traveller-illustration-desktop@1x.png">
+            <source media="(min-width: 688px)" srcset="img/header/traveller-illustration-tablet@1x.png">
+            <img class="header__img" src="img/header/traveller-illustration-mobile@1x.png" alt="Попутчик" width="192"
+              height="255">
           </picture>
         </div>
         <p class="header__lead quote">
@@ -164,15 +165,22 @@
   <main>
 
     <section class="about section">
-      <div class="container">
-        <div class="about__wrapper">
-          <h2 class="about__title section__title">О сервисе</h2>
-          <p class="about__content section__content">Любое путешествие веселее<br>с попутчиками, которые на одной волне
-            с тобой! Делитесь
-            своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="about__content section__content section__content--bold">А если найдете кого-то близкого по духу —
+      <div class="about__wrapper">
+        <h2 class="about__title section__title">О сервисе</h2>
+        <div class="about__content">
+          <p class="about__plain-text section__plain-text">Любое путешествие веселее<br> с попутчиками, которые на одной
+            волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about__bold-text section__bold-text">А если найдете кого-то близкого по духу —
             скорее зовите в совместный трип!</p>
         </div>
+        <div class="about__picture">
+          <picture>
+            <source media="(min-width: 1320px)" srcset="img/about/about-desktop@1x.png">
+            <source media="(min-width: 688px)" srcset="img/about/about-tablet@1x.png">
+            <img class="about__img" src="img/about/about-mobile@1x.png" alt="Превью сервиса" width="292" height="352">
+          </picture>
+        </div>
+        <a class="about__btn section__btn section__btn--no-border" href="#">Подробнее</a>
       </div>
     </section>
     <!-- /.about -->
@@ -182,7 +190,8 @@
         <div class="destination__wrapper">
           <div class="destination__lead">
             <h2 class="destination__title section__title">Направления</h2>
-            <p class="destination__content section__content">Мы не продаем туры<br>и ничего не рекламируем. Люди сами
+            <p class="destination__plain-text section__plain-text">Мы не продаем туры<br>и ничего не рекламируем. Люди
+              сами
               пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
           <ul class="destination__list">
@@ -247,7 +256,7 @@
               </p>
             </li>
           </ul>
-          <a class="destination__btn rect-btn rect-btn--no-border" href="form.html">Показать все</a>
+          <a class="destination__btn section__btn section__btn--no-border" href="form.html">Показать все</a>
         </div>
       </div>
     </section>
@@ -258,9 +267,9 @@
         <div class="fellow-travelers__wrapper">
           <div class="fellow-travelers__lead">
             <h2 class="fellow-travelers__title section__title">Попутчики</h2>
-            <p class="fellow-travelers__content section__content">Все мы индивидуальны и у каждого свой взгляд на
+            <p class="fellow-travelers__plain-text section__plain-text">Все мы индивидуальны и у каждого свой взгляд на
               идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="fellow-travelers__content section__content section__content--bold">Теперь можно легко найти
+            <p class="fellow-travelers__bold-text section__bold-text">Теперь можно легко найти
               единомышленников!</p>
           </div>
           <ul class="fellow-travelers__list">
@@ -446,7 +455,7 @@
               </div>
             </li>
           </ul>
-          <a class="destination__btn rect-btn rect-btn--no-border" href="form.html">Показать всех</a>
+          <a class="destination__btn section__btn section__btn--no-border" href="form.html">Показать всех</a>
         </div>
       </div>
     </section>
@@ -473,8 +482,8 @@
           <div class="feedback__wrapper feedback__wrapper--registration">
             <h2 class="feedback__title section__title">Заинтересовались?</h2>
             <div class="feedback__lead">
-              <p class="feedback__content section__content">Зарегистрируйтесь, это&nbsp;быстро и бесплатно!</p>
-              <p class="feedback__content section__content">Уже зарегистрированы? Тогда скорее <a
+              <p class="feedback__plain-text section__plain-text">Зарегистрируйтесь, это&nbsp;быстро и бесплатно!</p>
+              <p class="feedback__plain-text section__plain-text">Уже зарегистрированы? Тогда скорее <a
                   href="authorization.html">авторизуйтесь</a>.</p>
             </div>
             <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
@@ -486,8 +495,8 @@
               </button>
             </form>
             <div class="feedback__epilogue">
-              <p class="feedback__content section__content">Остались вопросы?</p>
-              <p class="feedback__content section__content">Мы с радостью на них ответим!</p>
+              <p class="feedback__plain-text section__plain-text">Остались вопросы?</p>
+              <p class="feedback__plain-text section__plain-text">Мы с радостью на них ответим!</p>
             </div>
             <div class="feedback__contacts">
               <a class="contact-item contact-item--feedback" href="tel:88005558628">
@@ -516,7 +525,7 @@
               </svg> -->
               ул. Большая Конюшенная, 19/8
             </a>
-            <a class="contacts__btn rect-btn rect-btn--border" href="#">
+            <a class="contacts__btn section__btn section__btn--border" href="#">
               <!-- <svg role="img" width="10" height="14">
                 <use xlink:href="#icon-triangle-arrow-right" x="0" y="0"></use>
               </svg> -->
@@ -591,7 +600,7 @@
   </section>
   <!-- /.modal -->
 
-  <script src="js/mobile-menu.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
