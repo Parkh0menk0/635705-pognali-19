@@ -186,14 +186,16 @@
     <!-- /.about -->
 
     <section class="destination section">
-      <div class="container">
-        <div class="destination__wrapper">
+      <div class="destination__wrapper">
+        <div class="destination__additional">
           <div class="destination__lead">
             <h2 class="destination__title section__title">Направления</h2>
-            <p class="destination__plain-text section__plain-text">Мы не продаем туры<br>и ничего не рекламируем. Люди
-              сами
-              пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="destination__plain-text section__plain-text">Мы не продаем туры и ничего не рекламируем. Люди
+              сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
+          <a class="destination__btn section__btn section__btn--no-border" href="form.html">Показать все</a>
+        </div>
+        <div class="destination__main">
           <ul class="destination__list">
             <li class="destination__item country">
               <div class="country__header">
@@ -211,9 +213,13 @@
                   <span class="country__visitors">18321</span>
                 </div>
               </div>
-              <p class="country__content">
-                <img src="img/destination/thailand-mobile@1x.jpg" alt="Таиланд">
-              </p>
+              <div class="country__picture">
+                <picture>
+                  <source media="(min-width: 668px)" srcset="img/destination/thailand-desktop@1x.jpg">
+                  <img class="country__img" src="img/destination/thailand-mobile@1x.jpg" alt="Таиланд" width="270"
+                    height="110">
+                </picture>
+              </div>
             </li>
             <li class="destination__item country">
               <div class="country__header">
@@ -231,9 +237,13 @@
                   <span class="country__visitors">12518</span>
                 </div>
               </div>
-              <p class="country__content">
-                <img src="img/destination/france-mobile@1x.jpg" alt="Франция">
-              </p>
+              <div class="country__picture">
+                <picture>
+                  <source media="(min-width: 668px)" srcset="img/destination/france-desktop@1x.jpg">
+                  <img class="country__img" src="img/destination/france-mobile@1x.jpg" alt="Франция" width="270"
+                    height="110">
+                </picture>
+              </div>
             </li>
             <li class="destination__item country">
               <div class="country__header">
@@ -251,12 +261,15 @@
                   <span class="country__visitors">5326</span>
                 </div>
               </div>
-              <p class="country__content">
-                <img src="img/destination/czech-mobile@1x.jpg" alt="Чехия">
-              </p>
+              <div class="country__picture">
+                <picture>
+                  <source media="(min-width: 668px)" srcset="img/destination/czech-desktop@1x.jpg">
+                  <img class="country__img" src="img/destination/czech-mobile@1x.jpg" alt="Чехия" width="270"
+                    height="110">
+                </picture>
+              </div>
             </li>
           </ul>
-          <a class="destination__btn section__btn section__btn--no-border" href="form.html">Показать все</a>
         </div>
       </div>
     </section>
