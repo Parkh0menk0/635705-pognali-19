@@ -1,3 +1,7 @@
+.section {
+  overflow: hidden;
+}
+
 .section__title {
   font-size: 24px;
   font-weight: bold;
@@ -19,7 +23,6 @@
 }
 
 .section__btn {
-  word-break: break-word;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -30,6 +33,7 @@
 
   text-align: left;
   text-transform: none;
+  word-break: break-word;
 
   color: $dark-slate-blue;
   border-radius: 10px;

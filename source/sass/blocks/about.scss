@@ -1,5 +1,10 @@
 .about {
+  position: relative;
+  z-index: 7;
+
+  margin-bottom: -30px;
   padding-top: 30px;
+
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $dark-blue-grey;
@@ -8,20 +13,24 @@
 .about__wrapper {
   position: relative;
   z-index: 0;
+
   width: 320px;
   margin: 0 auto;
   padding: 32px 50px 81px;
 
   &::before {
     position: absolute;
-    content: "";
+    z-index: -1;
     top: 0;
     left: 0;
+
     width: 113px;
     height: 132px;
-    background-color: $dark-blue-grey-four;
+
+    content: '';
+
     border-radius: 10px;
-    z-index: -1;
+    background-color: $dark-blue-grey-four;
   }
 }
 
@@ -31,9 +40,10 @@
 }
 
 .about__plain-text {
-  color: white;
   margin: 0;
   margin-bottom: 19px;
+
+  color: white;
 }
 
 .about__bold-text {
@@ -43,9 +53,9 @@
 
 .about__picture {
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 10px;
-  z-index: -1;
 }
 
 .about__img {
@@ -59,16 +69,19 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    border-bottom-right-radius: 60px;
-    border-bottom-left-radius: 60px;
     width: auto;
     margin: 0;
+    margin-bottom: -60px;
     padding-top: 60px;
     padding-bottom: 46px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 
   .about__wrapper {
     position: relative;
+
     width: 688px;
     margin: 0 auto;
     padding: 42px 35px;
