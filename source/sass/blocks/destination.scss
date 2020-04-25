@@ -26,7 +26,6 @@
 
 .destination__additional {
   display: contents;
-  width: 200px;
 }
 
 .destination__lead {
@@ -93,7 +92,7 @@
     margin: 0 auto;
     padding: 74px 0 35px;
 
-    background-image: url('../img/destination/flags-back@1x.png');
+    background-image: url("../img/destination/flags-back@1x.png");
     background-repeat: no-repeat;
     background-position: right 80px;
 
@@ -134,7 +133,7 @@
       width: 141px;
       height: 141px;
 
-      content: '';
+      content: "";
 
       border-radius: 20px;
       background-color: $pale-grey-four;
