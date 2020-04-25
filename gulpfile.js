@@ -11,13 +11,13 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var concat = require('gulp-concat');
+var concat = require("gulp-concat");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var uglify = require("gulp-uglify");
 var del = require("del");
-var fileinclude = require('gulp-file-include');
+var fileinclude = require("gulp-file-include");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -45,7 +45,6 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("src/_include/*.html", gulp.series("fileinclude", "refresh"));
   gulp.watch("source/js/**/*.js", gulp.series("scripts", "refresh"));
 });
 
@@ -87,20 +86,16 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("source/**/*.html")
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
-});
-
-gulp.task('fileinclude', function () {
-  gulp.src('src/_include/*.html')
+    .pipe(plumber())
     .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
+      prefix: "@@",
+      basepath: "@file"
     }))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest("build/"));
 });
 
 gulp.task("scripts", function () {
@@ -110,12 +105,12 @@ gulp.task("scripts", function () {
   ])
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('build/js'))
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
-    .pipe(rename('main.min.js'))
-    .pipe(sourcemap.write(''))
-    .pipe(gulp.dest('build/js'));
+    .pipe(rename("main.min.js"))
+    .pipe(sourcemap.write(""))
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
@@ -134,5 +129,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "fileinclude", "copy", "css", "scripts", "sprite", "html", "images", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html", "images", "webp"));
 gulp.task("start", gulp.series("build", "server"));
