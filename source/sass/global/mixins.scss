@@ -35,18 +35,6 @@
   }
 }
 
-@mixin tablet-breakpoint {
-  @media (max-width: $tablet-max-width) {
-    @content;
-  }
-}
-
-@mixin mobile-breakpoint {
-  @media (max-width: $mobile-max-width) {
-    @content;
-  }
-}
-
 @mixin retina {
   @media (min-resolution: 1.5dppx) {
     @content;
