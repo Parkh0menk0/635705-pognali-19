@@ -103,61 +103,7 @@
       </div>
     </div>
     <div class="header__drop-down drop-down drop-down--open">
-      <div class="drop-down__wrapper">
-        <div class="drop-down__site-list">
-          <ul class="site-list site-list--drop-down">
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-        </div>
-        <a class="drop-down__btn btn btn--authorization" href="#">Авторизация</a>
-        <div class="drop-down__contacts">
-          <a class="contact-item" href="tel:88005558628">
-            <p class="contact-item__icon">
-              <!-- <svg role="img" width="35" height="24">
-                <use xlink:href="#icon-contacts-phone" x="0" y="0"></use>
-              </svg> -->
-            </p>
-            <span class="contact-item__text">8 800 555-86-28</span>
-          </a>
-          <a class="contact-item" href="mailto:mail@htmlacademy.ru">
-            <p class="contact-item__icon">
-              <!-- <svg role="img" width="35" height="24">
-                <use xlink:href="#icon-contacts-mail" x="0" y="0"></use>
-              </svg> -->
-            </p>
-            <span class="contact-item__text">mail@htmlacademy.ru</span>
-          </a>
-        </div>
-        <div class="drop-down__social">
-          <ul class="social social--drop-down">
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/" target="_blank"
-                rel="noreferrer">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/" target="_blank" rel="noreferrer">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="https://www.instagram.com/" target="_blank"
-                rel="noreferrer">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      @@include('./_includes/_module.html')
     </div>
   </header>
 
@@ -276,8 +222,8 @@
     <!-- /.destination -->
 
     <section class="fellow-travelers section">
-      <div class="container">
-        <div class="fellow-travelers__wrapper">
+      <div class="fellow-travelers__wrapper">
+        <div class="fellow-travelers__additional">
           <div class="fellow-travelers__lead">
             <h2 class="fellow-travelers__title section__title">Попутчики</h2>
             <p class="fellow-travelers__plain-text section__plain-text">Все мы индивидуальны и у каждого свой взгляд на
@@ -285,6 +231,9 @@
             <p class="fellow-travelers__bold-text section__bold-text">Теперь можно легко найти
               единомышленников!</p>
           </div>
+          <a class="fellow-travelers__btn section__btn section__btn--no-border" href="form.html">Показать всех</a>
+        </div>
+        <div class="fellow-travelers__main">
           <ul class="fellow-travelers__list">
             <li class="fellow-travelers__item traveler-preview">
               <div class="traveler-preview__content">
@@ -468,7 +417,6 @@
               </div>
             </li>
           </ul>
-          <a class="destination__btn section__btn section__btn--no-border" href="form.html">Показать всех</a>
         </div>
       </div>
     </section>
