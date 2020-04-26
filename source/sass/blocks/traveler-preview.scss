@@ -45,27 +45,32 @@
 }
 
 .traveler-preview__picture {
-  width: 270px;
-  height: 270px;
+  position: relative;
 
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
-  }
-
-  &:active {
-    color: rgba($dark-two, 0.3);
-  }
-}
-
-.traveler-preview__img {
   display: block;
+  overflow: hidden;
+
   width: 270px;
   height: 270px;
 
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.traveler-preview__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 270px;
+  height: 270px;
+  margin: auto;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .traveler-preview__level {
@@ -201,14 +206,14 @@
   .traveler-preview__picture {
     width: 285px;
     height: 285px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .traveler-preview__img {
     width: 285px;
     height: 285px;
-
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
   }
 
   .traveler-preview__level {
