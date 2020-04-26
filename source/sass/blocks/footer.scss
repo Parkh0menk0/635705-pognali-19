@@ -50,3 +50,21 @@
   border-top: 1px solid rgba(black, 0.05);
   padding-top: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: auto;
+    margin: 0;
+    margin-top: -60px;
+    padding-top: 140px;
+    padding-bottom: 53px;
+
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
+  .footer__wrapper {
+    width: 688px;
+    margin: 0 auto;
+  }
+}

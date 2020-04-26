@@ -1,19 +1,18 @@
 .feedback {
-  position: relative;
-  z-index: 4;
-
   margin-bottom: -23px;
 }
 
 .feedback__registration {
   position: relative;
-  z-index: 3;
+  z-index: 2;
 
-  margin-bottom: -23px;
+  margin-bottom: -30px;
+  padding-top: 67px;
+  padding-bottom: 30px;
 
-  background-color: $dark-blue-grey;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  background-color: $dark-blue-grey;
 }
 
 .feedback__wrapper {
@@ -186,13 +185,15 @@
 
 .feedback__path {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   margin-bottom: -20px;
+  padding-top: 67px;
+  padding-bottom: 30px;
 
-  background-color: $light-gold;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  background-color: $light-gold;
 }
 
 .feedback__address {
@@ -207,5 +208,34 @@
     height: 328px;
 
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__registration {
+    width: auto;
+    margin: 0;
+    margin-bottom: -60px;
+    padding-top: 140px;
+    padding-bottom: 53px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .feedback__path {
+    width: auto;
+    margin: 0;
+    margin-bottom: -60px;
+    padding-top: 140px;
+    padding-bottom: 53px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .feedback__wrapper {
+    width: 688px;
+    margin: 0 auto;
   }
 }
