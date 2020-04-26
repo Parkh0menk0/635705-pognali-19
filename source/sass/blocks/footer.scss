@@ -25,11 +25,14 @@
   align-items: center;
 }
 
-.footer__logo {
+.footer__picture {
+  margin-bottom: 37px;
+}
+
+.footer__img {
   display: block;
   width: 100px;
   height: 19px;
-  margin-bottom: 37px;
 }
 
 .footer__social {
@@ -70,8 +73,13 @@
     justify-content: space-between;
   }
 
-  .footer__logo {
+  .footer__picture {
     margin-bottom: 0;
+  }
+
+  .footer__img {
+    width: 164px;
+    height: 42px;
   }
 
   .footer__social {
@@ -88,5 +96,10 @@
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     width: 1320px;
+  }
+
+  .footer__img {
+    width: 198px;
+    height: 52px;
   }
 }
