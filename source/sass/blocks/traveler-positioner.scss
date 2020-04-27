@@ -1,7 +1,34 @@
+.traveler-positioner {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .traveler-positioner__wrapper {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 20px;
+  padding: 0 25px;
+
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-positioner {
+    width: auto;
+    margin: 0;
+  }
+
+  .traveler-positioner__wrapper {
+    width: 688px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveler-positioner__wrapper {
+    width: 1320px;
+  }
 }
