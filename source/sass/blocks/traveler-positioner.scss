@@ -14,6 +14,14 @@
   align-items: flex-start;
 }
 
+.traveler-positioner__traveler-filter {
+  width: 100%;
+}
+
+.traveler-positioner__catalog {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
   .traveler-positioner {
     width: auto;
@@ -25,10 +33,28 @@
     margin: 0 auto;
     padding: 0;
   }
+
+  .traveler-positioner__traveler-filter {
+    width: 100%;
+  }
+
+  .traveler-positioner__catalog {
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .traveler-positioner__wrapper {
     width: 1320px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .traveler-positioner__traveler-filter {
+    width: 285px;
+  }
+
+  .traveler-positioner__catalog {
+    width: 950px;
   }
 }
