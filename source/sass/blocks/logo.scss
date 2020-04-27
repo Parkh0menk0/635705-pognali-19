@@ -1,14 +1,10 @@
-.logo {
-  &--open {
-    .logo__img {
-      &--blue {
-        display: block;
-      }
+.logo--open .logo__img {
+  &--blue {
+    display: block;
+  }
 
-      &--white {
-        display: none;
-      }
-    }
+  &--white {
+    display: none;
   }
 }
 
@@ -33,17 +29,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo {
-    &--open {
-      .logo__img {
-        &--blue {
-          display: none;
-        }
+  .logo--open .logo__img {
+    &--blue {
+      display: none;
+    }
 
-        &--white {
-          display: block;
-        }
-      }
+    &--white {
+      display: block;
     }
   }
 
@@ -52,11 +44,11 @@
     height: 52px;
 
     &--blue {
-      display: block;
+      display: none;
     }
 
     &--white {
-      display: none;
+      display: block;
     }
   }
 }
