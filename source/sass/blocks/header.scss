@@ -13,56 +13,55 @@
   border-bottom-left-radius: 30px;
   background-color: $dark-two;
   background-image: linear-gradient(transparent 762px, $dark-blue-grey 762px),
-    linear-gradient(transparent 478px, $dark-two 478px),
-    url("../img/header/globe-back-mobile@1x.jpg");
+    linear-gradient(transparent 478px, $dark-two 478px), url("../img/header/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 0 0, 0 0, 50% 0;
 
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+}
 
-  &--open {
-    background-image: linear-gradient(white 568px, transparent 568px), url("../img/header/globe-back-mobile@1x.jpg");
+.header--inner {
+  margin-bottom: -15px;
+  padding-top: 19px;
+  padding-bottom: 9px;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-image: none;
+
+  justify-content: flex-start;
+
+  .header__wrapper {
+    align-items: flex-start;
   }
 
-  &--inner {
-    margin-bottom: -15px;
-    padding-top: 19px;
-    padding-bottom: 9px;
+  .header__title {
+    position: relative;
 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image: none;
+    margin-bottom: 0;
 
-    justify-content: flex-start;
+    text-align: left;
 
-    .header__wrapper {
-      align-items: flex-start;
-    }
+    &::after {
+      position: absolute;
+      bottom: -11px;
+      left: 0;
 
-    .header__title {
-      position: relative;
+      width: 100%;
+      height: 5px;
 
-      margin-bottom: 0;
+      content: "";
 
-      text-align: left;
-
-      &::after {
-        position: absolute;
-        bottom: -11px;
-        left: 0;
-
-        width: 100%;
-        height: 5px;
-
-        content: "";
-
-        border-radius: 2px;
-        background-color: $mango;
-      }
+      border-radius: 2px;
+      background-color: $mango;
     }
   }
+}
+
+.header--open {
+  background-image: linear-gradient(white 568px, transparent 568px), url("../img/header/globe-back-mobile@1x.jpg");
 }
 
 .header__content {
@@ -96,6 +95,47 @@
   text-align: center;
 
   color: white;
+}
+
+.header__link {
+  position: relative;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    right: 0;
+
+    width: 32px;
+    height: 16px;
+
+    content: "";
+
+    background-image: url("../img/svg/return.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &:hover {
+    color: rgba(white, 0.6);
+
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    color: rgba(white, 0);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 .header__picture {
@@ -139,23 +179,51 @@
     background-image: url("../img/header/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 382px;
+  }
 
-    &--open {
-      background-image: linear-gradient(white 910px, transparent 910px), url("../img/header/globe-back-tablet@1x.jpg");
-      background-repeat: no-repeat, no-repeat;
-      background-position: 0 0, 50% 382px;
+  .header--inner {
+    background-image: none;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding-bottom: 58px;
+
+    .header__wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header__title {
+      line-height: 1.25;
+
+      &::after {
+        bottom: -62px;
+        height: 8px;
+        border-radius: 4px;
+      }
+    }
+
+    .header__link {
+      display: block;
+      padding-right: 63px;
     }
   }
 
+  .header--open {
+    background-image: linear-gradient(white 910px, transparent 910px), url("../img/header/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 50% 382px;
+  }
+
   .header__content {
-    width: auto;
+    width: 100%;
     margin: 0;
   }
 
   .header__wrapper {
     width: 688px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 33px;
   }
 
   .header__title {
@@ -199,6 +267,15 @@
     background-position: 50% 0;
   }
 
+  .header--inner {
+    padding-bottom: 59px;
+    background-image: none;
+
+    .header__wrapper {
+      width: 83%;
+    }
+  }
+
   .header__wrapper {
     flex-direction: row;
 
@@ -212,7 +289,6 @@
   .header__title {
     text-align: left;
     max-width: 470px;
-    padding-left: 68px;
   }
 
   .header__picture {
