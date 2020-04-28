@@ -69,6 +69,7 @@
   .footer__wrapper {
     width: 688px;
     margin: 0 auto;
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -84,6 +85,7 @@
 
   .footer__social {
     margin-bottom: 0;
+    margin-right: 10px;
   }
 
   .footer__copyright {
@@ -101,5 +103,9 @@
   .footer__img {
     width: 198px;
     height: 52px;
+  }
+
+  .footer__social {
+    margin-right: 42px;
   }
 }
