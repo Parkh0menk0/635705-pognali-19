@@ -1,9 +1,9 @@
 .logo--open .logo__img {
-  &--blue {
+  &--block {
     display: block;
   }
 
-  &--white {
+  &--none {
     display: none;
   }
 }
@@ -12,11 +12,11 @@
   width: 100px;
   height: 19px;
 
-  &--blue {
+  &--block {
     display: none;
   }
 
-  &--white {
+  &--none {
     display: block;
   }
 }
@@ -30,11 +30,11 @@
 
 @media (min-width: $desktop-width) {
   .logo--open .logo__img {
-    &--blue {
+    &--block {
       display: none;
     }
 
-    &--white {
+    &--none {
       display: block;
     }
   }
@@ -43,11 +43,11 @@
     width: 200px;
     height: 52px;
 
-    &--blue {
+    &--block {
       display: none;
     }
 
-    &--white {
+    &--none {
       display: block;
     }
   }
