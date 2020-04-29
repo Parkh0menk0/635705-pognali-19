@@ -1,34 +1,11 @@
 .contact-item {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 22px;
+  display: flex;
+  flex-direction: row;
 
-  position: relative;
+  flex-wrap: wrap;
 
-  display: block;
-
-  padding: 12px;
-  padding-left: 61px;
-
-  text-transform: uppercase;
-
-  color: $dark-two;
-
-  &::before {
-    position: absolute;
-    margin: auto;
-    bottom: 0;
-    top: 0;
-    left: 0;
-
-    width: 45px;
-    height: 45px;
-
-    content: "";
-
-    border-radius: 50%;
-    background-color: $dark-blue-grey-two;
-  }
+  justify-content: flex-start;
+  align-items: center;
 
   &:hover {
     color: $mango-two;
@@ -48,5 +25,46 @@
 
   &--feedback {
     color: $light-gold;
+  }
+}
+
+.contact-item__icon {
+  display: flex;
+
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  margin-right: 16px;
+
+  border-radius: 50%;
+  background-color: $dark-blue-grey-two;
+
+  svg {
+    margin: auto;
+  }
+}
+
+.contact-item__text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  color: $dark-two;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-item__icon {
+    width: 68px;
+    height: 68px;
+    margin-right: 23px;
+  }
+
+  .contact-item__text {
+    font-size: 28px;
+    line-height: 28px;
+
+    padding-top: 10px;
   }
 }

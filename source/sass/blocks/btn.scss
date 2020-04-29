@@ -12,16 +12,18 @@
   border-radius: 60px;
   background-color: $light-gold;
 
-  &--invite {
-    width: calc(100% - 40px);
-    padding: 7px 23px 3px;
-  }
-
   &:hover {
     background-color: $mango-two;
   }
 
   &:active {
     color: rgba($dark-two, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 20px;
+    padding: 12px 6px 8px;
   }
 }

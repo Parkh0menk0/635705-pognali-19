@@ -7,17 +7,6 @@
   align-items: flex-start;
 }
 
-.traveler-preview__wrapper {
-  display: flex;
-  flex-direction: row;
-
-  width: 82%;
-  margin: 0 auto;
-
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .traveler-preview__content {
   position: relative;
 
@@ -40,8 +29,37 @@
   margin-bottom: 14px;
 }
 
+.traveler-preview__top {
+  position: relative;
+}
+
 .traveler-preview__picture {
   position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  width: 270px;
+  height: 270px;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.traveler-preview__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 270px;
+  height: 270px;
+  margin: auto;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .traveler-preview__level {
@@ -70,24 +88,6 @@
 
   &:active {
     color: rgba($dark-two, 0.3);
-  }
-
-  &--img {
-    width: 270px;
-    height: 270px;
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
-
-    &:active {
-      color: rgba($dark-two, 0.3);
-    }
   }
 }
 
@@ -178,5 +178,60 @@
         height: 32px;
       }
     }
+  }
+}
+
+/* Tablet styles */
+
+@media (min-width: $tablet-width) {
+  .traveler-preview__content {
+    padding-top: 31px;
+    padding-bottom: 22px;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .traveler-preview__picture {
+    width: 285px;
+    height: 285px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .traveler-preview__img {
+    width: 285px;
+    height: 285px;
+  }
+
+  .traveler-preview__level {
+    top: 20px;
+    left: 20px;
+  }
+
+  .traveler-preview__title {
+    font-size: 24px;
+    margin-bottom: 7px;
+  }
+
+  .traveler-preview__hashtags {
+    width: 251px;
+    margin-bottom: 20px;
+  }
+
+  .traveler-preview__hashtags a {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}
+
+/* Desktop styles */
+
+@media (min-width: $desktop-width) {
+  .traveler-preview__level {
+    top: 23px;
+    left: 23px;
   }
 }

@@ -13,10 +13,10 @@
 // Общие стили
 
 @import "blocks/header.scss";
+@import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/topmenu.scss";
 @import "blocks/btn.scss";
-@import "blocks/rect-btn.scss";
 @import "blocks/quote.scss";
 @import "blocks/road-map.scss";
 @import "blocks/drop-down.scss";
@@ -39,6 +39,7 @@
 @import "blocks/traveler-filter.scss";
 @import "blocks/catalog.scss";
 @import "blocks/like.scss";
+@import "blocks/pagination.scss";
 @import "blocks/world-part.scss";
 @import "blocks/letter.scss";
 @import "blocks/double-range.scss";

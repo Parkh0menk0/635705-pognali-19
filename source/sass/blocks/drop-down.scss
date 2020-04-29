@@ -1,24 +1,31 @@
 .drop-down {
   display: none;
 
+  padding-top: 68px;
+  padding-bottom: 29px;
+
   background-color: white;
 
-  &.open {
+  &--open {
     display: block;
   }
 }
 
 .drop-down__wrapper {
-  padding-top: 68px;
-  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .drop-down__site-list {
-  display: flex;
-
-  margin: 0;
   margin-bottom: 49px;
-  padding: 0;
+  width: 90%;
 }
 
 .drop-down__btn {
@@ -28,5 +35,45 @@
 }
 
 .drop-down__contacts {
-  margin-bottom: 27px;
+  align-self: stretch;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .drop-down {
+    width: auto;
+    margin: 0;
+    padding-top: 83px;
+    padding-bottom: 74px;
+  }
+
+  .drop-down__wrapper {
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .drop-down__contacts {
+    align-self: center;
+    margin-bottom: 116px;
+    width: 90%;
+  }
+
+  .drop-down__site-list {
+    margin-bottom: 128px;
+    width: 90%;
+  }
+
+  .drop-down__btn {
+    display: none;
+  }
+
+  .drop-down__social {
+    width: 89%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .drop-down {
+    display: none;
+  }
 }

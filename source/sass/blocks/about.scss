@@ -1,18 +1,37 @@
 .about {
-  margin-top: -1px;
+  position: relative;
+  z-index: 6;
+
+  margin-bottom: -30px;
+  padding-top: 30px;
+
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   background-color: $dark-blue-grey;
-  background-image: url("../img/about/about-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .about__wrapper {
-  width: 82%;
+  position: relative;
+  z-index: 0;
+
+  width: 320px;
   margin: 0 auto;
-  padding-top: 33px;
-  padding-bottom: 81px;
+  padding: 32px 50px 81px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 113px;
+    height: 132px;
+
+    content: "";
+
+    border-radius: 10px;
+    background-color: $dark-blue-grey-four;
+  }
 }
 
 .about__title {
@@ -20,13 +39,139 @@
   margin-bottom: 19px;
 }
 
-.about__content {
+.about__plain-text {
   margin: 0;
   margin-bottom: 19px;
 
   color: white;
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.about__bold-text {
+  color: white;
+  margin: 0;
+}
+
+.about__picture {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 10px;
+}
+
+.about__img {
+  width: 292px;
+  height: 352px;
+}
+
+.about__btn {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: auto;
+    margin: 0;
+    margin-bottom: -60px;
+    padding-top: 60px;
+    padding-bottom: 46px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .about__wrapper {
+    position: relative;
+
+    width: 688px;
+    margin: 0 auto;
+    padding: 42px 35px;
+
+    &::before {
+      width: 100%;
+      height: 213px;
+      border-radius: 20px;
+    }
+  }
+
+  .about__title {
+    margin: 0 0 40px;
+  }
+
+  .about__content {
+    margin-bottom: 51px;
+  }
+
+  .about__plain-text {
+    max-width: 48.9%;
+    color: white;
+    margin: 0 0 31px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .about__bold-text {
+    max-width: 48.9%;
+    color: white;
+    margin: 0;
+  }
+
+  .about__picture {
+    top: 48px;
+    right: -33px;
+  }
+
+  .about__img {
+    width: 376px;
+    height: 548px;
+  }
+
+  .about__btn {
+    display: block;
+    width: 275px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 131px;
+    padding-bottom: 103px;
+  }
+
+  .about__wrapper {
+    width: 1320px;
+    padding: 60px 70px;
+
+    &::before {
+      width: 213px;
+    }
+  }
+
+  .about__img {
+    width: 630px;
+    height: 665px;
+  }
+
+  .about__title {
+    margin: 0 0 59px;
+  }
+
+  .about__content {
+    margin-bottom: 84px;
+  }
+
+  .about__plain-text {
+    max-width: 54%;
+    margin: 0 0 38px;
+  }
+
+  .about__bold-text {
+    max-width: 40%;
+  }
+
+  .about__picture {
+    top: 15px;
+    right: 0;
   }
 }

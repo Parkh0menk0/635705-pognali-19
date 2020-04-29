@@ -1,7 +1,15 @@
 .traveler-invite {
   position: relative;
-  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+
   border-radius: 20px;
+  background-color: white;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   &--firsova {
     .traveler-invite__list--wishes {
@@ -11,7 +19,7 @@
 
   &--demin {
     .traveler-invite__list--wishes {
-      margin-bottom: 17px;
+      margin-bottom: 18px;
     }
   }
 
@@ -28,32 +36,20 @@
   }
 }
 
-.traveler-invite__info {
-  padding: 15px 0 66px 0;
+.traveler-invite__header {
+  display: contents;
+  width: 100%;
 }
 
-.traveler-invite__interests {
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 13px;
-  padding: 0 26px 0 26px;
-
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.traveler-invite__preferences {
-  margin-bottom: 10px;
-}
-
-.traveler-invite__heading {
-  align-self: flex-end;
-  width: 64%;
-  margin-bottom: 6px;
+.traveler-invite__main {
+  display: contents;
 }
 
 .traveler-invite__title {
+  margin-top: 15px;
+}
+
+.traveler-invite__title h3 {
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
@@ -64,68 +60,112 @@
   color: $dark-slate-blue;
 }
 
-.traveler-invite__add {
-  align-self: flex-end;
-  width: 64%;
-  margin-bottom: 18px;
-}
-
-.traveler-invite__call {
-  position: absolute;
-  bottom: 22px;
-  left: 20px;
-}
-
-.traveler-invite__like {
-  button {
-    position: absolute;
-    left: 67px;
-    top: 55px;
-    z-index: 2;
-  }
-}
-
 .traveler-invite__hashtags {
+  padding: 0 50px 0 25px;
   display: flex;
   flex-direction: row;
 
-  max-width: 90%;
+  width: 100%;
 
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 13px;
+}
 
-  a {
-    margin-right: 4px;
-    font-size: 15px;
-    font-weight: normal;
-    line-height: 18px;
+.traveler-invite__hashtags a {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 18px;
 
-    color: $greyish-brown;
+  color: $greyish-brown;
+}
+
+.traveler-invite__add {
+  display: contents;
+}
+
+.traveler-invite__call {
+  width: calc(100% - 40px);
+  margin-bottom: 22px;
+  margin-left: 20px;
+  padding: 7px 23px 3px;
+
+  order: 1;
+}
+
+.traveler-invite__like {
+  position: absolute;
+  z-index: 2;
+  top: 54px;
+  left: 67px;
+}
+
+.traveler-invite__picture {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  width: 70px;
+  height: 70px;
+  margin: 15px 16px 15px 18px;
+
+  border-radius: 50%;
+}
+
+.traveler-invite__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 70px;
+  height: 70px;
+  margin: auto;
+
+  border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
-.traveler-invite__part {
-  &--visit {
-    .traveler-invite__subtitle {
-      margin-bottom: 17px;
-    }
+.traveler-invite__visit {
+  width: 100%;
+}
+
+.traveler-invite__visit .traveler-invite__subtitle {
+  margin-bottom: 17px;
+}
+
+.traveler-invite__wrapper {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  margin-bottom: 14px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.traveler-invite__vehicle {
+  width: 69%;
+
+  .traveler-invite__subtitle {
+    margin-bottom: 14px;
   }
+}
 
-  &--vehicle {
-    width: 69%;
+.traveler-invite__level {
+  width: 31%;
 
-    .traveler-invite__subtitle {
-      margin-bottom: 14px;
-    }
-  }
-
-  &--level {
-    width: 31%;
-
-    .traveler-invite__subtitle {
-      margin-bottom: 7px;
-    }
+  .traveler-invite__subtitle {
+    margin-bottom: 7px;
   }
 }
 
@@ -164,121 +204,350 @@
 
 .traveler-invite__list {
   @include list-reset;
+  display: flex;
 
-  &--wishes {
-    display: flex;
-    flex-direction: column;
+  padding: 0 25px;
 
-    padding: 0 26px 0 26px;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-    justify-content: flex-start;
-    align-items: flex-start;
+.traveler-invite__list--wishes {
+  flex-direction: column;
 
-    .traveler-invite__item {
-      width: 100%;
-      margin-bottom: 9.5px;
-      position: relative;
+  .traveler-invite__item {
+    width: 100%;
+    margin-bottom: 9.5px;
+    position: relative;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .traveler-invite__country {
-      position: absolute;
-      top: -3px;
-      left: -1px;
-
-      width: 26px;
-      height: 18px;
-
-      border-radius: 2px;
-      background-color: $mango;
-
-      svg {
-        width: 26px;
-        height: 18px;
-      }
-    }
-
-    .traveler-invite__description {
-      font-size: 15px;
-      font-weight: normal;
-      line-height: 18px;
-
-      margin: 0;
-      padding-left: 39px;
-
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-
-      color: $dark-slate-blue;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
-  &--preferred {
-    padding-left: 25px;
+  .traveler-invite__country {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+
+    width: 26px;
+    height: 18px;
+
+    border-radius: 2px;
+    background-color: $mango;
+
+    svg {
+      width: 26px;
+      height: 18px;
+    }
+  }
+
+  .traveler-invite__description {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+
+    margin: 0;
+    padding-left: 39px;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+
+    color: $dark-slate-blue;
+  }
+}
+
+.traveler-invite__list--preferred {
+  flex-direction: row;
+
+  .traveler-invite__item {
+    width: 32px;
+    height: 32px;
+  }
+
+  .traveler-invite__link {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background-color: $pale-grey;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-invite--firsova,
+  .traveler-invite--demin,
+  .traveler-invite--smolov,
+  .traveler-invite--rogovaya {
+    .traveler-invite__list--wishes {
+      margin-bottom: 20px;
+    }
+  }
+
+  .traveler-invite__header {
     display: flex;
-    overflow: hidden;
+    flex-direction: row;
+
+    width: 87.5%;
+    padding: 35px 35px 22px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .traveler-invite__picture {
+    width: 190px;
+    height: 190px;
+    margin: 0;
+    margin-right: 30px;
+
+    border-radius: 17px;
+  }
+
+  .traveler-invite__img {
+    width: 190px;
+    height: 190px;
+    border-radius: 17px;
+  }
+
+  .traveler-invite__main {
+    display: flex;
+    flex-direction: column;
+
+    width: 260px;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .traveler-invite__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .traveler-invite__title h3 {
+    font-size: 30px;
+    line-height: 30px;
+
+    max-width: none;
+    width: 255px;
+  }
+
+  .traveler-invite__hashtags {
+    padding: 0;
+    margin-bottom: 45px;
+    width: 248px;
+  }
+
+  .traveler-invite__hashtags a {
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 6px;
+  }
+
+  .traveler-invite__add {
+    display: flex;
     flex-direction: row;
 
     justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
+    align-self: flex-start;
+  }
 
-    .traveler-invite__item {
-      width: 32px;
-      height: 32px;
+  .traveler-invite__call {
+    width: 148px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 12px 15px 8px;
+
+    order: 0;
+  }
+
+  .traveler-invite__like {
+    position: static;
+  }
+
+  .traveler-invite__info {
+    display: contents;
+  }
+
+  .traveler-invite__visit {
+    order: 3;
+
+    .traveler-invite__subtitle {
+      margin-bottom: 17px;
     }
+  }
 
-    .traveler-invite__link {
-      display: block;
+  .traveler-invite__subtitle {
+    &::before {
+      width: 70px;
+    }
+  }
 
-      width: 32px;
-      height: 32px;
+  .traveler-invite__list--wishes {
+    flex-direction: row;
+    padding: 0 37px;
+    margin-bottom: 0;
 
-      border-radius: 50%;
-      background-color: $pale-grey;
+    .traveler-invite__country {
+      top: 0;
+      width: 35px;
+      height: 24px;
 
       svg {
-        width: 32px;
-        height: 32px;
+        width: 35px;
+        height: 24px;
       }
     }
-  }
-}
 
-.traveler-invite__wrapper {
-  display: flex;
-  flex-direction: row;
-
-  width: 100%;
-
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.traveler-invite__picture {
-  background-color: $pale-grey;
-}
-
-.traveler-invite__img {
-  position: absolute;
-  top: 15px;
-  left: 18px;
-  z-index: 1;
-
-  width: 70px;
-  height: 70px;
-
-  img {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.1);
+    .traveler-invite__item {
+      width: auto;
+      margin-bottom: 0;
+      margin-right: 28px;
     }
+
+    .traveler-invite__description {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 45px;
+    }
+  }
+
+  .traveler-invite__wrapper {
+    flex-direction: column;
+
+    width: 60px;
+    margin-bottom: 0;
+    padding-top: 35px;
+
+    order: 2;
+    align-items: center;
+  }
+
+  .traveler-invite__vehicle {
+    width: auto;
+
+    .traveler-invite__subtitle {
+      display: none;
+    }
+  }
+
+  .traveler-invite__list--preferred {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .traveler-invite__level {
+    width: auto;
+
+    .traveler-invite__subtitle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .traveler-invite--firsova,
+  .traveler-invite--demin,
+  .traveler-invite--smolov,
+  .traveler-invite--rogovaya {
+    .traveler-invite__list--wishes {
+      margin-bottom: 0;
+    }
+  }
+
+  .traveler-invite__header {
+    width: 630px;
+    padding: 0;
+  }
+
+  .traveler-invite__main {
+    padding: 46px 27px 48px 56px;
+    width: 345px;
+    align-items: center;
+  }
+
+  .traveler-invite__info {
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    padding: 48px 45px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .traveler-invite__wrapper {
+    flex-direction: row;
+
+    width: auto;
+    margin-top: auto;
+    padding: 0;
+  }
+
+  .traveler-invite__visit {
+    order: 0;
+    margin-bottom: 30px;
+
+    .traveler-invite__subtitle {
+      display: none;
+    }
+  }
+
+  .traveler-invite__title {
+    margin-bottom: 18px;
+  }
+
+  .traveler-invite__picture {
+    width: 285px;
+    height: 285px;
+    margin: 0;
+    margin-right: 0;
+
+    border-radius: 17px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .traveler-invite__img {
+    width: 285px;
+    height: 285px;
+
+    border-radius: 17px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .traveler-invite__list--wishes {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+
+    .traveler-invite__description {
+      padding-left: 53px;
+    }
+
+    .traveler-invite__item {
+      margin-bottom: 7px;
+    }
+  }
+
+  .traveler-invite__list--preferred {
+    flex-direction: row;
   }
 }
