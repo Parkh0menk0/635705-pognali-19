@@ -1,0 +1,36 @@
+.path {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $light-gold;
+}
+
+.path__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .path {
+    width: auto;
+    margin: 0;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .path__wrapper {
+    width: 688px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .path__wrapper {
+    width: 1320px;
+  }
+}

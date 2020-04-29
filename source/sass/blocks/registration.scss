@@ -1,0 +1,36 @@
+.registration {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: $dark-blue-grey;
+}
+
+.registration__wrapper {
+  padding: 0 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .registration {
+    width: auto;
+    margin: 0;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .registration__wrapper {
+    width: 688px;
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .registration__wrapper {
+    width: 1320px;
+  }
+}
