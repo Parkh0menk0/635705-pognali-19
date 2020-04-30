@@ -36,6 +36,8 @@
 
   .header__wrapper {
     align-items: flex-start;
+
+    padding: 0 25px;
   }
 
   .header__title {
@@ -76,7 +78,6 @@
   display: flex;
   flex-direction: column;
 
-  padding: 0 25px;
   width: 100%;
 
   justify-content: flex-start;
@@ -192,6 +193,8 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      padding: 0 33px;
     }
 
     .header__title {
@@ -224,7 +227,6 @@
   .header__wrapper {
     width: 688px;
     margin: 0 auto;
-    padding: 0 33px;
   }
 
   .header__title {
