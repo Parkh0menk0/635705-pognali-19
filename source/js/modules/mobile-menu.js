@@ -2,12 +2,12 @@
 
 (function () {
 
-  var burger = document.querySelector('.main-nav__toggle');
+  const burger = document.querySelector('.main-nav__toggle');
 
   if (burger) {
-    var dropDown = document.querySelector('.drop-down');
-    var header = document.querySelector('.header');
-    var logo = document.querySelector('.header__logo');
+    const dropDown = document.querySelector('.drop-down');
+    const header = document.querySelector('.header');
+    const logo = document.querySelector('.header__logo');
 
     burger.addEventListener('click', function () {
       dropDown.classList.toggle('drop-down--open');
