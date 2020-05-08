@@ -220,6 +220,7 @@
   height: 328px;
 
   border: none;
+  margin-bottom: -3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -304,6 +305,7 @@
 
   .feedback__map iframe {
     height: 574px;
+    margin-bottom: -1px;
   }
 }
 

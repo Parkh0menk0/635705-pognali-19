@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 37px;
-  padding-bottom: 60px;
+  padding-bottom: 63px;
 
   background-color: $pale-grey;
 }
@@ -56,7 +56,7 @@
   display: block;
 
   width: 100%;
-  margin-top: 13px;
+  margin-top: 20px;
   margin-bottom: 19px;
   padding: 7px 10px 3px;
 
@@ -152,7 +152,7 @@
     width: auto;
     margin: 0;
     padding-top: 124px;
-    padding-bottom: 63px;
+    padding-bottom: 66px;
   }
 
   .user__wrapper {
@@ -237,7 +237,7 @@
 @media (min-width: $desktop-width) {
   .user {
     padding-top: 133px;
-    padding-bottom: 91px;
+    padding-bottom: 113px;
   }
 
   .user__wrapper {

@@ -83,6 +83,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 25px;
 }
 
 .header__title {
@@ -227,6 +228,7 @@
   .header__wrapper {
     width: 688px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .header__title {
@@ -292,6 +294,7 @@
   .header__title {
     text-align: left;
     max-width: 470px;
+    margin-left: 66px;
   }
 
   .header__picture {
