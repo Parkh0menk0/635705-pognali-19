@@ -194,81 +194,131 @@
 
       <section class="form__add add">
         <div class="add__wrapper">
-          <h2 class="add__title">Добавить план:</h2>
+          <div class="add__heading">
+            <h2 class="add__title">Добавить план:</h2>
+            <ul class="add__nav">
+              <li class="add__nav-item add__nav-item--current">
+                <a>
+                  <span class="visually-hidden">Даты</span>
+                </a>
+              </li>
+              <li class="add__nav-item">
+                <a href="#">
+                  <span class="visually-hidden">Маршруты</span>
+                </a>
+              </li>
+              <li class="add__nav-item">
+                <a href="#">
+                  <span class="visually-hidden">Развлечения</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ol class="add__list">
-            <li class="add__item dates">
-              <h3 class="add__subtitle">Даты пребывания</h3>
-              <p class="add__lead">Укажите предпочтительное количество попутчиков, которых
+            <li class="add__item date">
+              <div class="date__heading">
+                <h3 class="add__subtitle">Даты пребывания</h3>
+                <ul class="add__nav">
+                  <li class="add__nav-item add__nav-item--current">
+                    <a>Даты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Маршруты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Развлечения</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="add__lead date__lead">Укажите предпочтительное количество попутчиков, которых
                 вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-              <div class="dates__people">
-                <label class="dates__title" for="traveller">
-                  <span>Ищу попутчиков:</span>
-                  <span>Чел.</span>
-                </label>
-                <div class="dates__field">
-                  <input class="dates__input" id="traveller" type="text" value="2">
-                  <button class="dates__btn dates__btn--minus" type="button">
-                    <span class="visually-hidden">Уменьшить на одного</span>
-                    <!-- <svg role="img" width="14" height="2">
-                        <use xlink:href="#icon-qty-minus-mobile" x="0" y="0"></use>
-                      </svg> -->
-                  </button>
-                  <button class="dates__btn dates__btn--plus" type="button">
-                    <span class="visually-hidden">Увеличить на одного</span>
-                    <!-- <svg role="img" width="14" height="14">
-                        <use xlink:href="#icon-qty-plus-mobile" x="0" y="0"></use>
-                      </svg> -->
-                  </button>
+              <div class="date__fields">
+                <div class="date__text">
+                  <div class="date__field date__field--people">
+                    <label class="date__title" for="traveller">
+                      <span>Ищу попутчиков:</span>
+                      <span>Чел.</span>
+                    </label>
+                    <div class="date__input">
+                      <input id="traveller" type="text" value="2">
+                      <button class="date__btn date__btn--minus" type="button">
+                        <span class="visually-hidden">Уменьшить на одного</span>
+                        <!-- <svg role="img" width="14" height="2">
+                            <use xlink:href="#icon-qty-minus-mobile" x="0" y="0"></use>
+                          </svg> -->
+                      </button>
+                      <button class="date__btn date__btn--plus" type="button">
+                        <span class="visually-hidden">Увеличить на одного</span>
+                        <!-- <svg role="img" width="14" height="14">
+                            <use xlink:href="#icon-qty-plus-mobile" x="0" y="0"></use>
+                          </svg> -->
+                      </button>
+                    </div>
+                  </div>
+                  <div class="date__field date__field--duration">
+                    <label class="date__title" for="duration">
+                      <span>Длительность:</span>
+                      <span>Дн.</span>
+                    </label>
+                    <div class="date__input">
+                      <input id="duration" type="text" value="2">
+                      <button class="date__btn date__btn--minus" type="button">
+                        <span class="visually-hidden">Уменьшить на один</span>
+                        <!-- <svg role="img" width="14" height="2">
+                            <use xlink:href="#icon-qty-minus-mobile" x="0" y="0"></use>
+                          </svg> -->
+                      </button>
+                      <button class="date__btn date__btn--plus" type="button">
+                        <span class="visually-hidden">Увеличить на один</span>
+                        <!-- <svg role="img" width="14" height="14">
+                            <use xlink:href="#icon-qty-plus-mobile" x="0" y="0"></use>
+                          </svg> -->
+                      </button>
+                    </div>
+                  </div>
                 </div>
+                <p class="date__field date__field--children">
+                  <input class="visually-hidden" type="checkbox" name="children" id="children" checked>
+                  <label for="children">Можно с детьми</label>
+                </p>
               </div>
-              <div class="dates__duration">
-                <label class="dates__title" for="duration">
-                  <span>Длительность:</span>
-                  <span>Дн.</span>
-                </label>
-                <div class="dates__field">
-                  <input class="dates__input" id="duration" type="text" value="2">
-                  <button class="dates__btn dates__btn--minus" type="button">
-                    <span class="visually-hidden">Уменьшить на один</span>
-                    <!-- <svg role="img" width="14" height="2">
-                        <use xlink:href="#icon-qty-minus-mobile" x="0" y="0"></use>
-                      </svg> -->
-                  </button>
-                  <button class="dates__btn dates__btn--plus" type="button">
-                    <span class="visually-hidden">Увеличить на один</span>
-                    <!-- <svg role="img" width="14" height="14">
-                        <use xlink:href="#icon-qty-plus-mobile" x="0" y="0"></use>
-                      </svg> -->
-                  </button>
-                </div>
-              </div>
-              <p class="dates__children">
-                <input class="visually-hidden" type="checkbox" name="children" id="children" checked>
-                <label for="children">Можно с детьми</label>
-              </p>
-              <div class="dates__calendar calendar">
+              <div class="date__calendar calendar">
                 <h2 class="visually-hidden">Обозначте даты путешествия</h2>
-                <div class="calendar__slider slider">
-                  <button class="slider__control slider__control--prev" type="button">
+                <div class="calendar__month">
+                  <button class="calendar__control calendar__control--prev" type="button">
                     <span class="visually-hidden">Предыдущий месяц</span>
                   </button>
                   <ul class="calendar__list">
                     <li class="calendar__item">Март 2019</li>
                   </ul>
-                  <button class="slider__control slider__control--next" type="button">
+                  <button class="calendar__control calendar__control--next" type="button">
                     <span class="visually-hidden">Следующий месяц</span>
                   </button>
                 </div>
                 <table class="calendar__table">
                   <thead>
                     <tr>
-                      <th class="calendar__day">П</th>
-                      <th class="calendar__day">В</th>
-                      <th class="calendar__day">С</th>
-                      <th class="calendar__day">Ч</th>
-                      <th class="calendar__day">П</th>
-                      <th class="calendar__day calendar__day--weekend">С</th>
-                      <th class="calendar__day calendar__day--weekend">В</th>
+                      <th class="calendar__day">
+                        <span>П</span><span>н</span>
+                      </th>
+                      <th class="calendar__day">
+                        <span>В</span><span>т</span>
+                      </th>
+                      <th class="calendar__day">
+                        <span>С</span><span>р</span>
+                      </th>
+                      <th class="calendar__day">
+                        <span>Ч</span><span>т</span>
+                      </th>
+                      <th class="calendar__day">
+                        <span>П</span><span>т</span>
+                      </th>
+                      <th class="calendar__day calendar__day--weekend">
+                        <span>С</span><span>б</span>
+                      </th>
+                      <th class="calendar__day calendar__day--weekend">
+                        <span>В</span><span>с</span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -330,13 +380,26 @@
                   </tbody>
                 </table>
               </div>
-              <a class="add__link btn" href="#step-2">Следующий шаг</a>
+              <a class="add__link" href="#step-2">Следующий шаг</a>
             </li>
-            <li id="step-2" class="add__item">
-              <h3 class="add__subtitle">Маршрут</h3>
-              <p class="add__lead">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
+            <li id="step-2" class="add__item visit">
+              <div class="visit__heading">
+                <h3 class="add__subtitle">Маршрут</h3>
+                <ul class="add__nav">
+                  <li class="add__nav-item add__nav-item--current">
+                    <a>Даты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Маршруты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Развлечения</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="add__lead visit__lead">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
                 несколько.</p>
-              <div class="add__visit visit">
+              <div class="add__visit">
                 <ul class="visit__list">
                   <li class="visit__item">
                     <p class="visit__country">Босния и Герцеговина</p>
@@ -433,17 +496,35 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
+                  <li class="visit__item visit__item--add">
+                    <p class="visit__country">Добавить страну</p>
+                  </li>
                 </ul>
-                <button class="visit__btn" type="button">Добавить страну</button>
               </div>
-              <a class="add__link btn" href="#step-3">Следующий шаг</a>
-              <a class="add__link add__link--back btn" href="#step-1">На шаг назад</a>
+              <div class="add__steps">
+                <a class="add__link" href="#step-3">Следующий шаг</a>
+                <a class="add__link add__link--back" href="#step-1">На шаг назад</a>
+              </div>
             </li>
-            <li id="step-3" class="add__item">
-              <h3 class="add__subtitle">Развлечения</h3>
-              <p class="add__lead">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной
+            <li id="step-3" class="add__item entertainment">
+              <div class="entertainment__heading">
+                <h3 class="add__subtitle">Развлечения</h3>
+                <ul class="add__nav">
+                  <li class="add__nav-item add__nav-item--current">
+                    <a>Даты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Маршруты</a>
+                  </li>
+                  <li class="add__nav-item">
+                    <a href="#">Развлечения</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="add__lead entertainment__lead">Наконец, расскажите о своих планах времяпровождения. Можно писать
+                в свободной
                 форме и ставить тэги.</p>
-              <div class="add__entertainment entertainment">
+              <div class="add__entertainment">
                 <ul class="entertainment__list">
                   <li class="entertainment__item">
                     <label for="entertainment-1">
@@ -473,8 +554,10 @@
                   </li>
                 </ul>
               </div>
-              <button class="plans__send" type="submit">Отправить</button>
-              <a class="add__link add__link--back btn" href="#step-2">На шаг назад</a>
+              <div class="add__steps">
+                <button class="plans__send add__link" type="submit">Отправить</button>
+                <a class="add__link add__link--back" href="#step-2">На шаг назад</a>
+              </div>
             </li>
           </ol>
         </div>
