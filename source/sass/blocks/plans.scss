@@ -40,7 +40,7 @@
 
 .plans__item {
   margin-bottom: 10px;
-  padding: 21px 24px 19px;
+  padding: 21px 24px 20px;
 
   color: $dark-slate-blue;
   border-radius: 10px;
@@ -91,7 +91,7 @@
 }
 
 .plans__details {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .plans__details p {
@@ -114,31 +114,6 @@
 
 .plans__send {
   @include btn-res;
-
-  width: 100%;
-  padding: 7px 23px 3px;
-  margin-bottom: 6px;
-
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 30px;
-
-  display: block;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: $dark-two;
-  border-radius: 60px;
-  background-color: $light-gold;
-
-  &:hover {
-    background-color: $mango-two;
-  }
-
-  &:active {
-    color: rgba($dark-two, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {

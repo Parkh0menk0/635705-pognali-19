@@ -1,4 +1,12 @@
-.calendar__slider {
+.calendar {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar__month {
   display: flex;
   flex-direction: row;
 
@@ -10,7 +18,38 @@
   border-bottom: 1px solid $cloudy-blue;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.calendar__control {
+  @include btn-res;
+
+  display: block;
+
+  width: 9px;
+  height: 17px;
+
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 17px;
+
+  &--prev {
+    background-image: url("../img/svg/month-arrow-left.svg");
+  }
+
+  &--next {
+    background-image: url("../img/svg/month-arrow-right.svg");
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .calendar__list {
@@ -19,7 +58,10 @@
 
 .calendar__item {
   font-size: 20px;
+  letter-spacing: normal;
   font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 20px;
 
   color: $dark-slate-blue;
@@ -27,32 +69,40 @@
 
 .calendar__table {
   border-collapse: collapse;
+  width: 220px;
+  height: 217px;
 }
 
 .calendar__day,
 .calendar__number {
+  height: 31px;
   font-size: 14px;
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 18px;
 
-  height: 31px;
   padding: 0;
 
   text-align: center;
-  vertical-align: center;
 }
 
 .calendar__day {
-  width: 31px;
-
   color: $greyish-brown;
 
   &--weekend {
     color: red;
   }
+}
 
-  &:nth-child(2n) {
-    width: 32px;
+.calendar__day span {
+  &:first-child {
+    text-transform: uppercase;
+  }
+
+  &:last-child {
+    text-transform: lowercase;
+    display: none;
   }
 }
 
@@ -80,5 +130,51 @@
     a {
       color: rgba($greyish-brown, 0.3);
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calendar__month {
+    padding-top: 26px;
+    padding-bottom: 19px;
+    margin-bottom: 33px;
+  }
+
+  .calendar__control {
+    background-size: 19px 34px;
+    width: 50px;
+    height: 34px;
+  }
+
+  .calendar__item {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .calendar__table {
+    width: 530px;
+  }
+
+  .calendar__day,
+  .calendar__number {
+    font-size: 18px;
+    line-height: 1.78;
+    letter-spacing: 1.8px;
+  }
+
+  .calendar__day span {
+    &:last-child {
+      display: inline;
+    }
+  }
+
+  .calendar__number {
+    height: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__table {
+    width: 100%;
   }
 }

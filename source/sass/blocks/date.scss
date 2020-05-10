@@ -1,0 +1,368 @@
+.date__heading {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 29px;
+  width: 100%;
+}
+
+.date__lead {
+  margin: 0;
+  margin-bottom: 21px;
+  width: 96%;
+}
+
+.date__fields {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+  width: 96%;
+}
+
+.date__field--people {
+  margin-bottom: 21px;
+}
+
+.date__field--duration {
+  margin-bottom: 25px;
+}
+
+.date__field--children {
+  margin: 0;
+
+  input[type="checkbox"] {
+    &:checked + label {
+      &::after {
+        display: block;
+      }
+    }
+
+    &:hover + label,
+    &:focus + label {
+      &::before {
+        border-color: $bluey-grey;
+      }
+    }
+
+    &:active + label {
+      &::before {
+        border-color: $pale-grey-three;
+        background-color: $pale-grey-three;
+      }
+    }
+  }
+
+  label {
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 21px;
+
+    position: relative;
+
+    padding-left: 39px;
+
+    color: $greyish-brown;
+
+    &::before {
+      position: absolute;
+      top: -4px;
+      left: 0;
+
+      width: 26px;
+      height: 26px;
+
+      content: "";
+
+      border: 1px solid $cloudy-blue;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    &::after {
+      position: absolute;
+      top: 4px;
+      left: 9px;
+
+      display: none;
+
+      width: 9px;
+      height: 9px;
+
+      content: "";
+
+      background-image: url("../img/svg/tick.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+.date__title {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 8px;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.date__title span {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+
+  letter-spacing: 1.45px;
+  text-transform: uppercase;
+
+  color: $dark-slate-blue;
+
+  &:last-child {
+    color: rgba($dark-slate-blue, 0.3);
+  }
+}
+
+.date__input {
+  position: relative;
+}
+
+.date__input input {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 13.5px;
+
+  width: 100%;
+  padding: 15px 45px 10px;
+
+  text-align: center;
+
+  color: $dark-slate-blue;
+  border: 1px solid $cloudy-blue;
+  border-radius: 3px;
+
+  &:hover {
+    border-color: $bluey-grey;
+
+    & + .date__btn {
+      svg {
+        fill: $bluey-grey;
+      }
+    }
+  }
+
+  &:focus {
+    border-color: $dark-two;
+
+    & + .date__btn {
+      svg {
+        fill: $dark-two;
+      }
+    }
+  }
+}
+
+.date__btn {
+  @include btn-res;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+
+  width: 43px;
+  height: 100%;
+
+  svg {
+    margin: auto;
+    fill: rgba($greyish-brown, 0.2);
+  }
+
+  &--minus {
+    left: 0;
+  }
+
+  &--plus {
+    right: 0;
+  }
+
+  &:hover {
+    svg {
+      fill: rgba($greyish-brown, 0.4);
+    }
+  }
+
+  &:active {
+    svg {
+      fill: rgba($greyish-brown, 0.1);
+    }
+  }
+}
+
+.date__calendar {
+  margin-bottom: 22px;
+  width: 96%;
+}
+
+@media (min-width: $tablet-width) {
+  .date__fields {
+    margin-bottom: 59px;
+    width: auto;
+  }
+
+  .date__text {
+    display: contents;
+  }
+
+  .date__field--people,
+  .date__field--duration {
+    border-top: 1px solid #cbced9;
+    padding-top: 25px;
+  }
+
+  .date__field--people {
+    order: 1;
+    margin-bottom: 35px;
+  }
+
+  .date__field--duration {
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .date__field--children {
+    order: 2;
+    margin-bottom: 34px;
+  }
+
+  .date__title {
+    margin-bottom: 24px;
+  }
+
+  .date__title span {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+  }
+
+  .date__lead {
+    width: 95%;
+
+    margin-bottom: 38px;
+  }
+
+  .date__field--children label {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    color: $dark-slate-blue;
+    text-transform: uppercase;
+    padding-left: 58px;
+
+    &::before {
+      top: -10px;
+      left: 0;
+      width: 36px;
+      height: 36px;
+    }
+
+    &::after {
+      top: 0;
+      left: 13px;
+      bottom: 0;
+      margin: auto;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .date__input input {
+    font-size: 20px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+    padding: 24px 45px 22px;
+  }
+
+  .date__calendar {
+    width: auto;
+    margin-bottom: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .date__fields {
+    border-top: 1px solid #cbced9;
+    padding-top: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .date__text {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .date__field--people,
+  .date__field--duration {
+    border: none;
+    padding-top: 0;
+  }
+
+  .date__field {
+    display: flex;
+    align-items: center;
+  }
+
+  .date__field--people {
+    margin-bottom: 15px;
+  }
+
+  .date__field--children {
+    margin-bottom: 0;
+  }
+
+  .date__title {
+    display: contents;
+  }
+
+  .date__title span {
+    &:first-child {
+      width: 205px;
+      order: 1;
+      margin-right: 15px;
+    }
+
+    &:last-child {
+      margin-left: 35px;
+      order: 3;
+    }
+  }
+
+  .date__input {
+    order: 2;
+  }
+
+  .date__input input {
+    width: 181px;
+  }
+}
