@@ -1,18 +1,6 @@
-.visit__heading {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 29px;
-  width: 100%;
-}
-
 .visit__lead {
   margin: 0;
   margin-bottom: 21px;
-  width: 96%;
 }
 
 .visit__list {
@@ -33,14 +21,17 @@
 
   &::before {
     position: absolute;
-    content: "";
+    z-index: 1;
+    top: 0;
+    right: 49px;
+    bottom: 0;
+
     width: 8px;
     height: 8px;
-    top: 0;
-    bottom: 0;
-    right: 49px;
-    z-index: 1;
     margin: auto;
+
+    content: "";
+
     border-radius: 50%;
     background-color: $dark-slate-blue;
   }
@@ -56,6 +47,46 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
+  }
+}
+
+.visit__item--open {
+  flex-direction: column;
+  align-items: stretch;
+
+  .visit__country {
+    position: relative;
+    border: 1px solid $dark-slate-blue;
+    background-color: $dark-slate-blue;
+    color: white;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 17px;
+      bottom: 0;
+      width: 9px;
+      height: 9px;
+      margin: auto;
+      content: "";
+      background-image: url("../img/svg/filter-close.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .visit__dropdown {
+    display: flex;
+  }
+
+  .visit__delete {
+    display: none;
   }
 }
 
@@ -204,11 +235,25 @@
   background-color: $pale-grey;
 }
 
+.visit__dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 42px;
+  z-index: 2;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  border-top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 @media (min-width: $tablet-width) {
   .visit__lead {
     width: 75%;
-
-    margin: 0;
     margin-bottom: 33px;
   }
 
@@ -227,6 +272,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .visit__item--open .visit__country {
+    align-self: flex-start;
   }
 
   .visit__item--add {
@@ -287,5 +336,62 @@
     border-radius: 0;
     background-color: transparent;
     background-size: 17px;
+  }
+
+  .visit__dropdown {
+    top: 70px;
+    left: 0;
+    width: calc(100% + 43px);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    padding: 34px 26px;
+
+    &::before {
+      position: absolute;
+      left: 64%;
+      top: 0;
+
+      width: 1px;
+      height: 100%;
+
+      content: "";
+
+      background-color: $cloudy-blue;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visit__lead {
+    margin-bottom: 54px;
+  }
+
+  .visit__item {
+    &::before {
+      right: 220px;
+    }
+  }
+
+  .visit__dropdown {
+    width: calc(100% - 271px);
+    padding: 34px 26px 17px;
+
+    &::before {
+      left: 67%;
+    }
+  }
+
+  .visit__country {
+    width: calc(100% - 271px);
+  }
+
+  .visit__flag {
+    margin-right: 116px;
+  }
+
+  .visit__delete {
+    right: 8px;
   }
 }

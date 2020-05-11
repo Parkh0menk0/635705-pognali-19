@@ -1,18 +1,6 @@
-.entertainment__heading {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 29px;
-  width: 100%;
-}
-
 .entertainment__lead {
   margin: 0;
-  margin-bottom: 20px;
-  width: 96%;
+  margin-bottom: 21px;
 }
 
 .entertainment label {
@@ -96,10 +84,8 @@
 
 @media (min-width: $tablet-width) {
   .entertainment__lead {
-    margin-bottom: 27px;
     width: 100%;
-    border-bottom: 1px solid $light-blue-grey-two;
-    padding-bottom: 33px;
+    margin-bottom: 33px;
   }
 
   .entertainment__item {
@@ -139,5 +125,21 @@
     line-height: 1.2;
     letter-spacing: normal;
     height: 142px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .entertainment__lead {
+    max-width: 530px;
+    margin-bottom: 54px;
+  }
+
+  .entertainment__list {
+    margin-right: 115px;
+  }
+
+  .entertainment textarea {
+    width: 82.5%;
+    padding: 24px;
   }
 }

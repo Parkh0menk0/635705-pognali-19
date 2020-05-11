@@ -1,18 +1,6 @@
-.date__heading {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 29px;
-  width: 100%;
-}
-
 .date__lead {
   margin: 0;
   margin-bottom: 21px;
-  width: 96%;
 }
 
 .date__fields {
@@ -259,8 +247,6 @@
   }
 
   .date__lead {
-    width: 95%;
-
     margin-bottom: 38px;
   }
 
@@ -306,11 +292,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .date__lead {
+    max-width: 589px;
+    margin-bottom: 54px;
+  }
+
   .date__fields {
     border-top: 1px solid #cbced9;
-    padding-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 32px;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 0;
+    align-items: flex-start;
   }
 
   .date__text {
@@ -334,11 +328,12 @@
   }
 
   .date__field--people {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
   .date__field--children {
     margin-bottom: 0;
+    min-height: 71px;
   }
 
   .date__title {
@@ -364,5 +359,9 @@
 
   .date__input input {
     width: 181px;
+  }
+
+  .date__calendar {
+    margin-bottom: 56px;
   }
 }

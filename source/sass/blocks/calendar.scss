@@ -174,7 +174,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .calendar__month {
+    margin-bottom: 5px;
+  }
+
   .calendar__table {
     width: 100%;
+  }
+
+  .calendar__control {
+    width: 20px;
+  }
+
+  .calendar__day,
+  .calendar__number {
+    text-align: left;
+    padding: 6px 15px;
+    vertical-align: top;
+  }
+
+  .calendar__day {
+    height: 50px;
+  }
+
+  .calendar__number {
+    height: 71px;
   }
 }
