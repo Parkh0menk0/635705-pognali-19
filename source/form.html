@@ -194,8 +194,8 @@
 
       <section class="form__add add">
         <div class="add__wrapper">
-          <div class="add__heading">
-            <h2 class="add__title">Добавить план:</h2>
+          <div class="add__title">
+            <h2>Добавить план:</h2>
             <ul class="add__nav">
               <li class="add__nav-item add__nav-item--current">
                 <a>
@@ -216,8 +216,12 @@
           </div>
           <ol class="add__list">
             <li class="add__item date">
-              <div class="date__heading">
-                <h3 class="add__subtitle">Даты пребывания</h3>
+              <div class="add__top">
+                <div class="add__heading">
+                  <h3 class="add__subtitle">Даты пребывания</h3>
+                  <p class="add__lead date__lead">Укажите предпочтительное количество попутчиков, которых
+                    вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                </div>
                 <ul class="add__nav">
                   <li class="add__nav-item add__nav-item--current">
                     <a>Даты</a>
@@ -230,8 +234,6 @@
                   </li>
                 </ul>
               </div>
-              <p class="add__lead date__lead">Укажите предпочтительное количество попутчиков, которых
-                вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
               <div class="date__fields">
                 <div class="date__text">
                   <div class="date__field date__field--people">
@@ -383,8 +385,12 @@
               <a class="add__link" href="#step-2">Следующий шаг</a>
             </li>
             <li id="step-2" class="add__item visit">
-              <div class="visit__heading">
-                <h3 class="add__subtitle">Маршрут</h3>
+              <div class="add__top">
+                <div class="add__heading">
+                  <h3 class="add__subtitle">Маршрут</h3>
+                  <p class="add__lead visit__lead">Укажите страны, которые вы хотели посетить. Это может быть одна или
+                    сразу несколько.</p>
+                </div>
                 <ul class="add__nav">
                   <li class="add__nav-item add__nav-item--current">
                     <a>Даты</a>
@@ -397,8 +403,6 @@
                   </li>
                 </ul>
               </div>
-              <p class="add__lead visit__lead">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу
-                несколько.</p>
               <div class="add__visit">
                 <ul class="visit__list">
                   <li class="visit__item">
@@ -425,70 +429,69 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="visit__item select-menu">
+                  <li class="visit__item visit__item--open select-menu">
                     <p class="visit__country">Выберите страну</p>
-                    <div class="select-menu__dropdown">
-                      <div class="select-menu__letter" role="menu">
-                        <button type="button" class="letter__btn letter__btn--active" role="menuitemradio"
-                          aria-checked="true">А</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Б</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">В</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Г</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Д</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Е</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">И</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">З</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">К</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Л</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">М</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Н</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">О</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">П</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Р</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">С</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Т</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">У</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ф</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Х</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ч</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ш</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Э</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Ю</button>
-                        <button type="button" class="letter__btn" role="menuitemradio" aria-checked="false">Я</button>
-                      </div>
+                    <div class="visit__dropdown select-menu__dropdown">
+                      <ul class="select-menu__letters" role="menu">
+                        <li class="select-menu__letter select-menu__letter--active">А</li>
+                        <li class="select-menu__letter">Б</li>
+                        <li class="select-menu__letter">В</li>
+                        <li class="select-menu__letter">Г</li>
+                        <li class="select-menu__letter">Д</li>
+                        <li class="select-menu__letter">Е</li>
+                        <li class="select-menu__letter">З</li>
+                        <li class="select-menu__letter">И</li>
+                        <li class="select-menu__letter">К</li>
+                        <li class="select-menu__letter">Л</li>
+                        <li class="select-menu__letter">М</li>
+                        <li class="select-menu__letter">Н</li>
+                        <li class="select-menu__letter">О</li>
+                        <li class="select-menu__letter">П</li>
+                        <li class="select-menu__letter">Р</li>
+                        <li class="select-menu__letter">С</li>
+                        <li class="select-menu__letter">Т</li>
+                        <li class="select-menu__letter">У</li>
+                        <li class="select-menu__letter">Ф</li>
+                        <li class="select-menu__letter">Х</li>
+                        <li class="select-menu__letter">Ч</li>
+                        <li class="select-menu__letter">Ш</li>
+                        <li class="select-menu__letter">Э</li>
+                        <li class="select-menu__letter">Ю</li>
+                        <li class="select-menu__letter">Я</li>
+                      </ul>
                       <ul class="select-menu__list">
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="islands/australia.html">Австралия</a>
+                        <li class="select-menu__country">
+                          <a href="islands/australia.html">Австралия</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="europe/austria.html">Австрия</a>
+                        <li class="select-menu__country">
+                          <a href="europe/austria.html">Австрия</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="asia/azerbaijan.html">Азербайджан</a>
+                        <li class="select-menu__country">
+                          <a href="asia/azerbaijan.html">Азербайджан</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="europe/albania.html">Албания</a>
+                        <li class="select-menu__country">
+                          <a href="europe/albania.html">Албания</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="africa/algeria.html">Алжир</a>
+                        <li class="select-menu__country">
+                          <a href="africa/algeria.html">Алжир</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="africa/angola.html">Ангола</a>
+                        <li class="select-menu__country">
+                          <a href="africa/angola.html">Ангола</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="europe/andorra.html">Андорра</a>
+                        <li class="select-menu__country">
+                          <a href="europe/andorra.html">Андорра</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
+                        <li class="select-menu__country">
+                          <a href="islands/antiguaandbarbuda.html">Антигуа и Барбуда</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="america/argentina.html">Аргентина</a>
+                        <li class="select-menu__country">
+                          <a href="america/argentina.html">Аргентина</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="asia/armenia.html">Армения</a>
+                        <li class="select-menu__country">
+                          <a href="asia/armenia.html">Армения</a>
                         </li>
-                        <li class="select-menu__item">
-                          <a class="select-menu__country" href="asia/afghanistan.html">Афганистан</a>
+                        <li class="select-menu__country">
+                          <a href="asia/afghanistan.html">Афганистан</a>
                         </li>
                       </ul>
                     </div>
@@ -507,8 +510,12 @@
               </div>
             </li>
             <li id="step-3" class="add__item entertainment">
-              <div class="entertainment__heading">
-                <h3 class="add__subtitle">Развлечения</h3>
+              <div class="add__top">
+                <div class="add__heading">
+                  <h3 class="add__subtitle">Развлечения</h3>
+                  <p class="add__lead entertainment__lead">Наконец, расскажите о своих планах времяпровождения. Можно
+                    писать в свободной форме и ставить тэги.</p>
+                </div>
                 <ul class="add__nav">
                   <li class="add__nav-item add__nav-item--current">
                     <a>Даты</a>
@@ -521,9 +528,6 @@
                   </li>
                 </ul>
               </div>
-              <p class="add__lead entertainment__lead">Наконец, расскажите о своих планах времяпровождения. Можно писать
-                в свободной
-                форме и ставить тэги.</p>
               <div class="add__entertainment">
                 <ul class="entertainment__list">
                   <li class="entertainment__item">
