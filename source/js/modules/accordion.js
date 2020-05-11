@@ -2,17 +2,17 @@
 
 (function () {
 
-  var form = document.querySelector('.traveler-filter__form');
+  let form = document.querySelector('.traveler-filter__form');
 
   if (form) {
-    var btn = form.querySelectorAll('.accordion__btn');
-    var panel = form.querySelectorAll('.accordion__panel');
+    let btn = form.querySelectorAll('.traveler-filter__legend');
+    let panel = form.querySelectorAll('.traveler-filter__list');
 
-    for (var i = 0; i < btn.length; i++) {
+    for (let i = 0; i < btn.length; i++) {
       btn[i].addEventListener('click', function (e) {
         e.preventDefault();
-        btn[i].classList.toggle('accordion__btn--open');
-        panel[i].classList.toggle('accordion__panel--open');
+        btn[i].classList.toggle('traveler-filter__legend--open');
+        panel[i].classList.toggle('traveler-filter__list--open');
       });
     }
   }

@@ -1,114 +1,114 @@
 .level {
   position: relative;
+}
 
-  &--fill {
+.level--fill {
+  width: 60px;
+  height: 60px;
+
+  svg {
     width: 60px;
     height: 60px;
+  }
 
-    svg {
-      width: 60px;
-      height: 60px;
-    }
+  .level__progress {
+    font-size: 175px;
 
-    .level__progress {
-      font-size: 175px;
+    stroke-width: 3px;
+    fill: rgba(black, 0.6);
+  }
 
-      stroke-width: 3px;
-      fill: rgba(black, 0.6);
-    }
+  .level__text {
+    font-size: 24px;
 
-    .level__text {
-      font-size: 24px;
+    padding-top: 11px;
 
-      padding-top: 11px;
+    color: white;
+  }
 
-      color: white;
-    }
+  .level__number {
+    &::before {
+      height: 1px;
 
-    .level__number {
-      &::before {
-        height: 1px;
-
-        background-color: rgba(white, 0.3);
-      }
-    }
-
-    .level__description {
-      font-size: 14px;
+      background-color: rgba(white, 0.3);
     }
   }
 
-  &--small {
+  .level__description {
+    font-size: 14px;
+  }
+}
+
+.level--small {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+
+  svg {
     width: 45px;
     height: 45px;
-    margin: 0 auto;
+  }
 
-    svg {
-      width: 45px;
-      height: 45px;
-    }
+  .level__progress {
+    font-size: 135px;
 
-    .level__progress {
-      font-size: 135px;
+    stroke-width: 2px;
+  }
 
-      stroke-width: 2px;
-    }
+  .level__text {
+    padding-top: 5px;
+    font-size: 24px;
 
-    .level__text {
-      padding-top: 5px;
-      font-size: 24px;
+    color: $dark-slate-blue;
+  }
 
-      color: $dark-slate-blue;
-    }
+  .level__number {
+    margin: auto;
 
-    .level__number {
-      margin: auto;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    .level__description {
+    &::before {
       display: none;
     }
   }
 
-  &--big {
+  .level__description {
+    display: none;
+  }
+}
+
+.level--big {
+  width: 100px;
+  height: 100px;
+
+  svg {
     width: 100px;
     height: 100px;
+  }
 
-    svg {
-      width: 100px;
-      height: 100px;
+  .level__progress {
+    font-size: 250px;
+
+    stroke-width: 3px;
+  }
+
+  .level__text {
+    padding-top: 10px;
+    font-size: 38px;
+
+    color: $dark-two;
+  }
+
+  .level__number {
+    &::before {
+      height: 2px;
+
+      background-color: $cloudy-blue;
     }
+  }
 
-    .level__progress {
-      font-size: 250px;
+  .level__description {
+    font-size: 18px;
 
-      stroke-width: 3px;
-    }
-
-    .level__text {
-      padding-top: 10px;
-      font-size: 38px;
-
-      color: $dark-two;
-    }
-
-    .level__number {
-      &::before {
-        height: 2px;
-
-        background-color: $cloudy-blue;
-      }
-    }
-
-    .level__description {
-      font-size: 18px;
-
-      color: $greyish-brown;
-    }
+    color: $greyish-brown;
   }
 }
 
@@ -165,4 +165,16 @@
   line-height: 1.4;
 
   margin-bottom: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .level--big {
+    .level__number {
+      color: white;
+    }
+
+    .level__description {
+      color: white;
+    }
+  }
 }

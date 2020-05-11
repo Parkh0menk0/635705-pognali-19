@@ -107,7 +107,7 @@ gulp.task("scripts", function () {
     .pipe(sourcemap.init())
     .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename("main.min.js"))
     .pipe(sourcemap.write(""))
     .pipe(gulp.dest("build/js"));

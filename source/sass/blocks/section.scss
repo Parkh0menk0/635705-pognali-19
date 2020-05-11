@@ -73,7 +73,7 @@
   }
 
   &--border {
-    padding: 14px 21px 13px;
+    padding: 14px 21px 12px;
     background-color: transparent;
     border: 3px solid $dark-blue-grey;
 
@@ -136,6 +136,10 @@
       &::after {
         right: 36px;
       }
+    }
+
+    &--border {
+      padding: 27px 33px 24px;
     }
   }
 }

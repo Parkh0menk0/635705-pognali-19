@@ -1,8 +1,11 @@
 .letter__list {
   @include list-reset;
-  width: 220px;
+
   display: flex;
   flex-direction: row;
+
+  width: 220px;
+
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -11,34 +14,36 @@
 .letter__item {
   position: relative;
   z-index: 1;
-  margin-bottom: -1px;
-  margin-right: -1px;
-  border: 1px solid $cloudy-blue;
+
+  display: flex;
+
   width: 45px;
   height: 42px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+
+  cursor: pointer;
+
+  border: 1px solid $cloudy-blue;
 
   &:nth-child(5n) {
     width: 44px;
-  }
-
-  &--active {
-    z-index: 2;
-    background-color: $dark-slate-blue;
-    border-color: $dark-slate-blue;
-
-    .letter__title {
-      color: white;
-    }
   }
 }
 
-.letter__link {
-  display: flex;
-  width: 45px;
-  height: 42px;
+.letter__item ul {
+  @include list-reset;
 
-  &:nth-child(5n) {
-    width: 44px;
+  display: none;
+}
+
+.letter__item--active {
+  z-index: 2;
+  background-color: $dark-slate-blue;
+  border-color: $dark-slate-blue;
+
+  .letter__title {
+    color: white;
   }
 }
 
@@ -46,8 +51,108 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+
   margin: auto;
+
   text-align: center;
   vertical-align: middle;
+
   color: $dark-slate-blue;
+}
+
+.letter__countries {
+  @include list-reset;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    color: $greyish-brown;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .letter__list {
+    width: 380px;
+  }
+
+  .letter__item {
+    margin-bottom: 14px;
+    margin-right: 42px;
+    border: none;
+    width: 35px;
+    height: auto;
+
+    &:nth-child(5n) {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+
+  .letter__item--active {
+    z-index: 2;
+    background-color: transparent;
+    border-color: none;
+
+    .letter__title {
+      color: $dark-slate-blue;
+    }
+  }
+
+  .letter__title {
+    color: rgba($dark-slate-blue, 0.3);
+    font-size: 60px;
+    line-height: 69px;
+  }
+
+  .letter__countries {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .letter__list {
+    width: 100%;
+  }
+
+  .letter__item {
+    flex-direction: column;
+    margin-bottom: 44px;
+    margin-right: 0;
+    width: 19.1%;
+    padding: 0 35px;
+  }
+
+  .letter__title {
+    color: $dark-slate-blue;
+    margin: 0;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+
+  .letter__item ul {
+    display: block;
+    min-height: 308px;
+  }
+
+  .letter__item a {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+
+    text-align: left;
+    letter-spacing: normal;
+
+    color: $greyish-brown;
+  }
 }

@@ -1,8 +1,13 @@
+.entertainment__lead {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
 .entertainment label {
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   padding-left: 11px;
 
   justify-content: space-between;
@@ -25,12 +30,10 @@
 
 .entertainment__list {
   @include list-reset;
-
-  margin-bottom: 15px;
 }
 
 .entertainment__item {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -39,7 +42,11 @@
 
 .entertainment__country {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  text-align: left;
   line-height: 18px;
 
   position: relative;
@@ -67,9 +74,72 @@
 .entertainment__flag {
   width: 35px;
   height: 24px;
+  background-color: $mango;
 
   svg {
     width: 35px;
     height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .entertainment__lead {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .entertainment__item {
+    margin-bottom: 36px;
+  }
+
+  .entertainment__list {
+    margin-right: 31px;
+  }
+
+  .entertainment label {
+    padding-left: 0;
+    margin-bottom: 29px;
+  }
+
+  .entertainment__country {
+    font-size: 30px;
+    line-height: 0.6;
+  }
+
+  .entertainment__flag {
+    width: 70px;
+    height: 47px;
+
+    svg {
+      width: 70px;
+      height: 47px;
+    }
+  }
+
+  .entertainment textarea {
+    padding: 17px;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    height: 142px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .entertainment__lead {
+    max-width: 530px;
+    margin-bottom: 54px;
+  }
+
+  .entertainment__list {
+    margin-right: 115px;
+  }
+
+  .entertainment textarea {
+    width: 82.5%;
+    padding: 24px;
   }
 }

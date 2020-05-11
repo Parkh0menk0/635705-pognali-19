@@ -76,6 +76,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 40px;
+  }
+
   .catalog__list {
     margin-bottom: 46px;
   }
