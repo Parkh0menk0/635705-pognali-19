@@ -16,56 +16,41 @@
 <body>
 
   <!-- Шапка -->
-  <header class="header header--inner header--open">
-    <nav class="main-nav main-nav--inner">
+  <header class="header header--inner">
+    <nav class="main-nav main-nav--open main-nav--inner">
       <div class="main-nav__wrapper">
-        <a class="header__logo logo logo--open">
-          <picture>
-            <source media="(min-width: 1320px)" srcset="img/logo/logo-desktop-blue@1x.png">
-            <source media="(min-width: 688px)" srcset="img/logo/logo-tablet-blue@1x.png">
-            <img class="logo__img logo__img--block" src="img/logo/logo-mobile-blue@1x.png" alt="Логотип «Погнали»"
-              width="100" height="19">
-          </picture>
-          <picture>
-            <source media="(min-width: 1320px)" srcset="img/logo/logo-desktop-white@1x.png">
-            <source media="(min-width: 688px)" srcset="img/logo/logo-tablet-white@1x.png">
-            <img class="logo__img logo__img--none" src="img/logo/logo-mobile-white@1x.png" alt="Логотип «Погнали»"
-              width="100" height="19">
-          </picture>
+        <a class="main-nav__logo">
+          @@include('./_include/_main-nav__logo.html')
         </a>
         <div class="main-nav__menu">
-          <button class="main-nav__toggle main-nav__toggle--open" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="main-nav__site-list">
-            <ul class="site-list site-list--main-nav">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">О сервисе</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Направления</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Попутчики</a>
-              </li>
-            </ul>
+          <div class="main-nav__drop-down drop-down">
+            <div class="drop-down__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">О сервисе</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link">Направления</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Попутчики</a>
+                </li>
+              </ul>
+              <a class="drop-down__btn btn" href="#">Авторизация</a>
+              <div class="drop-down__contacts">
+                @@include('./_include/_contact-item--tel.html')
+                @@include('./_include/_contact-item--mail.html')
+              </div>
+              <ul class="drop-down__social social">
+                @@include('./_include/_social__item.html')
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="main-nav__contacts">
-          <ul class="topmenu">
-            <li class="topmenu__item">
-              <a class="topmenu__link topmenu__link--phone" href="tel:88005558628">
-                <span class="visually-hidden">Позвонить нам</span>
-              </a>
-            </li>
-            <li class="topmenu__item">
-              <a class="topmenu__link topmenu__link--mail" href="mailto:mail@htmlacademy.ru">
-                <span class="visually-hidden">Позвонить нам</span>
-              </a>
-            </li>
-          </ul>
-          <a class="main-nav__btn btn" href="#">Авторизация</a>
-        </div>
+        @@include('./_include/_main-nav__contacts.html')
       </div>
     </nav>
     <div class="header__content">
@@ -74,7 +59,6 @@
       </div>
     </div>
     <div class="header__drop-down drop-down drop-down--open">
-      @@include('./_include/_drop-down__wrapper.html')
     </div>
   </header>
 

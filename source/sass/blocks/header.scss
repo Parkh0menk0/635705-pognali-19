@@ -11,16 +11,27 @@
 
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  background-color: $dark-two;
-  background-image: linear-gradient(transparent 762px, $dark-blue-grey 762px),
-    linear-gradient(transparent 478px, $dark-two 478px),
-    url("../img/header/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 0 0, 50% 0;
+  background-color: $dark-blue-grey;
+  background-image: url("../img/header/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  &::before {
+    position: absolute;
+    top: 478px;
+    left: 0;
+
+    width: 100%;
+    height: 285px;
+
+    content: "";
+
+    background-color: $dark-two;
+  }
 }
 
 .header--inner {
@@ -33,6 +44,10 @@
   background-image: none;
 
   justify-content: flex-start;
+
+  &::before {
+    display: none;
+  }
 
   .header__wrapper {
     align-items: flex-start;
@@ -61,10 +76,6 @@
       background-color: $mango;
     }
   }
-}
-
-.header--open {
-  background-image: linear-gradient(white 568px, transparent 568px), url("../img/header/globe-back-mobile@1x.jpg");
 }
 
 .header__content {
@@ -172,6 +183,8 @@
   margin: auto;
 }
 
+/* Tablet styles */
+
 @media (min-width: $tablet-width) {
   .header {
     padding-top: 40px;
@@ -182,6 +195,10 @@
     background-image: url("../img/header/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 382px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .header--inner {
@@ -212,12 +229,6 @@
       display: block;
       padding-right: 63px;
     }
-  }
-
-  .header--open {
-    background-image: linear-gradient(white 910px, transparent 910px), url("../img/header/globe-back-tablet@1x.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 0 0, 50% 382px;
   }
 
   .header__content {
@@ -258,6 +269,8 @@
     top: 100px;
   }
 }
+
+/* Desktop styles */
 
 @media (min-width: $desktop-width) {
   .header {

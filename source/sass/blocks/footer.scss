@@ -32,9 +32,9 @@
 }
 
 .footer__social {
-  margin: 0;
+  @include list-reset;
+
   margin-bottom: 37px;
-  padding: 0;
 
   .social__link {
     background-color: $light-gold;
