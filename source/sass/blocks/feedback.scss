@@ -2,8 +2,7 @@
   position: relative;
   z-index: 2;
 
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   margin-bottom: -30px;
   padding-top: 102px;
   padding-bottom: 28px;
@@ -17,8 +16,7 @@
   position: relative;
   z-index: 1;
 
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   margin-bottom: -30px;
   padding-top: 63px;
   padding-bottom: 35px;
@@ -48,10 +46,14 @@
 .feedback__lead {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  margin-bottom: 29px;
+
+  text-align: center;
+
   justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  margin-bottom: 29px;
 }
 
 .feedback__lead p {
@@ -202,6 +204,10 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
+
+  span {
+    color: $light-gold;
+  }
 }
 
 .feedback__address {
@@ -211,6 +217,10 @@
 
 .feedback__btn {
   width: 100%;
+
+  svg {
+    fill: $dark-slate-blue;
+  }
 }
 
 .feedback__map iframe {
@@ -222,6 +232,8 @@
   border: none;
   margin-bottom: -3px;
 }
+
+/* Tablet styles */
 
 @media (min-width: $tablet-width) {
   .feedback__registration {
@@ -247,7 +259,8 @@
   }
 
   .feedback__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 0 35px;
   }
@@ -309,6 +322,8 @@
   }
 }
 
+/* Desktop styles */
+
 @media (min-width: $desktop-width) {
   .feedback__path .feedback__wrapper {
     justify-content: flex-end;
@@ -316,7 +331,7 @@
   }
 
   .feedback__wrapper {
-    width: 1320px;
+    width: 100%;
     padding: 0 73px;
   }
 

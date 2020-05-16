@@ -24,12 +24,6 @@
   }
 }
 
-.contact-item--feedback {
-  .contact-item__text {
-    color: $light-gold;
-  }
-}
-
 .contact-item__wrapper {
   display: flex;
 
@@ -112,6 +106,23 @@
     width: 90px;
     height: 90px;
     margin-right: 32px;
+  }
+
+  .contact-item__icon {
+    width: 36px;
+
+    &--tel {
+      height: 36px;
+    }
+
+    &--mail {
+      height: 26px;
+    }
+
+    &--path {
+      width: 28px;
+      height: 43px;
+    }
   }
 
   .contact-item__text {

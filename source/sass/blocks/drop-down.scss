@@ -3,8 +3,6 @@
 }
 
 .drop-down__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 0 25px;
 }
 
@@ -21,13 +19,20 @@
 .drop-down__social {
   @include list-reset;
   display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 /* Tablet styles */
 
 @media (min-width: $tablet-width) {
   .drop-down__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
+    margin: 0 auto;
     padding: 0 57px;
   }
 
@@ -49,7 +54,7 @@
   }
 
   .drop-down__wrapper {
-    width: auto;
+    width: 100%;
     padding: 0;
   }
 

@@ -2,8 +2,9 @@
   position: relative;
   z-index: 5;
 
+  width: auto;
   margin-bottom: -30px;
-  padding-top: 30px;
+  padding-top: 102px;
   padding-bottom: 30px;
 
   border-bottom-right-radius: 30px;
@@ -15,9 +16,7 @@
   display: flex;
   flex-direction: column;
 
-  width: 320px;
-  margin: 0 auto;
-  padding: 72px 25px 0;
+  padding: 0 25px;
 
   justify-content: flex-start;
   align-items: center;
@@ -30,7 +29,7 @@
 
 .destination__lead {
   order: 1;
-  width: 220px;
+  width: 82%;
 }
 
 .destination__title {
@@ -43,6 +42,14 @@
 
   color: $greyish-brown;
   max-width: 200px;
+
+  br:first-child {
+    display: block;
+  }
+
+  br:last-child {
+    display: none;
+  }
 }
 
 .destination__btn {
@@ -73,6 +80,8 @@
   }
 }
 
+/* Tablet styles */
+
 @media (min-width: $tablet-width) {
   .destination {
     width: auto;
@@ -88,7 +97,8 @@
   .destination__wrapper {
     position: relative;
 
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 74px 0 35px;
 
@@ -112,8 +122,12 @@
     max-width: 350px;
     margin: 0 0 65px;
 
-    br {
+    br:first-child {
       display: none;
+    }
+
+    br:last-child {
+      display: block;
     }
   }
 
@@ -145,6 +159,8 @@
   }
 }
 
+/* Desktop styles */
+
 @media (min-width: $desktop-width) {
   .destination {
     padding-top: 149px;
@@ -152,9 +168,9 @@
   }
 
   .destination__wrapper {
+    width: 100%;
     flex-direction: row-reverse;
 
-    width: 1320px;
     padding: 0;
 
     background-position: right top;

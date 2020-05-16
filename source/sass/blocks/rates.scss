@@ -2,6 +2,7 @@
   position: relative;
   z-index: 3;
 
+  width: auto;
   margin-bottom: -30px;
   padding: 82px 0 35px;
 
@@ -11,8 +12,6 @@
 }
 
 .rates__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 0 25px 0 50px;
 }
 
@@ -35,7 +34,7 @@
     position: absolute;
     right: 0;
 
-    @media (max-width: 687px) {
+    @media (max-width: 767px) {
       top: -130px;
     }
 
@@ -66,7 +65,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 200px;
+  width: 82%;
 
   &::after {
     font-size: 16px;
@@ -122,6 +121,8 @@
   color: $dark-blue-grey;
 }
 
+/* Tablet styles */
+
 @media (min-width: $tablet-width) {
   .rates {
     width: auto;
@@ -135,7 +136,8 @@
   }
 
   .rates__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 0;
   }
@@ -182,7 +184,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 17px 0 15px 0;
-    max-width: none;
+    width: 100%;
 
     &::after {
       font-size: 28px;
@@ -238,6 +240,8 @@
   }
 }
 
+/* Desktop styles */
+
 @media (min-width: $desktop-width) {
   .rates {
     padding-top: 167px;
@@ -245,7 +249,7 @@
   }
 
   .rates__wrapper {
-    width: 1320px;
+    width: 100%;
     padding: 0 72px;
   }
 

@@ -4,9 +4,10 @@
 
   @include list-reset;
 
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 30%;
 }
 
 .topmenu__link {
@@ -75,6 +76,7 @@
 @media (min-width: $desktop-width) {
   .topmenu {
     display: flex;
+    width: 34.8%;
   }
 
   .topmenu__link {
