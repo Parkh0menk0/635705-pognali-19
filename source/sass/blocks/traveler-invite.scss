@@ -666,11 +666,9 @@
     }
   }
 
-  .traveler-invite__list--preferred {
-    .traveler-invite__item {
-      margin-bottom: 0;
-      margin-right: 10px;
-    }
+  .traveler-invite__list--preferred .traveler-invite__item {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 
   .traveler-invite__list--preferred {
