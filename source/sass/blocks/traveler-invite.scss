@@ -380,7 +380,7 @@
     display: flex;
     flex-direction: column;
 
-    width: 260px;
+    width: 49%;
 
     justify-content: flex-start;
     align-items: center;
@@ -428,6 +428,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     align-self: flex-start;
+    width: 100%;
   }
 
   .traveler-invite__call {
@@ -480,7 +481,7 @@
     .traveler-invite__item {
       width: auto;
       margin-bottom: 0;
-      margin-right: 28px;
+      margin-right: 4.5%;
     }
 
     .traveler-invite__description {
@@ -567,6 +568,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .traveler-invite__vehicle {
+    margin-bottom: 0;
+  }
+
   .traveler-invite--firsova,
   .traveler-invite--demin,
   .traveler-invite--smolov,
@@ -593,7 +598,7 @@
 
     width: 33%;
     min-height: 285px;
-    padding: 48px 45px 43px;
+    padding: 48px 38px 43px 41px;
 
     justify-content: flex-start;
     align-items: flex-start;
@@ -604,7 +609,8 @@
   .traveler-invite__wrapper {
     flex-direction: row;
 
-    width: auto;
+    justify-content: space-between;
+    width: 100%;
     margin-top: auto;
     padding: 0;
   }
@@ -648,11 +654,22 @@
     align-items: flex-start;
 
     .traveler-invite__description {
-      padding-left: 53px;
+      padding-left: 57px;
     }
 
     .traveler-invite__item {
       margin-bottom: 7px;
+    }
+
+    .traveler-invite__country {
+      left: 3px;
+    }
+  }
+
+  .traveler-invite__list--preferred {
+    .traveler-invite__item {
+      margin-bottom: 0;
+      margin-right: 10px;
     }
   }
 
