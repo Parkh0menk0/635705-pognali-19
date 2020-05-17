@@ -1,6 +1,5 @@
 .user {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   padding-top: 37px;
   padding-bottom: 63px;
 
@@ -147,6 +146,8 @@
   background-color: transparent;
 }
 
+/* Tablet styles */
+
 @media (min-width: $tablet-width) {
   .user {
     width: auto;
@@ -158,7 +159,8 @@
   .user__wrapper {
     flex-direction: row;
 
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 0 35px;
 
@@ -234,6 +236,8 @@
   }
 }
 
+/* Desktop styles */
+
 @media (min-width: $desktop-width) {
   .user {
     padding-top: 133px;
@@ -245,7 +249,7 @@
 
     flex-direction: row-reverse;
 
-    width: 1320px;
+    width: 100%;
     padding: 0;
 
     justify-content: flex-start;

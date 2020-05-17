@@ -1,14 +1,13 @@
 .traveler-positioner {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
   padding-top: 91px;
+  margin-bottom: 29px;
 }
 
 .traveler-positioner__wrapper {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 20px;
   padding: 0 25px;
 
   justify-content: flex-start;
@@ -23,6 +22,8 @@
   width: 100%;
 }
 
+/* Tablet styles */
+
 @media (min-width: $tablet-width) {
   .traveler-positioner {
     width: auto;
@@ -31,7 +32,8 @@
   }
 
   .traveler-positioner__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 0;
   }
@@ -45,13 +47,15 @@
   }
 }
 
+/* Desktop styles */
+
 @media (min-width: $desktop-width) {
   .traveler-positioner {
     padding-top: 60px;
   }
 
   .traveler-positioner__wrapper {
-    width: 1320px;
+    width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
   }

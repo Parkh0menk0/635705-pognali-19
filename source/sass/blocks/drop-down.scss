@@ -1,31 +1,9 @@
 .drop-down {
-  display: none;
-
-  padding-top: 68px;
-  padding-bottom: 29px;
-
   background-color: white;
-
-  &--open {
-    display: block;
-  }
 }
 
 .drop-down__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  width: 320px;
-  margin: 0 auto;
   padding: 0 25px;
-
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.drop-down__site-list {
-  margin-bottom: 49px;
-  width: 90%;
 }
 
 .drop-down__btn {
@@ -35,45 +13,56 @@
 }
 
 .drop-down__contacts {
-  align-self: stretch;
   margin-bottom: 30px;
 }
 
-@media (min-width: $tablet-width) {
-  .drop-down {
-    width: auto;
-    margin: 0;
-    padding-top: 83px;
-    padding-bottom: 74px;
-  }
+.drop-down__social {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
 
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Tablet styles */
+
+@media (min-width: $tablet-width) {
   .drop-down__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
+    padding: 0 57px;
   }
 
   .drop-down__contacts {
     align-self: center;
-    margin-bottom: 116px;
-    width: 90%;
-  }
-
-  .drop-down__site-list {
-    margin-bottom: 128px;
-    width: 90%;
+    margin-bottom: 114px;
   }
 
   .drop-down__btn {
     display: none;
   }
-
-  .drop-down__social {
-    width: 89%;
-  }
 }
+
+/* Desktop styles */
 
 @media (min-width: $desktop-width) {
   .drop-down {
+    background-color: $dark-two;
+  }
+
+  .drop-down__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .drop-down__contacts {
+    display: none;
+  }
+
+  .drop-down__social {
     display: none;
   }
 }
