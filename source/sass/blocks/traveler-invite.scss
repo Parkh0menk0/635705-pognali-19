@@ -36,6 +36,14 @@
   }
 }
 
+.traveler-invite--active {
+  .traveler-invite__title h3 {
+    &::before {
+      background-color: $green-apple;
+    }
+  }
+}
+
 .traveler-invite__header {
   display: contents;
   width: 100%;
@@ -50,6 +58,7 @@
 }
 
 .traveler-invite__title h3 {
+  position: relative;
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
@@ -58,6 +67,20 @@
   margin: 0;
 
   color: $dark-slate-blue;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: -38px;
+
+    width: 6px;
+    height: 6px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $salmon;
+  }
 }
 
 .traveler-invite__hashtags {
@@ -234,7 +257,6 @@
     height: 18px;
 
     border-radius: 2px;
-    background-color: $mango;
 
     svg {
       width: 26px;
@@ -265,20 +287,55 @@
     height: 32px;
   }
 
+  .traveler-invite__item--active {
+    .traveler-invite__vehicle-icon {
+      fill: $dark-slate-blue;
+    }
+  }
+
   .traveler-invite__link {
-    display: block;
+    display: flex;
 
     width: 32px;
     height: 32px;
 
     border-radius: 50%;
     background-color: $pale-grey;
+  }
 
-    svg {
-      width: 32px;
-      height: 32px;
+  .traveler-invite__vehicle-icon {
+    margin: auto;
+
+    fill: rgba($greyish-brown, 0.15);
+
+    &--plane {
+      width: 14px;
+      height: 16px;
+    }
+
+    &--bus {
+      width: 13px;
+      height: 16px;
+    }
+
+    &--bike {
+      width: 19px;
+      height: 17px;
+    }
+
+    &--run {
+      width: 15px;
+      height: 17px;
     }
   }
+}
+
+.traveler-invite__info {
+  width: 100%;
+}
+
+.traveler-invite__grade {
+  padding-left: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -333,14 +390,22 @@
   .traveler-invite__title {
     margin-top: 0;
     margin-bottom: 16px;
+    width: 255px;
   }
 
   .traveler-invite__title h3 {
+    display: inline;
     font-size: 30px;
     line-height: 30px;
 
     max-width: none;
-    width: 255px;
+
+    &::before {
+      top: 9px;
+      right: -30px;
+      width: 7px;
+      height: 7px;
+    }
   }
 
   .traveler-invite__hashtags {
@@ -430,7 +495,7 @@
 
     width: 60px;
     margin-bottom: 0;
-    padding-top: 35px;
+    padding-top: 38px;
 
     order: 2;
     align-items: center;
@@ -438,6 +503,7 @@
 
   .traveler-invite__vehicle {
     width: auto;
+    margin-bottom: 13px;
 
     .traveler-invite__subtitle {
       display: none;
@@ -447,6 +513,44 @@
   .traveler-invite__list--preferred {
     flex-direction: column;
     padding: 0;
+
+    .traveler-invite__item {
+      width: 24px;
+      height: 21px;
+      margin-bottom: 11px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .traveler-invite__link {
+      width: 24px;
+      height: 21px;
+      background-color: transparent;
+    }
+
+    .traveler-invite__vehicle-icon {
+      &--plane {
+        width: 19px;
+        height: 21px;
+      }
+
+      &--bus {
+        width: 17px;
+        height: 21px;
+      }
+
+      &--bike {
+        width: 24px;
+        height: 21px;
+      }
+
+      &--run {
+        width: 20px;
+        height: 21px;
+      }
+    }
   }
 
   .traveler-invite__level {
@@ -455,6 +559,10 @@
     .traveler-invite__subtitle {
       display: none;
     }
+  }
+
+  .traveler-invite__grade {
+    padding: 0;
   }
 }
 
@@ -483,8 +591,9 @@
     display: flex;
     flex-direction: column;
 
-    width: 320px;
-    padding: 48px 45px;
+    width: 33%;
+    min-height: 285px;
+    padding: 48px 45px 43px;
 
     justify-content: flex-start;
     align-items: flex-start;

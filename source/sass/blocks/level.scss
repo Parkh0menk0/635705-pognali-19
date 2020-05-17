@@ -42,7 +42,6 @@
 .level--small {
   width: 45px;
   height: 45px;
-  margin: 0 auto;
 
   svg {
     width: 45px;
@@ -63,8 +62,6 @@
   }
 
   .level__number {
-    margin: auto;
-
     &::before {
       display: none;
     }
@@ -146,6 +143,7 @@
   position: relative;
 
   margin-top: auto;
+  margin-bottom: auto;
 
   &::before {
     position: absolute;
@@ -165,6 +163,46 @@
   line-height: 1.4;
 
   margin-bottom: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .level--small {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    .level__progress {
+      stroke-width: 3px;
+      font-size: 177px;
+    }
+
+    .level__text {
+      padding-top: 8px;
+    }
+
+    .level__number {
+      margin-bottom: 0;
+    }
+
+    .level__description {
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.2;
+
+      display: block;
+
+      text-align: center;
+      letter-spacing: normal;
+
+      color: rgba($greyish-brown, 0.4);
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -26,13 +26,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .filter__content {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   display: none;
   overflow: hidden;
@@ -145,7 +145,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 30px;
-  padding: 0 25px;
+  padding: 0 10%;
+  width: 100%;
 }
 
 .filter__world-part {
@@ -263,7 +264,8 @@
   }
 
   .filter__wrapper {
-    width: 688px;
+    width: 89.6%; /* 688px / 768px ~= 90% */
+    max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
     padding: 0 35px;
     flex-direction: row;
@@ -373,7 +375,7 @@
   }
 
   .filter__wrapper {
-    width: 1320px;
+    width: 100%;
     padding: 0 20px;
   }
 

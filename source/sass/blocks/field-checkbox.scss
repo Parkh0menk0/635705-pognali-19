@@ -35,18 +35,8 @@
   border-radius: 50%;
   background-color: white;
 
-  svg {
-    margin: auto;
-
-    fill: rgba($greyish-brown, 0.15);
-  }
-
   &:active {
     background-color: $pale-grey-three;
-  }
-
-  input[type="checkbox"] + svg {
-    fill: $dark-slate-blue;
   }
 
   input[type="checkbox"]:hover + svg {
@@ -67,6 +57,32 @@
 
   input[type="checkbox"]:checked:active + svg {
     fill: rgba($dark-slate-blue, 0.3);
+  }
+}
+
+.field-checkbox__vehicle-icon {
+  margin: auto;
+
+  fill: rgba($greyish-brown, 0.15);
+
+  &--plane {
+    width: 14px;
+    height: 16px;
+  }
+
+  &--bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bike {
+    width: 19px;
+    height: 17px;
+  }
+
+  &--run {
+    width: 15px;
+    height: 17px;
   }
 }
 
@@ -120,5 +136,27 @@ input[type="checkbox"]:checked:focus + .field-checkbox__box {
   .field-checkbox--vehicle {
     width: 43px;
     height: 43px;
+  }
+
+  .field-checkbox__vehicle-icon {
+    &--plane {
+      width: 19px;
+      height: 21px;
+    }
+
+    &--bus {
+      width: 17px;
+      height: 21px;
+    }
+
+    &--bike {
+      width: 24px;
+      height: 21px;
+    }
+
+    &--run {
+      width: 20px;
+      height: 21px;
+    }
   }
 }
