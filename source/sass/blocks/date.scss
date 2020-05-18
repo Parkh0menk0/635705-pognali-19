@@ -166,25 +166,25 @@
 
 .date__btn {
   @include btn-res;
+
   position: absolute;
   top: 0;
 
-  display: flex;
-
   width: 43px;
   height: 100%;
-
-  svg {
-    margin: auto;
-    fill: rgba($greyish-brown, 0.2);
-  }
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--minus {
     left: 0;
+    background-image: url("../img/svg/qty-minus-mobile.svg");
+    background-size: 14px 2px;
   }
 
   &--plus {
     right: 0;
+    background-image: url("../img/svg/qty-plus-mobile.svg");
+    background-size: 14px 14px;
   }
 
   &:hover {
@@ -288,6 +288,20 @@
   .date__calendar {
     width: auto;
     margin-bottom: 46px;
+  }
+
+  .date__btn {
+    width: 60px;
+
+    &--minus {
+      background-image: url("../img/svg/qty-minus.svg");
+      background-size: 20px 2px;
+    }
+
+    &--plus {
+      background-image: url("../img/svg/qty-plus.svg");
+      background-size: 20px 20px;
+    }
   }
 }
 
