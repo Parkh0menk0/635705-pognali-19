@@ -7,6 +7,8 @@
 
   if (burger && nav) {
 
+    nav.classList.remove('main-nav--nojs');
+
     burger.addEventListener('click', function () {
       nav.classList.toggle('main-nav--open');
     });
