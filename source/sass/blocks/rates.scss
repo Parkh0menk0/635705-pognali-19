@@ -47,6 +47,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/rates/rates@2x.png");
+      background-size: 198px auto;
+    }
   }
 }
 
