@@ -21,6 +21,11 @@
   align-items: flex-start;
   flex-wrap: wrap;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header/globe-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   &::before {
     position: absolute;
     top: 478px;
@@ -195,6 +200,11 @@
     background-position: 50% 382px;
     background-size: auto;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header/globe-back-tablet@2x.jpg");
+      background-size: 1479px auto;
+    }
+
     &::before {
       display: none;
     }
@@ -283,6 +293,11 @@
     background-image: url("../img/header/globe-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/header/globe-back-desktop@2x.jpg");
+      background-size: 1800px auto;
+    }
   }
 
   .header--inner {

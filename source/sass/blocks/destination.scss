@@ -107,6 +107,11 @@
     background-position: right 80px;
 
     align-items: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/destination/flags-back@2x.png");
+      background-size: 289px auto;
+    }
   }
 
   .destination__lead {
