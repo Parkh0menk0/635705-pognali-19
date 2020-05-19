@@ -143,7 +143,6 @@
   position: relative;
 
   margin-top: auto;
-  margin-bottom: auto;
 
   &::before {
     position: absolute;
@@ -202,6 +201,15 @@
 
       color: rgba($greyish-brown, 0.4);
     }
+  }
+
+  .level--big svg {
+    width: 94px;
+    height: 94px;
+  }
+
+  .level--big .level__progress {
+    font-size: 234px;
   }
 }
 

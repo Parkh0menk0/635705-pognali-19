@@ -1,6 +1,6 @@
 .entertainment__lead {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .entertainment label {
@@ -12,6 +12,70 @@
 
   justify-content: space-between;
   align-items: center;
+}
+
+.entertainment__list {
+  @include list-reset;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 11px;
+
+    @media (max-width: 767px) {
+      left: -14px;
+    }
+
+    width: 2px;
+    height: 281px;
+
+    content: "";
+
+    background-color: $dark-slate-blue;
+  }
+}
+
+.entertainment__item {
+  position: relative;
+  margin-bottom: 17px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 11px;
+
+    @media (max-width: 767px) {
+      left: -14px;
+    }
+
+    width: 15px;
+    height: 2px;
+
+    content: "";
+
+    background-color: $dark-slate-blue;
+  }
+
+  &::after {
+    position: absolute;
+    top: 9px;
+
+    @media (max-width: 767px) {
+      left: -3px;
+    }
+
+    width: 6px;
+    height: 6px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $dark-slate-blue;
+  }
 }
 
 .entertainment textarea {
@@ -26,18 +90,6 @@
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
   background-color: transparent;
-}
-
-.entertainment__list {
-  @include list-reset;
-}
-
-.entertainment__item {
-  margin-bottom: 17px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .entertainment__country {
@@ -74,7 +126,6 @@
 .entertainment__flag {
   width: 35px;
   height: 24px;
-  background-color: $mango;
 
   svg {
     width: 35px;
@@ -88,12 +139,36 @@
     margin-bottom: 33px;
   }
 
-  .entertainment__item {
-    margin-bottom: 36px;
-  }
-
   .entertainment__list {
     margin-right: 31px;
+
+    &::before {
+      position: absolute;
+      top: 24px;
+      right: -28px;
+
+      width: 3px;
+      height: 261px;
+
+      content: "";
+
+      background-color: $dark-slate-blue;
+    }
+  }
+
+  .entertainment__item {
+    margin-bottom: 36px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 17px;
+      right: -34px;
+      width: 16px;
+      height: 16px;
+    }
   }
 
   .entertainment label {
@@ -136,6 +211,17 @@
 
   .entertainment__list {
     margin-right: 115px;
+
+    &::before {
+      right: 110px;
+    }
+  }
+
+  .entertainment__item {
+    &::after {
+      top: 16px;
+      right: 103px;
+    }
   }
 
   .entertainment textarea {

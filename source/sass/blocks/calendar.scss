@@ -69,7 +69,7 @@
 
 .calendar__table {
   border-collapse: collapse;
-  width: 220px;
+  width: 100%;
   height: 217px;
 }
 
@@ -108,6 +108,7 @@
 
 .calendar__number {
   border: 1px solid $cloudy-blue;
+  background-color: $pale-grey;
 
   a {
     color: $greyish-brown;
@@ -127,9 +128,8 @@
   }
 
   &--not-available {
-    a {
-      color: rgba($greyish-brown, 0.3);
-    }
+    background-color: transparent;
+    opacity: 0.3;
   }
 }
 
@@ -149,10 +149,6 @@
   .calendar__item {
     font-size: 36px;
     line-height: 40px;
-  }
-
-  .calendar__table {
-    width: 530px;
   }
 
   .calendar__day,
@@ -199,5 +195,77 @@
 
   .calendar__number {
     height: 71px;
+  }
+
+  .calendar__number--check-in {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      color: white;
+      content: "Заезд";
+      bottom: 7px;
+      left: 14px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: 1.8px;
+      text-align: left;
+    }
+  }
+
+  .calendar__number--check-out {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      color: white;
+      content: "Выезд";
+      bottom: 7px;
+      left: 14px;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: 1.8px;
+      text-align: left;
+    }
+  }
+
+  .calendar__number--mar {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      color: inherit;
+      content: "мар";
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: 1.8px;
+      text-align: left;
+    }
+  }
+
+  .calendar__number--apr {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      color: inherit;
+      content: "апр";
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: 1.8px;
+      text-align: left;
+    }
   }
 }
