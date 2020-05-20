@@ -6,6 +6,7 @@
 
   justify-content: flex-start;
   align-items: center;
+  color: $light-gold;
 
   &:hover {
     color: $mango-two;
@@ -22,6 +23,10 @@
       opacity: 0.3;
     }
   }
+}
+
+.contact-item svg {
+  fill: $light-gold;
 }
 
 .contact-item__wrapper {
@@ -57,7 +62,6 @@
 
   text-transform: uppercase;
 
-  color: $dark-two;
   max-width: 205px;
 }
 
@@ -79,6 +83,11 @@
 
     &--mail {
       height: 20px;
+    }
+
+    &--path {
+      width: 21px;
+      height: 32px;
     }
   }
 

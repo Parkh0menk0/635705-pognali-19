@@ -204,15 +204,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-
-  span {
-    color: $light-gold;
-  }
 }
 
 .feedback__address {
   margin-bottom: 31px;
   width: 100%;
+  color: $dark-two;
 }
 
 .feedback__btn {

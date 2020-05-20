@@ -50,7 +50,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/rates/rates@2x.png");
-      background-size: 198px auto;
+      background-size: 99px auto;
     }
   }
 }
@@ -282,6 +282,8 @@
 
       width: 198px;
       height: 198px;
+
+      background-size: 198px auto;
     }
   }
 }
