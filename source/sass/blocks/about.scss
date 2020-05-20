@@ -181,6 +181,10 @@
   .about__plain-text {
     max-width: 54%;
     margin: 0 0 38px;
+
+    br:last-child {
+      display: none;
+    }
   }
 
   .about__bold-text {
