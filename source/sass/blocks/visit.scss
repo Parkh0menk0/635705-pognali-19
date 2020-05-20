@@ -71,10 +71,13 @@
       top: 0;
       right: 17px;
       bottom: 0;
+
       width: 9px;
       height: 9px;
       margin: auto;
+
       content: "";
+
       background-image: url("../img/svg/filter-close.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -111,10 +114,13 @@
       top: 0;
       right: 17px;
       bottom: 0;
+
       width: 9px;
       height: 9px;
       margin: auto;
+
       content: "";
+
       background-image: url("../img/svg/filter-close.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -209,7 +215,7 @@
 
     content: "";
 
-    background-image: linear-gradient(to left, white 30px, transparent 40px);
+    background-image: linear-gradient(to left, #f9f9fa 15%, transparent 20%);
   }
 
   &::after {
