@@ -58,14 +58,7 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
-      imagemin.svgo({
-        plugins: [
-          { cleanupIDs: false },
-          { removeViewBox: false },
-          { convertPathData: false },
-          { mergePaths: false },
-        ],
-      })
+      imagemin.svgo()
     ]))
 
     .pipe(gulp.dest("source/img"));
@@ -74,7 +67,10 @@ gulp.task("images", function () {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({ quality: 90 }))
+    .pipe(webp({
+      quality: 90,
+      method: 6
+    }))
     .pipe(gulp.dest("build/img/"));
 });
 

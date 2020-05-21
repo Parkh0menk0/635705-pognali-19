@@ -15,9 +15,9 @@
 
 <body>
 
-  <object type="image/svg+xml" data="img/sprite_auto.svg" style="display: none;">
-    Your browser does not support SVG
-  </object>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
 
   <!-- Шапка -->
   <header class="header">
@@ -156,8 +156,8 @@
                     <p class="country__content">Джунгли зовут!</p>
                     <a class="country__flag" href="asia/thailand.html">
                       <span class="visually-hidden">Таиланд</span>
-                      <svg role="img" viewBox="0 0 71 48" width="35" height="24">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-thailand" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-thailand" x="0" y="0"></use>
                       </svg>
                     </a>
                   </div>
@@ -186,8 +186,8 @@
                     <p class="country__content">Трэ бьен, манифик!</p>
                     <a class="country__flag" href="europe/france.html">
                       <span class="visually-hidden">Фпанция</span>
-                      <svg role="img" viewBox="0 0 71 48" width="35" height="24">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-france" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-france" x="0" y="0"></use>
                       </svg>
                     </a>
                   </div>
@@ -216,8 +216,8 @@
                     <p class="country__content">Закоулки старой Европы</p>
                     <a class="country__flag" href="europe/czech.html">
                       <span class="visually-hidden">Чехия</span>
-                      <svg role="img" viewBox="0 0 71 48" width="35" height="24">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-czech" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-czech" x="0" y="0"></use>
                       </svg>
                     </a>
                   </div>
@@ -275,24 +275,24 @@
                   <li class="traveler-preview__item">
                     <a class="traveler-preview__country" href="island/srilanka.html">
                       <span class="visually-hidden">Шри Ланка</span>
-                      <svg role="img" width="35" height="24" viewBox="0 0 71 48">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-sri-lanka" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-sri-lanka" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="traveler-preview__item">
                     <a class="traveler-preview__country" href="asia/thailand.html">
                       <span class="visually-hidden">Таиланд</span>
-                      <svg role="img" width="35" height="24" viewBox="0 0 71 48">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-thailand" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-thailand" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="traveler-preview__item">
                     <a class="traveler-preview__country" href="island/seychelles.html">
                       <span class="visually-hidden">Сейшелы</span>
-                      <svg role="img" width="35" height="24" viewBox="0 0 71 48">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-seychelles" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-seychelles" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -302,8 +302,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Авиаперелёт</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--plane" role="img"
-                        width="19" height="21" viewBox="0 0 19 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                        width="19" height="21">
+                        <use xlink:href="#icon-plane" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -311,8 +311,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Автотранспорт</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--bus" role="img"
-                        width="17" height="21" viewBox="0 0 17 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                        width="17" height="21">
+                        <use xlink:href="#icon-bus" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -320,8 +320,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Велосипед</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--bike" role="img"
-                        width="24" height="21" viewBox="0 0 24 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                        width="24" height="21">
+                        <use xlink:href="#icon-bike" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -329,8 +329,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Пешком</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--run" role="img"
-                        width="20" height="21" viewBox="0 0 20 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-run" x="0" y="0"></use>
+                        width="20" height="21">
+                        <use xlink:href="#icon-run" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -339,19 +339,11 @@
               <div class="traveler-preview__top">
                 <a class="traveler-preview__picture" href="profile.html">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1320px)"
-                      srcset="img/travellers/firsova-desktop@1x.webp 1x, img/travellers/firsova-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/travellers/firsova-tablet@1x.webp 1x, img/travellers/firsova-tablet@2x.webp 2x">
                     <source type="image/webp"
-                      srcset="img/travellers/firsova-mobile@1x.webp 1x, img/travellers/firsova-mobile@2x.webp 2x">
+                      srcset="img/travellers/firsova-desktop@1x.webp 1x, img/travellers/firsova-desktop@2x.webp 2x">
 
-                    <source media="(min-width: 1320px)"
-                      srcset="img/travellers/firsova-desktop@1x.jpg, img/travellers/firsova-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/travellers/firsova-tablet@1x.jpg, img/travellers/firsova-tablet@2x.jpg 2x">
-                    <img class="traveler-preview__img" src="img/travellers/firsova-mobile@1x.jpg"
-                      srcset="img/travellers/firsova-mobile@2x.jpg 2x" alt="Таня Фирсова" width="270" height="270">
+                    <img class="traveler-preview__img" src="img/travellers/firsova-desktop@1x.jpg"
+                      srcset="img/travellers/firsova-desktop@2x.jpg 2x" alt="Таня Фирсова" width="270" height="270">
                   </picture>
                 </a>
                 <div class="traveler-preview__level">
@@ -385,16 +377,16 @@
                   <li class="traveler-preview__item">
                     <a class="traveler-preview__country" href="europe/belgium.html">
                       <span class="visually-hidden">Бельгия></span>
-                      <svg role="img" width="35" height="24" viewBox="0 0 71 48">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-belgium" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-belgium" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="traveler-preview__item">
                     <a class="traveler-preview__country" href="europe/czech.html">
                       <span class="visually-hidden">Чехия</span>
-                      <svg role="img" width="35" height="24" viewBox="0 0 71 48">
-                        <use xlink:href="img/sprite_auto.svg#icon-flag-czech" x="0" y="0"></use>
+                      <svg role="img" width="35" height="24">
+                        <use xlink:href="#icon-flag-czech" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -404,8 +396,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Авиаперелёт</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--plane" role="img"
-                        width="19" height="21" viewBox="0 0 19 21" xml:space="preserve">
-                        <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                        width="19" height="21" xml:space="preserve">
+                        <use xlink:href="#icon-plane" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -413,8 +405,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Автотранспорт</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--bus" role="img"
-                        width="17" height="21" viewBox="0 0 17 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                        width="17" height="21">
+                        <use xlink:href="#icon-bus" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -422,8 +414,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Велосипед</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--bike" role="img"
-                        width="24" height="21" viewBox="0 0 24 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                        width="24" height="21">
+                        <use xlink:href="#icon-bike" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -431,8 +423,8 @@
                     <a class="traveler-preview__vehicle" href="#">
                       <span class="visually-hidden">Пешком</span>
                       <svg class="traveler-preview__vehicle-icon traveler-preview__vehicle-icon--run" role="img"
-                        width="20" height="21" viewBox="0 0 20 21">
-                        <use xlink:href="img/sprite_auto.svg#icon-run" x="0" y="0"></use>
+                        width="20" height="21">
+                        <use xlink:href="#icon-run" x="0" y="0"></use>
                       </svg>
                     </a>
                   </li>
@@ -441,19 +433,11 @@
               <div class="traveler-preview__top">
                 <a class="traveler-preview__picture" href="profile.html">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1320px)"
-                      srcset="img/travellers/demin-desktop@1x.webp 1x, img/travellers/demin-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/travellers/demin-tablet@1x.webp 1x, img/travellers/demin-tablet@2x.webp 2x">
                     <source type="image/webp"
-                      srcset="img/travellers/demin-mobile@1x.webp 1x, img/travellers/demin-mobile@2x.webp 2x">
+                      srcset="img/travellers/demin-desktop@1x.webp 1x, img/travellers/demin-desktop@2x.webp 2x">
 
-                    <source media="(min-width: 1320px)"
-                      srcset="img/travellers/demin-desktop@1x.jpg, img/travellers/demin-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/travellers/demin-tablet@1x.jpg, img/travellers/demin-tablet@2x.jpg 2x">
-                    <img class="traveler-preview__img" src="img/travellers/demin-mobile@1x.jpg"
-                      srcset="img/travellers/demin-mobile@2x.jpg 2x" alt="Петя Дёмин" width="270" height="270">
+                    <img class="traveler-preview__img" src="img/travellers/demin-desktop@1x.jpg"
+                      srcset="img/travellers/demin-desktop@2x.jpg 2x" alt="Петя Дёмин" width="270" height="270">
                   </picture>
                 </a>
                 <div class="traveler-preview__level">
@@ -530,9 +514,8 @@
           <a class="feedback__address contact-item"
             href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19%2F8,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+191186/@59.9387165,30.3208587,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474">
             <p class="contact-item__wrapper">
-              <svg class="contact-item__icon contact-item__icon--path" role="img" width="14" height="22"
-                viewBox="0 0 28 43">
-                <use xlink:href="img/sprite_auto.svg#icon-contacts-location" x="0" y="0"></use>
+              <svg class="contact-item__icon contact-item__icon--path" role="img" width="14" height="22">
+                <use xlink:href="#icon-contacts-location" x="0" y="0"></use>
               </svg>
             </p>
             <span class="contact-item__text">ул. Большая Конюшенная, 19/8</span>
