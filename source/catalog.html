@@ -15,9 +15,9 @@
 
 <body>
 
-  <object type="image/svg+xml" data="img/sprite_auto.svg" style="display: none;">
-    Your browser does not support SVG
-  </object>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
 
   <!-- Шапка -->
   <header class="header header--inner">
@@ -695,7 +695,7 @@
                     <input class="visually-hidden" type="checkbox" name="plane" checked>
                     <svg class="field-checkbox__vehicle-icon field-checkbox__vehicle-icon--plane" role="img" width="14"
                       height="16" viewBox="0 0 19 21">
-                      <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                      <use xlink:href="#icon-plane" x="0" y="0"></use>
                     </svg>
                   </label>
                 </li>
@@ -705,7 +705,7 @@
                     <input class="visually-hidden" type="checkbox" name="car" checked>
                     <svg class="field-checkbox__vehicle-icon field-checkbox__vehicle-icon--bus" role="img" width="13"
                       height="16" viewBox="0 0 17 21">
-                      <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                      <use xlink:href="#icon-bus" x="0" y="0"></use>
                     </svg>
                   </label>
                 </li>
@@ -715,7 +715,7 @@
                     <input class="visually-hidden" type="checkbox" name="bicycle">
                     <svg class="field-checkbox__vehicle-icon field-checkbox__vehicle-icon--bike" role="img" width="19"
                       height="17" viewBox="0 0 24 21">
-                      <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                      <use xlink:href="#icon-bike" x="0" y="0"></use>
                     </svg>
                   </label>
                 </li>
@@ -725,7 +725,7 @@
                     <input class="visually-hidden" type="checkbox" name="walk" checked>
                     <svg class="field-checkbox__vehicle-icon field-checkbox__vehicle-icon--run" role="img" width="15"
                       height="17" viewBox="0 0 20 21">
-                      <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                      <use xlink:href="#icon-bike" x="0" y="0"></use>
                     </svg>
                   </label>
                 </li>
@@ -814,7 +814,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="island/srilanka.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-sri-lanka" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-sri-lanka" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Шри-Ланка</p>
@@ -822,7 +822,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="asia/thailand.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-thailand" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-thailand" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Таиланд</p>
@@ -830,7 +830,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="island/seychelles.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-seychelles" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-seychelles" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Сейшелы</p>
@@ -846,7 +846,7 @@
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
                               width="14" height="16" viewBox="0 0 19 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                              <use xlink:href="#icon-plane" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -855,7 +855,7 @@
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
                               width="13" height="16" viewBox="0 0 17 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                              <use xlink:href="#icon-bus" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -864,7 +864,7 @@
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
                               width="19" height="17" viewBox="0 0 24 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -873,7 +873,7 @@
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
                               width="15" height="17" viewBox="0 0 20 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -950,7 +950,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="europe/belgium.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-belgium" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-belgium" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Бельгия</p>
@@ -958,7 +958,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="europe/czech.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-czech" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-czech" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Чехия</p>
@@ -974,7 +974,7 @@
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
                               width="14" height="16" viewBox="0 0 19 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                              <use xlink:href="#icon-plane" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -983,7 +983,7 @@
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
                               width="13" height="16" viewBox="0 0 17 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                              <use xlink:href="#icon-bus" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -992,7 +992,7 @@
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
                               width="19" height="17" viewBox="0 0 24 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1001,7 +1001,7 @@
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
                               width="15" height="17" viewBox="0 0 20 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1078,7 +1078,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="america/usa.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-usa" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-usa" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">США</p>
@@ -1086,7 +1086,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="island/australia.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-australia" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-australia" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Австралия</p>
@@ -1094,7 +1094,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="island/dominica.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-dominica" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-dominica" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Доминика</p>
@@ -1110,7 +1110,7 @@
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
                               width="14" height="16" viewBox="0 0 19 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                              <use xlink:href="#icon-plane" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1119,7 +1119,7 @@
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
                               width="13" height="16" viewBox="0 0 17 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                              <use xlink:href="#icon-bus" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1128,7 +1128,7 @@
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
                               width="19" height="17" viewBox="0 0 24 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1137,7 +1137,7 @@
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
                               width="15" height="17" viewBox="0 0 20 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1213,7 +1213,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="europe/england.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-united-kingdom" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-united-kingdom" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Великобритания</p>
@@ -1221,7 +1221,7 @@
                       <li class="traveler-invite__item">
                         <a class="traveler-invite__country" href="europe/germany.html">
                           <svg role="img" width="26" height="18" viewBox="0 0 71 48">
-                            <use xlink:href="img/sprite_auto.svg#icon-flag-germany" x="0" y="0"></use>
+                            <use xlink:href="#icon-flag-germany" x="0" y="0"></use>
                           </svg>
                         </a>
                         <p class="traveler-invite__description">Германия</p>
@@ -1237,7 +1237,7 @@
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
                               width="14" height="16" viewBox="0 0 19 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-plane" x="0" y="0"></use>
+                              <use xlink:href="#icon-plane" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1246,7 +1246,7 @@
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
                               width="13" height="16" viewBox="0 0 17 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bus" x="0" y="0"></use>
+                              <use xlink:href="#icon-bus" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1255,7 +1255,7 @@
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
                               width="19" height="17" viewBox="0 0 24 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
@@ -1264,7 +1264,7 @@
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
                               width="15" height="17" viewBox="0 0 20 21">
-                              <use xlink:href="img/sprite_auto.svg#icon-bike" x="0" y="0"></use>
+                              <use xlink:href="#icon-bike" x="0" y="0"></use>
                             </svg>
                           </a>
                         </li>
