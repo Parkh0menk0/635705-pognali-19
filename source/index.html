@@ -540,7 +540,17 @@
   </main>
 
   <!-- Подвал -->
-  @@include('./_include/_footer.html')
+  <footer class="footer footer--inner">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        @@include('./_include/_footer__logo--blue.html')
+      </a>
+      <ul class="footer__social social">
+        @@include('./_include/_social__item.html')
+      </ul>
+      @@include('./_include/_copyright.html')
+    </div>
+  </footer>
 
   <section class="modal business-rates">
     <div class="business-rates__content">

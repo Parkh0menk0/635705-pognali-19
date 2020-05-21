@@ -23,7 +23,7 @@
   <header class="header header--inner">
     <nav class="main-nav main-nav--inner main-nav--nojs">
       <div class="main-nav__wrapper">
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           @@include('./_include/_main-nav__logo.html')
         </a>
         <div class="main-nav__menu">
@@ -562,7 +562,17 @@
   </main>
 
   <!-- Подвал -->
-  @@include('./_include/_footer.html')
+  <footer class="footer footer--inner">
+    <div class="footer__wrapper">
+      <a class="footer__logo" href="index.html">
+        @@include('./_include/_footer__logo--blue.html')
+      </a>
+      <ul class="footer__social social">
+        @@include('./_include/_social__item.html')
+      </ul>
+      @@include('./_include/_copyright.html')
+    </div>
+  </footer>
 
   <script src="js/main.min.js"></script>
 </body>
