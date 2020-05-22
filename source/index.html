@@ -22,7 +22,7 @@
   <!-- Шапка -->
   <header class="header">
     <nav class="main-nav main-nav--nojs">
-      <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper main-nav__wrapper--no-scroll">
         <a class="main-nav__logo">
           @@include('./_include/_main-nav__logo.html')
         </a>
@@ -54,12 +54,19 @@
             </div>
           </div>
         </div>
-        @@include('./_include/_main-nav__contacts.html')
+        <div class="main-nav__contacts">
+          @@include('./_include/_topmenu.html')
+          <a class="main-nav__btn btn" href="#">Авторизация</a>
+        </div>
       </div>
     </nav>
     <div class="header__content">
       <div class="header__wrapper">
         <h1 class="header__title">В путешествие с&nbsp;крутыми попутчиками!</h1>
+        <div class="header__contacts">
+          @@include('./_include/_topmenu.html')
+          <a class="header__btn btn" href="#">Авторизация</a>
+        </div>
         <div class="header__picture">
           <picture>
             <source type="image/webp" media="(min-width: 1320px)"

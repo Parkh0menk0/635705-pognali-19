@@ -6,7 +6,6 @@
   flex-direction: row;
 
   margin-bottom: -30px;
-  padding-top: 27px;
   padding-bottom: 39px;
 
   border-bottom-right-radius: 30px;
@@ -42,7 +41,6 @@
 
 .header--inner {
   margin-bottom: -15px;
-  padding-top: 19px;
   padding-bottom: 9px;
 
   border-bottom-right-radius: 20px;
@@ -86,6 +84,7 @@
 
 .header__content {
   width: 100%;
+  margin-top: 94px;
 }
 
 .header__wrapper {
@@ -107,11 +106,30 @@
 
   max-width: 270px;
   margin: 0;
-  margin-bottom: 312px;
+  margin-bottom: 244px;
 
   text-align: center;
 
   color: white;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  margin: auto;
+
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin-bottom: 27px;
+}
+
+.header__btn {
+  padding: 7px 6px 3px;
+  width: 189px;
 }
 
 .header__link {
@@ -159,6 +177,7 @@
   position: absolute;
   top: 129px;
   right: 15%;
+  z-index: -1;
 }
 
 .header__img {
@@ -190,7 +209,6 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    padding-top: 40px;
     padding-bottom: 96px;
     margin-bottom: -60px;
 
@@ -243,6 +261,11 @@
   .header__content {
     width: 100%;
     margin: 0;
+    margin-top: 163px;
+  }
+
+  .header--inner .header__content {
+    margin-top: 218px;
   }
 
   .header__wrapper {
@@ -260,8 +283,12 @@
     margin-bottom: 85px;
   }
 
+  .header__contacts {
+    display: none;
+  }
+
   .header__picture {
-    top: 240px;
+    top: 403px;
     right: 10%;
   }
 
@@ -284,7 +311,6 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    padding-top: 47px;
     padding-bottom: 123px;
 
     border-bottom-right-radius: 60px;
@@ -301,8 +327,8 @@
   }
 
   .header--inner {
-    padding-bottom: 59px;
     background-image: none;
+    padding-bottom: 59px;
   }
 
   .header--inner .header__wrapper {
@@ -323,10 +349,19 @@
     align-items: flex-start;
   }
 
+  .header__content {
+    margin-top: 209px;
+  }
+
+  .header--inner .header__content {
+    margin-top: 218px;
+  }
+
   .header__title {
-    text-align: left;
     max-width: 470px;
     margin-left: 66px;
+
+    text-align: left;
   }
 
   .header__picture {
