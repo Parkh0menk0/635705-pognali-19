@@ -249,7 +249,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    width: 100%;
     margin: 0;
   }
 
@@ -290,10 +290,9 @@
   }
 
   .main-nav__wrapper {
-    width: 100%;
+    width: 89.6%;
     max-width: 1320px; /* 1320px / .90 ~= 1188px (центровка начнётся чуть раньше 1440px) */
     margin: 0 auto;
-    margin-bottom: 73px;
     padding: 40px 0;
 
     align-items: center;
