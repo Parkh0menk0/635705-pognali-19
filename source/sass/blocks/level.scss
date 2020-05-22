@@ -214,13 +214,16 @@
 }
 
 @media (min-width: $desktop-width) {
-  .level--big {
-    .level__number {
-      color: white;
-    }
+  .level--big .level__number {
+    color: white;
+  }
 
-    .level__description {
-      color: white;
-    }
+  .level--big .level__description {
+    color: white;
+  }
+
+  .level--big .level__text {
+    padding-top: 2px;
+    right: 8px;
   }
 }
