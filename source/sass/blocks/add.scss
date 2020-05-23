@@ -360,6 +360,10 @@
       background-repeat: no-repeat;
       background-position: 0 0;
     }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   .add__prev-step {

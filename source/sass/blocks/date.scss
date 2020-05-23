@@ -155,6 +155,7 @@
 
   &:focus {
     border-color: $dark-two;
+    outline: none;
 
     & + .date__btn {
       svg {
