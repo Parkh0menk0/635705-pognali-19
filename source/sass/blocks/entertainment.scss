@@ -193,7 +193,7 @@
   }
 
   .entertainment textarea {
-    padding: 17px;
+    padding: 17px 35px 17px 17px;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -207,11 +207,11 @@
 @media (min-width: $desktop-width) {
   .entertainment__lead {
     max-width: 530px;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
 
   .entertainment__list {
-    margin-right: 115px;
+    margin-right: 116px;
 
     &::before {
       right: 110px;
@@ -226,11 +226,11 @@
   }
 
   .entertainment__label {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
   }
 
   .entertainment textarea {
     width: 82.5%;
-    padding: 24px;
+    padding: 24px 20px 24px 24px;
   }
 }

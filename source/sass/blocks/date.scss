@@ -1,6 +1,10 @@
 .date__lead {
   margin: 0;
   margin-bottom: 21px;
+
+  br {
+    display: none;
+  }
 }
 
 .date__fields {
@@ -310,6 +314,10 @@
   .date__lead {
     max-width: 589px;
     margin-bottom: 54px;
+
+    br {
+      display: block;
+    }
   }
 
   .date__fields {
