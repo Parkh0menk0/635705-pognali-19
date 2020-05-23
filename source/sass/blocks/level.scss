@@ -211,6 +211,11 @@
   .level--big .level__progress {
     font-size: 234px;
   }
+
+  .level--big .level__text {
+    padding-top: 5px;
+    right: 8px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -224,6 +229,5 @@
 
   .level--big .level__text {
     padding-top: 2px;
-    right: 8px;
   }
 }

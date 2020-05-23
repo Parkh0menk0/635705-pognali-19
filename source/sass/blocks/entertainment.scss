@@ -90,6 +90,7 @@
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
   background-color: transparent;
+  white-space: inherit;
 }
 
 .entertainment__country {
@@ -206,7 +207,7 @@
 @media (min-width: $desktop-width) {
   .entertainment__lead {
     max-width: 530px;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   .entertainment__list {
@@ -222,6 +223,10 @@
       top: 16px;
       right: 103px;
     }
+  }
+
+  .entertainment__label {
+    margin-bottom: 28px;
   }
 
   .entertainment textarea {

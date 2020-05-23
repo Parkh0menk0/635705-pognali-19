@@ -94,7 +94,7 @@
   flex-wrap: wrap;
 
   margin-bottom: 10px;
-  padding: 24px 20px 6px;
+  padding: 24px 20px 7px;
 
   color: $dark-slate-blue;
   border-radius: 10px;
@@ -169,7 +169,7 @@
   align-items: flex-start;
 }
 
-.add__link {
+.add__next-step {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -190,10 +190,6 @@
   border-radius: 60px;
   background-color: $light-gold;
 
-  &--back {
-    background-color: transparent;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -204,6 +200,35 @@
 
   &:active {
     color: rgba($dark-two, 0.3);
+  }
+}
+
+.add__prev-step {
+  width: 100%;
+  padding: 7px 23px 3px;
+  text-transform: uppercase;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+
+  text-align: center;
+  letter-spacing: normal;
+
+  color: $dark-two;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -304,7 +329,8 @@
     align-items: center;
   }
 
-  .add__link {
+  .add__next-step {
+    position: relative;
     font-size: 24px;
     line-height: 1;
     margin-bottom: 0;
@@ -318,10 +344,48 @@
 
     align-self: flex-start;
 
-    &--back {
-      padding: 0;
-      width: auto;
-      align-self: center;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 37px;
+      bottom: 0;
+
+      width: 10px;
+      height: 14px;
+      margin: auto;
+
+      content: "";
+
+      background-image: url("../img/svg/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  .add__prev-step {
+    position: relative;
+    font-size: 24px;
+    line-height: 1;
+    padding: 4px;
+    width: auto;
+    padding: 0;
+    text-transform: none;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -32px;
+      bottom: 0;
+
+      width: 10px;
+      height: 14px;
+      margin: auto;
+
+      content: "";
+
+      background-image: url("../img/svg/triangle-arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
     }
   }
 }
