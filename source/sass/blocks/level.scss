@@ -62,6 +62,8 @@
   }
 
   .level__number {
+    margin-bottom: auto;
+
     &::before {
       display: none;
     }
@@ -185,6 +187,13 @@
 
     .level__number {
       margin-bottom: 0;
+      position: relative;
+
+      &::before {
+        display: block;
+
+        height: 1px;
+      }
     }
 
     .level__description {
