@@ -4,7 +4,7 @@
 
   const burger = document.querySelector('.main-nav__toggle');
   const nav = document.querySelector('.main-nav');
-  const panel = document.querySelector('.main-nav__wrapper');
+  const panel = document.querySelector('.main-nav__fixed');
 
   if (burger && nav) {
 
@@ -16,12 +16,12 @@
 
     window.addEventListener('scroll', function () {
       if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
-        panel.classList.remove("main-nav__wrapper--no-scroll");
-        panel.classList.add("main-nav__wrapper--scroll");
+        panel.classList.remove("main-nav__fixed--no-scroll");
+        panel.classList.add("main-nav__fixed--scroll");
       }
       else {
-        panel.classList.remove("main-nav__wrapper--scroll");
-        panel.classList.add("main-nav__wrapper--no-scroll");
+        panel.classList.remove("main-nav__fixed--scroll");
+        panel.classList.add("main-nav__fixed--no-scroll");
       }
     });
   }
