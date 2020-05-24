@@ -696,7 +696,7 @@
             <div class="traveler-filter__fieldset traveler-filter__fieldset--vehicle">
               <h3 class="traveler-filter__legend traveler-filter__legend--open">Транспорт</h3>
               <ul class="traveler-filter__list traveler-filter__list--open" role="listbox">
-                <li role="option" data-tooltip="Авиаперелёт">
+                <li role="option" data-tooltip="Авиаперелёт" data-flow="down">
                   <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Авиаперелёт</span>
                     <input class="visually-hidden" type="checkbox" name="plane" checked>
@@ -706,7 +706,7 @@
                     </svg>
                   </label>
                 </li>
-                <li role="option" data-tooltip="Автотранспорт">
+                <li role="option" data-tooltip="Автотранспорт" data-flow="down">
                   <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Автотранспорт</span>
                     <input class="visually-hidden" type="checkbox" name="car" checked>
@@ -716,7 +716,7 @@
                     </svg>
                   </label>
                 </li>
-                <li role="option" data-tooltip="Велосипед">
+                <li role="option" data-tooltip="Велосипед" data-flow="down">
                   <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Велосипед</span>
                     <input class="visually-hidden" type="checkbox" name="bicycle">
@@ -726,7 +726,7 @@
                     </svg>
                   </label>
                 </li>
-                <li role="option" data-tooltip="Пешком">
+                <li role="option" data-tooltip="Пешком" data-flow="down">
                   <label class="field-checkbox field-checkbox--vehicle">
                     <span class="visually-hidden">Пешком</span>
                     <input class="visually-hidden" type="checkbox" name="walk" checked>
@@ -818,7 +818,7 @@
                   <div class="traveler-invite__visit">
                     <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
                     <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Шри-Ланка" data-flow="down">
                         <a class="traveler-invite__country" href="island/srilanka.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-sri-lanka" x="0" y="0"></use>
@@ -826,7 +826,7 @@
                         </a>
                         <p class="traveler-invite__description">Шри-Ланка</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Таиланд" data-flow="down">
                         <a class="traveler-invite__country" href="asia/thailand.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-thailand" x="0" y="0"></use>
@@ -834,7 +834,7 @@
                         </a>
                         <p class="traveler-invite__description">Таиланд</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Сейшелы" data-flow="down">
                         <a class="traveler-invite__country" href="island/seychelles.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-seychelles" x="0" y="0"></use>
@@ -848,7 +848,8 @@
                     <div class="traveler-invite__vehicle">
                       <h4 class="traveler-invite__subtitle">транспорт:</h4>
                       <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
@@ -857,7 +858,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                        <li class="traveler-invite__item" data-tooltip="Автотранспорт" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
@@ -866,7 +867,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
+                        <li class="traveler-invite__item" data-tooltip="Велосипед" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
@@ -875,7 +876,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
+                        <li class="traveler-invite__item" data-tooltip="Пешком" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
@@ -954,7 +955,7 @@
                   <div class="traveler-invite__visit">
                     <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
                     <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Бельгия" data-flow="down">
                         <a class="traveler-invite__country" href="europe/belgium.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-belgium" x="0" y="0"></use>
@@ -962,7 +963,7 @@
                         </a>
                         <p class="traveler-invite__description">Бельгия</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Чехия" data-flow="down">
                         <a class="traveler-invite__country" href="europe/czech.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-czech" x="0" y="0"></use>
@@ -976,7 +977,8 @@
                     <div class="traveler-invite__vehicle">
                       <h4 class="traveler-invite__subtitle">транспорт:</h4>
                       <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
@@ -985,7 +987,8 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Автотранспорт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Автотранспорт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
@@ -994,7 +997,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
+                        <li class="traveler-invite__item" data-tooltip="Велосипед" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
@@ -1003,7 +1006,8 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Пешком">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Пешком"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
@@ -1082,7 +1086,7 @@
                   <div class="traveler-invite__visit">
                     <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
                     <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="США" data-flow="down">
                         <a class="traveler-invite__country" href="america/usa.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-usa" x="0" y="0"></use>
@@ -1090,7 +1094,7 @@
                         </a>
                         <p class="traveler-invite__description">США</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Австралия" data-flow="down">
                         <a class="traveler-invite__country" href="island/australia.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-australia" x="0" y="0"></use>
@@ -1098,7 +1102,7 @@
                         </a>
                         <p class="traveler-invite__description">Австралия</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Доминика" data-flow="down">
                         <a class="traveler-invite__country" href="island/dominica.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-dominica" x="0" y="0"></use>
@@ -1112,7 +1116,8 @@
                     <div class="traveler-invite__vehicle">
                       <h4 class="traveler-invite__subtitle">транспорт:</h4>
                       <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
@@ -1121,7 +1126,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Автотранспорт">
+                        <li class="traveler-invite__item" data-tooltip="Автотранспорт" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
@@ -1130,7 +1135,8 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Велосипед">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Велосипед"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
@@ -1139,7 +1145,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
+                        <li class="traveler-invite__item" data-tooltip="Пешком" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"
@@ -1217,7 +1223,7 @@
                   <div class="traveler-invite__visit">
                     <h4 class="traveler-invite__subtitle">хочет посетить:</h4>
                     <ul class="traveler-invite__list traveler-invite__list--wishes">
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Великобритания" data-flow="down">
                         <a class="traveler-invite__country" href="europe/england.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-united-kingdom" x="0" y="0"></use>
@@ -1225,7 +1231,7 @@
                         </a>
                         <p class="traveler-invite__description">Великобритания</p>
                       </li>
-                      <li class="traveler-invite__item">
+                      <li class="traveler-invite__item" data-tooltip="Германия" data-flow="down">
                         <a class="traveler-invite__country" href="europe/germany.html">
                           <svg role="img" width="26" height="18">
                             <use xlink:href="#icon-flag-germany" x="0" y="0"></use>
@@ -1239,7 +1245,8 @@
                     <div class="traveler-invite__vehicle">
                       <h4 class="traveler-invite__subtitle">транспорт:</h4>
                       <ul class="traveler-invite__list traveler-invite__list--preferred">
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Авиаперелёт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Авиаперелёт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--plane" role="img"
@@ -1248,7 +1255,8 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Автотранспорт">
+                        <li class="traveler-invite__item traveler-invite__item--active" data-tooltip="Автотранспорт"
+                          data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Автотранспорт</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bus" role="img"
@@ -1257,7 +1265,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Велосипед">
+                        <li class="traveler-invite__item" data-tooltip="Велосипед" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Велосипед</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--bike" role="img"
@@ -1266,7 +1274,7 @@
                             </svg>
                           </a>
                         </li>
-                        <li class="traveler-invite__item" data-tooltip="Пешком">
+                        <li class="traveler-invite__item" data-tooltip="Пешком" data-flow="down">
                           <a class="traveler-invite__link" href="#">
                             <span class="visually-hidden">Пешком</span>
                             <svg class="traveler-invite__vehicle-icon traveler-invite__vehicle-icon--run" role="img"

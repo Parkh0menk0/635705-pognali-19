@@ -1,3 +1,7 @@
+.drop-down {
+  background-color: white;
+}
+
 .drop-down__wrapper {
   padding: 0 25px;
 }
@@ -45,6 +49,10 @@
 /* Desktop styles */
 
 @media (min-width: $desktop-width) {
+  .drop-down {
+    background-color: transparent;
+  }
+
   .drop-down__wrapper {
     width: 100%;
     padding: 0;
