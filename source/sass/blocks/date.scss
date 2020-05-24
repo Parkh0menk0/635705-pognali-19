@@ -1,6 +1,10 @@
 .date__lead {
   margin: 0;
   margin-bottom: 21px;
+
+  br {
+    display: none;
+  }
 }
 
 .date__fields {
@@ -100,10 +104,9 @@
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 8px;
-
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .date__title span {
@@ -118,13 +121,22 @@
 
   color: $dark-slate-blue;
 
+  &:first-child {
+    margin-bottom: 8px;
+    order: 1;
+  }
+
   &:last-child {
+    order: 2;
     color: rgba($dark-slate-blue, 0.3);
   }
 }
 
 .date__input {
+  margin: 0;
+  order: 3;
   position: relative;
+  width: 100%;
 }
 
 .date__input input {
@@ -146,27 +158,25 @@
   &:hover {
     border-color: $bluey-grey;
 
-    & + .date__btn {
-      svg {
-        fill: $bluey-grey;
-      }
+    & + .date__btn--minus,
+    & + .date__btn--plus {
+      opacity: 0.3;
     }
   }
 
   &:focus {
     border-color: $dark-two;
+    outline: none;
 
-    & + .date__btn {
-      svg {
-        fill: $dark-two;
-      }
+    & + .date__btn--minus,
+    & + .date__btn--plus {
+      opacity: 1;
     }
   }
 }
 
 .date__btn {
-  @include btn-res;
-
+  overflow: hidden;
   position: absolute;
   top: 0;
 
@@ -174,6 +184,7 @@
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.2;
 
   &--minus {
     left: 0;
@@ -187,16 +198,13 @@
     background-size: 14px 14px;
   }
 
-  &:hover {
-    svg {
-      fill: rgba($greyish-brown, 0.4);
-    }
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
   &:active {
-    svg {
-      fill: rgba($greyish-brown, 0.1);
-    }
+    opacity: 0.1;
   }
 }
 
@@ -236,14 +244,11 @@
     margin-bottom: 34px;
   }
 
-  .date__title {
-    margin-bottom: 24px;
-  }
-
   .date__title span {
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
+    margin-bottom: 24px;
   }
 
   .date__lead {
@@ -309,6 +314,10 @@
   .date__lead {
     max-width: 589px;
     margin-bottom: 54px;
+
+    br {
+      display: block;
+    }
   }
 
   .date__fields {
@@ -351,14 +360,17 @@
   }
 
   .date__title {
-    display: contents;
+    align-items: center;
   }
 
   .date__title span {
+    margin-bottom: 0;
+
     &:first-child {
       width: 205px;
       order: 1;
       margin-right: 15px;
+      margin-bottom: 0;
     }
 
     &:last-child {
@@ -369,6 +381,7 @@
 
   .date__input {
     order: 2;
+    width: auto;
   }
 
   .date__input input {

@@ -79,7 +79,8 @@
 }
 
 .entertainment textarea {
-  line-height: 1.3;
+  position: relative;
+  line-height: 1.4;
 
   width: 100%;
   height: 220px;
@@ -90,6 +91,49 @@
   border: 1px solid $cloudy-blue;
   border-radius: 4px;
   background-color: transparent;
+  white-space: inherit;
+  color: rgba(68, 68, 68, 0.3);
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $dark-two;
+
+    &::placeholder {
+      color: $greyish-brown;
+    }
+  }
+
+  &:focus:invalid {
+    border-color: red;
+  }
+
+  &:focus:invalid::after {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+
+    position: absolute;
+
+    width: 100%;
+    height: 57px;
+
+    content: "Это поле должно быть заполнено";
+    text-align: left;
+    letter-spacing: normal;
+
+    color: red;
+    background-color: #f47e7e;
+  }
 }
 
 .entertainment__country {
@@ -192,7 +236,7 @@
   }
 
   .entertainment textarea {
-    padding: 17px;
+    padding: 17px 35px 17px 17px;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -210,7 +254,7 @@
   }
 
   .entertainment__list {
-    margin-right: 115px;
+    margin-right: 116px;
 
     &::before {
       right: 110px;
@@ -224,8 +268,12 @@
     }
   }
 
+  .entertainment__label {
+    margin-bottom: 29px;
+  }
+
   .entertainment textarea {
     width: 82.5%;
-    padding: 24px;
+    padding: 24px 20px 24px 24px;
   }
 }

@@ -16,6 +16,10 @@
   margin-bottom: 30px;
 }
 
+.drop-down__contacts span {
+  color: $dark-blue-grey;
+}
+
 .drop-down__social {
   @include list-reset;
   display: flex;
@@ -50,7 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .drop-down {
-    background-color: $dark-two;
+    background-color: transparent;
   }
 
   .drop-down__wrapper {

@@ -1,0 +1,156 @@
+.modal-rates {
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+
+  display: none;
+  overflow: auto; /* Enable scroll if needed */
+
+  width: 100%;
+  height: 100%;
+  padding-top: 100px; /* Location of the box */
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-rates--open {
+  display: block;
+}
+
+.modal-rates__content {
+  display: flex;
+  flex-direction: column;
+
+  width: 85%;
+  margin: auto;
+  padding: 33px 0 0;
+
+  border-radius: 23px;
+  background-color: white;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.modal-rates__title {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.modal-rates__list {
+  @include list-reset;
+
+  width: 81%;
+  margin-bottom: 34px;
+}
+
+.modal-rates__item {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 12px;
+  padding-bottom: 9px;
+
+  text-align: left;
+  letter-spacing: normal;
+
+  color: $greyish-brown;
+  border-top: 1px solid #f2f2f2;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &:last-child {
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+
+.modal-rates__btn {
+  @include btn-res;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+
+  display: block;
+
+  width: 100%;
+  padding: 19px 18px 17px;
+
+  text-align: center;
+  letter-spacing: normal;
+  text-transform: uppercase;
+
+  color: $dark-slate-blue;
+  border-bottom-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  background-color: #f3f4f8;
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+  }
+}
+
+/* Tablet styles */
+
+@media (min-width: $tablet-width) {
+  .modal-rates__content {
+    width: 90%;
+    padding: 52px 0 0;
+  }
+
+  .modal-rates__title {
+    margin: 0 0 46px;
+  }
+
+  .modal-rates__list {
+    width: 73%;
+
+    margin-bottom: 51px;
+  }
+
+  .modal-rates__item {
+    font-size: 22px;
+    line-height: 28px;
+
+    flex-direction: row;
+
+    padding-top: 14px;
+    padding-bottom: 13px;
+
+    justify-content: space-between;
+  }
+
+  .modal-rates__btn {
+    font-size: 24px;
+    line-height: 24px;
+
+    padding: 41px 40px 42px;
+
+    text-transform: none;
+  }
+}
+
+/* Desktop styles */
+
+@media (min-width: $desktop-width) {
+  .modal-rates__content {
+    padding: 50px 0 0;
+    width: 52%;
+  }
+
+  .modal-rates__list {
+    width: 84.5%;
+  }
+}

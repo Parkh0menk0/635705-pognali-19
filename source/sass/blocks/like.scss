@@ -8,19 +8,53 @@
 
 .like__btn {
   @include btn-res;
-  margin-right: 6px;
+
+  display: flex;
+
   width: 31px;
   height: 31px;
+  margin-right: 6px;
+
   border-radius: 50%;
-  background-image: url("../img/svg/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 13px 11px;
   background-color: $pale-grey;
 
-  &--active {
+  &:not(.like__btn--active):hover {
+    &::before {
+      opacity: 0.5;
+    }
+  }
+
+  &:not(.like__btn--active):active {
+    &::before {
+      opacity: 0.1;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    opacity: 0.3;
+    margin: auto;
+    width: 13px;
+    height: 11px;
+    background-image: url("../img/svg/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.like__btn--active {
+  background-color: $beige;
+
+  &::before {
     background-image: url("../img/svg/heart-active.svg");
-    background-color: $beige;
+    opacity: 1;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -38,10 +72,15 @@
   .like__btn {
     width: 50px;
     height: 50px;
-    background-size: 20px 17px;
+
+    &::before {
+      width: 20px;
+      height: 17px;
+    }
   }
 
   .like__count {
+    margin: 3px 0 0;
     font-size: 20px;
     line-height: 30px;
   }

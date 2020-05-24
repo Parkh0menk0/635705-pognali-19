@@ -75,6 +75,7 @@
 
 .calendar__day,
 .calendar__number {
+  user-select: none;
   height: 31px;
   font-size: 14px;
   font-weight: normal;
@@ -107,6 +108,11 @@
 }
 
 .calendar__number {
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+
   border: 1px solid $cloudy-blue;
   background-color: $pale-grey;
 
@@ -114,22 +120,35 @@
     color: $greyish-brown;
   }
 
-  &--current {
-    outline: 2px solid red;
-    outline-offset: -2px;
-  }
-
   &--active {
-    background-color: $dark-slate-blue;
+    background-color: #101d41;
 
     a {
       color: white;
     }
   }
 
-  &--not-available {
+  &--disabled {
+    cursor: not-allowed;
     background-color: transparent;
     opacity: 0.3;
+
+    a {
+      cursor: inherit;
+    }
+  }
+
+  &:not(.calendar__number--disabled):hover {
+    z-index: 2;
+
+    border-color: red;
+    outline: 4px solid red;
+    outline-offset: -3px;
+    background-color: $dark-slate-blue;
+
+    a {
+      color: white;
+    }
   }
 }
 
@@ -235,7 +254,8 @@
     }
   }
 
-  .calendar__number--mar {
+  .calendar__number--mar,
+  .calendar__number--apr {
     position: relative;
 
     &::after {
@@ -249,23 +269,7 @@
       line-height: 1.67;
       letter-spacing: 1.8px;
       text-align: left;
-    }
-  }
-
-  .calendar__number--apr {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      color: inherit;
-      content: "апр";
-      font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: 1.8px;
-      text-align: left;
+      left: 32px;
     }
   }
 }

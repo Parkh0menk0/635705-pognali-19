@@ -136,20 +136,30 @@
   }
 }
 
+.visit__item--choose {
+  &::before {
+    border: 1px solid #d6d9e6;
+    background-color: white;
+  }
+}
+
 .visit__item--add {
   &::before {
     position: absolute;
-    content: "";
+    z-index: 1;
+    top: 0;
+    right: 49px;
+    bottom: 0;
+
     width: 8px;
     height: 8px;
-    top: 0;
-    bottom: 0;
-    right: 49px;
-    z-index: 1;
     margin: auto;
+
+    content: "";
+
+    border: 1px solid #d6d9e6;
     border-radius: 50%;
-    border: 1px solid rgba($greyish-brown, 0.3);
-    background-color: transparent;
+    background-color: #edeff6;
   }
 }
 
@@ -173,14 +183,33 @@
 
     content: "";
 
-    opacity: 0.3;
+    opacity: 0.2;
     background-image: url("../img/svg/show-more-plus.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
+
+  &:hover {
+    border-color: transparent;
+    background-color: #dfe3f0;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+
+    &::after {
+      opacity: 0.1;
+    }
+  }
 }
 
 .visit__country {
+  @include btn-res;
+
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
@@ -230,10 +259,26 @@
 
     content: "";
 
-    opacity: 0.3;
+    opacity: 0.2;
     background-image: url("../img/svg/dropdown-form.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+
+  &:hover {
+    border-color: #959bb2;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+
+    &::after {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -319,7 +364,6 @@
 
   .visit__item {
     margin-bottom: 15px;
-    justify-content: space-between;
     align-items: center;
 
     &::before {
@@ -340,12 +384,6 @@
 
   .visit__item--open .visit__country {
     align-self: flex-start;
-  }
-
-  .visit__item--add {
-    &::before {
-      background-color: white;
-    }
   }
 
   .visit__item--add .visit__country {
@@ -376,6 +414,7 @@
 
   .visit__flag {
     margin-right: 40px;
+    margin-left: auto;
     width: 70px;
     height: 47px;
     border: none;
@@ -436,7 +475,7 @@
 
   .visit__item {
     &::before {
-      right: 220px;
+      right: 219px;
     }
   }
 
