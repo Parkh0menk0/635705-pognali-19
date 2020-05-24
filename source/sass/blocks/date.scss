@@ -104,10 +104,9 @@
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 8px;
-
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .date__title span {
@@ -121,14 +120,23 @@
   text-transform: uppercase;
 
   color: $dark-slate-blue;
+  margin-bottom: 8px;
+
+  &:first-child {
+    order: 1;
+  }
 
   &:last-child {
+    order: 2;
     color: rgba($dark-slate-blue, 0.3);
   }
 }
 
 .date__input {
+  margin: 0;
+  order: 3;
   position: relative;
+  width: 100%;
 }
 
 .date__input input {
@@ -241,14 +249,11 @@
     margin-bottom: 34px;
   }
 
-  .date__title {
-    margin-bottom: 24px;
-  }
-
   .date__title span {
     font-size: 20px;
     line-height: 0.9;
     letter-spacing: 2px;
+    margin-bottom: 24px;
   }
 
   .date__lead {
@@ -360,10 +365,12 @@
   }
 
   .date__title {
-    display: contents;
+    align-items: center;
   }
 
   .date__title span {
+    margin-bottom: 0;
+
     &:first-child {
       width: 205px;
       order: 1;
@@ -378,6 +385,7 @@
 
   .date__input {
     order: 2;
+    width: auto;
   }
 
   .date__input input {
