@@ -242,12 +242,12 @@
                       <span>Ищу попутчиков:</span>
                       <p class="date__input">
                         <input type="text" value="2">
-                        <span class="date__btn date__btn--minus">
+                        <button type="button" class="date__btn date__btn--minus">
                           <span class="visually-hidden">Уменьшить на одного</span>
-                        </span>
-                        <span class="date__btn date__btn--plus">
+                        </button>
+                        <button type="button" class="date__btn date__btn--plus">
                           <span class="visually-hidden">Увеличить на одного</span>
-                        </span>
+                        </button>
                       </p>
                       <span>Чел.</span>
                     </label>
@@ -257,12 +257,12 @@
                       <span>Длительность:</span>
                       <p class="date__input">
                         <input type="text" value="2">
-                        <span class="date__btn date__btn--minus">
+                        <button type="button" class="date__btn date__btn--minus">
                           <span class="visually-hidden">Уменьшить на одного</span>
-                        </span>
-                        <span class="date__btn date__btn--plus">
+                        </button>
+                        <button type="button" class="date__btn date__btn--plus">
                           <span class="visually-hidden">Увеличить на одного</span>
-                        </span>
+                        </button>
                       </p>
                       <span>Дн.</span>
                     </label>
@@ -399,7 +399,7 @@
               <div class="add__visit">
                 <ul class="visit__list">
                   <li class="visit__item">
-                    <p class="visit__country">Босния и Герцеговина</p>
+                    <button class="visit__country" type="button">Босния и Герцеговина</button>
                     <a class="visit__flag" href="europe/bosniaandherzegovina.html">
                       <span class="visually-hidden">Босния и Герцеговина</span>
                       <svg role="img" width="35" height="24">
@@ -411,7 +411,7 @@
                     </button>
                   </li>
                   <li class="visit__item">
-                    <p class="visit__country">Чехия</p>
+                    <button class="visit__country" type="button">Чехия</button>
                     <a class="visit__flag" href="europe/сzech.html">
                       <span class="visually-hidden">Чехия</span>
                       <svg role="img" width="35" height="24">
@@ -422,8 +422,8 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="visit__item visit__item--nojs select-menu">
-                    <p class="visit__country">Выберите страну</p>
+                  <li class="visit__item visit__item--choose visit__item--nojs select-menu">
+                    <button class="visit__country" type="button">Выберите страну</button>
                     <div class="visit__dropdown select-menu__dropdown">
                       <ul class="select-menu__letters" role="menu">
                         <li class="select-menu__letter select-menu__letter--active">А</li>
@@ -493,7 +493,7 @@
                     </button>
                   </li>
                   <li class="visit__item visit__item--add">
-                    <p class="visit__country">Добавить страну</p>
+                    <button class="visit__country" type="button">Добавить страну</button>
                   </li>
                 </ul>
               </div>
@@ -547,7 +547,7 @@
                       </span>
                     </label>
                     <textarea id="entertainment-2" name="message" placeholder="Пить пиво и лазить по старым замкам,
-                    наслаждаться архитектурой и вот это все." autocomplete="on"></textarea>
+                    наслаждаться архитектурой и вот это все." autocomplete="on" required></textarea>
                   </li>
                 </ul>
               </div>
