@@ -41,13 +41,11 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
-  &--active {
-    background-color: $beige;
-  }
 }
 
 .like__btn--active {
+  background-color: $beige;
+
   &::before {
     background-image: url("../img/svg/heart-active.svg");
     opacity: 1;
