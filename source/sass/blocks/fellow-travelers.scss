@@ -223,6 +223,8 @@
   }
 
   .fellow-travelers__plain-text {
+    position: relative;
+    z-index: 1;
     max-width: 485px;
     margin: 0 0 39px;
 

@@ -254,7 +254,8 @@
     }
   }
 
-  .calendar__number--mar {
+  .calendar__number--mar,
+  .calendar__number--apr {
     position: relative;
 
     &::after {
@@ -268,23 +269,7 @@
       line-height: 1.67;
       letter-spacing: 1.8px;
       text-align: left;
-    }
-  }
-
-  .calendar__number--apr {
-    position: relative;
-
-    &::after {
-      position: absolute;
-      color: inherit;
-      content: "апр";
-      font-size: 18px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.67;
-      letter-spacing: 1.8px;
-      text-align: left;
+      left: 32px;
     }
   }
 }

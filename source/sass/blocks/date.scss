@@ -120,9 +120,9 @@
   text-transform: uppercase;
 
   color: $dark-slate-blue;
-  margin-bottom: 8px;
 
   &:first-child {
+    margin-bottom: 8px;
     order: 1;
   }
 
@@ -370,6 +370,7 @@
       width: 205px;
       order: 1;
       margin-right: 15px;
+      margin-bottom: 0;
     }
 
     &:last-child {
