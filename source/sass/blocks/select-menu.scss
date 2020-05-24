@@ -12,16 +12,20 @@
 .select-menu__letter {
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
   font-style: normal;
+  font-stretch: normal;
   line-height: 3;
-  letter-spacing: 1.4px;
+
+  width: 20%;
+  height: 41px;
+
+  cursor: pointer;
   text-align: center;
+  letter-spacing: 1.4px;
+
   color: $dark-slate-blue;
   border-right: 1px solid $cloudy-blue;
   border-bottom: 1px solid $cloudy-blue;
-  width: 20%;
-  height: 41px;
 
   &--active {
     background-color: $pale-grey;
@@ -29,6 +33,11 @@
 
   &:nth-child(5n) {
     border-right: 0;
+  }
+
+  &:active {
+    color: white;
+    background-color: #1d2e5b;
   }
 }
 
@@ -63,6 +72,10 @@
     &--active {
       background-color: $dark-slate-blue;
       color: white;
+    }
+
+    &:hover {
+      border-color: #959bb2;
     }
   }
 
