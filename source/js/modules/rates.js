@@ -5,7 +5,7 @@
   var ESC_KEYCODE = 27;
   var modal = document.querySelector('.modal-rates');
   var link = document.querySelector('.rates__link');
-  var modalClose = modal.querySelector('.modal-rates__btn');
+  var modalClose = document.querySelector('.modal-rates__btn');
 
   /**
    * Функция для закрытия окна формы по нажатии клавиши Esc.
