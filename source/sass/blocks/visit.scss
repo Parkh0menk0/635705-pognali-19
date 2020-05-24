@@ -319,7 +319,6 @@
 
   .visit__item {
     margin-bottom: 15px;
-    justify-content: space-between;
     align-items: center;
 
     &::before {
@@ -376,6 +375,7 @@
 
   .visit__flag {
     margin-right: 40px;
+    margin-left: auto;
     width: 70px;
     height: 47px;
     border: none;
