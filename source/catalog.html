@@ -20,48 +20,48 @@
   </div>
 
   <!-- Шапка -->
-  <header class="header header--inner">
-    <nav class="main-nav main-nav--inner main-nav--nojs">
-      <div class="main-nav__fixed main-nav__fixed--no-scroll">
-        <div class="main-nav__wrapper">
-          <a class="main-nav__logo" href="index.html">
-            @@include('./_include/_main-nav__logo.html')
-          </a>
-          <div class="main-nav__menu">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__drop-down drop-down">
-              <div class="drop-down__wrapper">
-                <ul class="main-nav__list">
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="index.html">О сервисе</a>
-                  </li>
-                  <li class="main-nav__item">
-                    <a class="main-nav__link" href="form.html">Направления</a>
-                  </li>
-                  <li class="main-nav__item main-nav__item--active">
-                    <a class="main-nav__link">Попутчики</a>
-                  </li>
-                </ul>
-                <a class="drop-down__btn btn" href="#">Авторизация</a>
-                <div class="drop-down__contacts">
-                  @@include('./_include/_contact-item--tel.html')
-                  @@include('./_include/_contact-item--mail.html')
-                </div>
-                <ul class="drop-down__social social">
-                  @@include('./_include/_social__item.html')
-                </ul>
+  <nav class="main-nav main-nav--inner main-nav--nojs">
+    <div class="main-nav__fixed main-nav__fixed--no-scroll">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo" href="index.html">
+          @@include('./_include/_main-nav__logo.html')
+        </a>
+        <div class="main-nav__menu">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__drop-down drop-down">
+            <div class="drop-down__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="index.html">О сервисе</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Направления</a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link">Попутчики</a>
+                </li>
+              </ul>
+              <a class="drop-down__btn btn" href="#">Авторизация</a>
+              <div class="drop-down__contacts">
+                @@include('./_include/_contact-item--tel.html')
+                @@include('./_include/_contact-item--mail.html')
               </div>
+              <ul class="drop-down__social social">
+                @@include('./_include/_social__item.html')
+              </ul>
             </div>
           </div>
-          <div class="main-nav__contacts">
-            @@include('./_include/_topmenu.html')
-            <a class="main-nav__btn btn" href="#">Авторизация</a>
-          </div>
+        </div>
+        <div class="main-nav__contacts">
+          @@include('./_include/_topmenu.html')
+          <a class="main-nav__btn btn" href="#">Авторизация</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <header class="header header--inner">
     <div class="header__content">
       <div class="header__wrapper">
         <h1 class="header__title">Попутчики</h1>
