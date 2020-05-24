@@ -133,14 +133,20 @@
 }
 
 .header__link {
-  position: relative;
-  display: none;
+  max-width: 50%;
+  word-break: break-word;
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.2;
-  color: white;
+
+  position: relative;
+
+  display: none;
+
   text-transform: uppercase;
+
+  color: white;
 
   &::after {
     position: absolute;
@@ -157,19 +163,11 @@
   }
 
   &:hover {
-    color: rgba(white, 0.6);
-
-    &::after {
-      opacity: 0.6;
-    }
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(white, 0);
-
-    &::after {
-      opacity: 0.3;
-    }
+    opacity: 0.3;
   }
 }
 
