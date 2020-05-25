@@ -56,6 +56,14 @@
   letter-spacing: normal;
   text-align: left;
   color: $greyish-brown;
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
