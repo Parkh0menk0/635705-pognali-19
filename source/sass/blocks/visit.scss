@@ -242,6 +242,7 @@
 .visit__delete {
   @include btn-res;
 
+  display: flex;
   position: absolute;
   top: -10px;
   right: -10px;
@@ -251,10 +252,27 @@
 
   border-radius: 50%;
   background-color: $pale-grey;
-  background-image: url("../img/svg/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9px;
+
+  &::before {
+    width: 9px;
+    height: 9px;
+    margin: auto;
+
+    content: "";
+
+    opacity: 0.1;
+    background-image: url("../img/svg/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover::before {
+    opacity: 0.3;
+  }
+
+  &:active::before {
+    opacity: 0.05;
+  }
 }
 
 .visit__btn {
@@ -396,7 +414,11 @@
 
     border-radius: 0;
     background-color: transparent;
-    background-size: 17px;
+
+    &::before {
+      width: 17px;
+      height: 17px;
+    }
   }
 
   .visit__dropdown {
