@@ -215,7 +215,7 @@
 
 @media (min-width: $tablet-width) {
   .date__fields {
-    margin-bottom: 59px;
+    margin-bottom: 35px;
     width: auto;
   }
 
@@ -231,7 +231,7 @@
 
   .date__field--people {
     order: 1;
-    margin-bottom: 35px;
+    margin-bottom: 11px;
   }
 
   .date__field--duration {
@@ -249,6 +249,10 @@
     line-height: 0.9;
     letter-spacing: 2px;
     margin-bottom: 24px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 
   .date__lead {

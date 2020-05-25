@@ -233,7 +233,9 @@
 }
 
 .add__send {
-  @include btn-res;
+  cursor: pointer;
+  color: inherit;
+  border: none;
 }
 
 /* Tablet styles */
