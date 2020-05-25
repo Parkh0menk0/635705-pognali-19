@@ -213,6 +213,10 @@
   flex-wrap: wrap;
 }
 
+.main-nav__item {
+  overflow: hidden;
+}
+
 .main-nav__link {
   font-size: 30px;
   font-weight: 500;
@@ -228,6 +232,24 @@
 
   &:active {
     color: rgba($mango-two, 0.3);
+  }
+
+  &:hover span,
+  &:focus span {
+    transform: translateY(-100%);
+  }
+}
+
+.main-nav__link span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
   }
 }
 
