@@ -68,6 +68,10 @@
 }
 
 @media (max-width: 1319px) {
+  .main-nav--nojs .main-nav__fixed {
+    position: absolute;
+  }
+
   .main-nav--nojs .main-nav__logo-img {
     &--block {
       display: block;
