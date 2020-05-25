@@ -325,6 +325,7 @@
   .main-nav__wrapper {
     width: 100%;
     justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .main-nav__fixed--scroll .drop-down {
@@ -381,8 +382,8 @@
     position: relative;
     width: 540px;
     max-height: none;
-    margin-left: 40px;
-    padding-left: 105px;
+    margin-left: 41px;
+    padding: 14px 0 39px 105px;
 
     &::before {
       position: absolute;
