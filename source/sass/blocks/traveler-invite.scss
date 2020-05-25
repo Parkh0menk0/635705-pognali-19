@@ -36,11 +36,35 @@
   }
 }
 
-.traveler-invite--active {
-  .traveler-invite__title h3 {
-    &::before {
-      background-color: $green-apple;
-    }
+.traveler-invite h3 {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+
+  max-width: 106px;
+  margin: 0;
+
+  color: inherit;
+
+  &::before {
+    position: absolute;
+    top: 8px;
+    right: -38px;
+
+    width: 6px;
+    height: 6px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $salmon;
+  }
+}
+
+.traveler-invite--active h3 {
+  &::before {
+    background-color: $green-apple;
   }
 }
 
@@ -55,31 +79,14 @@
 
 .traveler-invite__title {
   margin-top: 15px;
-}
-
-.traveler-invite__title h3 {
-  position: relative;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-
-  max-width: 106px;
-  margin: 0;
-
   color: $dark-slate-blue;
 
-  &::before {
-    position: absolute;
-    top: 8px;
-    right: -38px;
+  &:hover {
+    color: rgba($dark-slate-blue, 0.7);
+  }
 
-    width: 6px;
-    height: 6px;
-
-    content: "";
-
-    border-radius: 50%;
-    background-color: $salmon;
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
   }
 }
 
@@ -393,7 +400,7 @@
     width: 255px;
   }
 
-  .traveler-invite__title h3 {
+  .traveler-invite h3 {
     display: inline;
     font-size: 30px;
     line-height: 30px;
@@ -628,7 +635,7 @@
     margin-bottom: 18px;
   }
 
-  .traveler-invite__title h3 {
+  .traveler-invite h3 {
     &::before {
       top: 11px;
       left: -26px;
