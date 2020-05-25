@@ -58,6 +58,14 @@
     &[href] {
       background-color: $steel-grey;
     }
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -469,6 +477,14 @@
 
       &[href] {
         color: rgba(black, 0.6);
+      }
+
+      &[href]:hover {
+        opacity: 0.6;
+      }
+
+      &[href]:active {
+        opacity: 0.3;
       }
     }
 
