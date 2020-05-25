@@ -50,116 +50,58 @@
   }
 }
 
+.visit__item--open,
 .visit__item--nojs {
   flex-direction: column;
   align-items: stretch;
+}
 
-  .visit__country {
-    position: relative;
-    border: 1px solid $dark-slate-blue;
-    background-color: $dark-slate-blue;
-    color: white;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.visit__item--open .visit__country,
+.visit__item--nojs .visit__country {
+  position: relative;
+  border: 1px solid $dark-slate-blue;
+  background-color: $dark-slate-blue;
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 17px;
-      bottom: 0;
-
-      width: 9px;
-      height: 9px;
-      margin: auto;
-
-      content: "";
-
-      background-image: url("../img/svg/filter-close.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
+  &::before {
+    display: none;
   }
 
-  .visit__dropdown {
-    display: flex;
-  }
+  &::after {
+    right: 16px;
+    top: 2px;
 
-  .visit__delete {
+    width: 9px;
+    height: 9px;
+
+    background-image: url("../img/svg/small-cross.svg");
+  }
+}
+
+.visit__item--open .visit__dropdown,
+.visit__item--nojs .visit__dropdown {
+  display: flex;
+}
+
+.visit__item--open .visit__delete,
+.visit__item--nojs .visit__delete {
+  display: none;
+}
+
+.visit__item--open.visit__item--choose,
+.visit__item--nojs.visit__item--choose {
+  &::before {
     display: none;
   }
 }
 
-.visit__item--open {
-  flex-direction: column;
-  align-items: stretch;
-
-  .visit__country {
-    position: relative;
-    border: 1px solid $dark-slate-blue;
-    background-color: $dark-slate-blue;
-    color: white;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 17px;
-      bottom: 0;
-
-      width: 9px;
-      height: 9px;
-      margin: auto;
-
-      content: "";
-
-      background-image: url("../img/svg/filter-close.svg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-  }
-
-  .visit__dropdown {
-    display: flex;
-  }
-
-  .visit__delete {
-    display: none;
-  }
-}
-
-.visit__item--choose {
+.visit__item--choose,
+.visit__item--add {
   &::before {
     border: 1px solid #d6d9e6;
     background-color: white;
-  }
-}
-
-.visit__item--add {
-  &::before {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 49px;
-    bottom: 0;
-
-    width: 8px;
-    height: 8px;
-    margin: auto;
-
-    content: "";
-
-    border: 1px solid #d6d9e6;
-    border-radius: 50%;
-    background-color: #edeff6;
   }
 }
 
@@ -259,7 +201,7 @@
 
     content: "";
 
-    opacity: 0.2;
+    opacity: 0.3;
     background-image: url("../img/svg/dropdown-form.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -269,7 +211,7 @@
     border-color: #959bb2;
 
     &::after {
-      opacity: 0.3;
+      opacity: 1;
     }
   }
 
@@ -309,7 +251,7 @@
 
   border-radius: 50%;
   background-color: $pale-grey;
-  background-image: url("../img/svg/small-cross.svg");
+  background-image: url("../img/svg/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9px;
@@ -378,12 +320,29 @@
     }
   }
 
+  .visit__item--open .visit__country,
   .visit__item--nojs .visit__country {
     align-self: flex-start;
+
+    &::after {
+      right: 25px;
+      top: 0;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 
-  .visit__item--open .visit__country {
-    align-self: flex-start;
+  .visit__item--choose {
+    &::before {
+      background-color: #f9f9fa;
+    }
+  }
+
+  .visit__item--add {
+    &::before {
+      background-color: #edeff6;
+    }
   }
 
   .visit__item--add .visit__country {
