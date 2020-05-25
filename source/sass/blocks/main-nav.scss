@@ -360,6 +360,14 @@
 
   .main-nav__fixed--scroll .main-nav__link {
     color: $dark-two;
+
+    &:hover {
+      color: $mango-two;
+    }
+
+    &:active {
+      color: rgba($mango-two, 0.3);
+    }
   }
 
   .main-nav__fixed--scroll .main-nav__menu {
