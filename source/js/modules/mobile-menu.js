@@ -2,12 +2,14 @@
 
 (function () {
 
-  const burger = document.querySelector('.main-nav__toggle');
+  const header = document.querySelector('.header');
   const nav = document.querySelector('.main-nav');
+  const burger = document.querySelector('.main-nav__toggle');
   const panel = document.querySelector('.main-nav__fixed');
 
-  if (burger && nav) {
+  if (header && nav && burger) {
 
+    header.classList.remove('header--nojs');
     nav.classList.remove('main-nav--nojs');
 
     burger.addEventListener('click', function () {

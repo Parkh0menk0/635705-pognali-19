@@ -39,6 +39,20 @@
   }
 }
 
+@media (max-width: 1319px) {
+  .header--nojs {
+    background-position: 50% 495px;
+
+    &::before {
+      top: 973px;
+    }
+  }
+
+  .header--nojs .header__content {
+    margin-top: 590px;
+  }
+}
+
 .header--inner {
   margin-bottom: -15px;
   padding-bottom: 9px;
@@ -223,6 +237,16 @@
 
     &::before {
       display: none;
+    }
+  }
+
+  @media (max-width: 1319px) {
+    .header--nojs {
+      background-position: 50% 1156px;
+    }
+
+    .header--nojs div.header__content {
+      margin-top: 940px;
     }
   }
 
