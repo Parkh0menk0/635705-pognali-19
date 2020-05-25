@@ -232,6 +232,10 @@
   }
 }
 
+.add__send {
+  @include btn-res;
+}
+
 /* Tablet styles */
 
 @media (min-width: $tablet-width) {
