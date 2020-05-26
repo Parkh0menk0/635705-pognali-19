@@ -200,11 +200,7 @@
   background-color: $light-periwinkle;
 
   &:hover {
-    color: rgba($dark-two, 0.6);
-
-    &::before {
-      opacity: 0.6;
-    }
+    background-color: #c8cee8;
   }
 
   &:active {
