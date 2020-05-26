@@ -43,7 +43,8 @@
     background-color: $pale-grey-three;
   }
 
-  input[type="checkbox"]:hover + svg {
+  input[type="checkbox"]:hover + svg,
+  input[type="checkbox"]:focus + svg {
     fill: rgba($greyish-brown, 0.3);
   }
 
@@ -55,7 +56,8 @@
     fill: $dark-slate-blue;
   }
 
-  input[type="checkbox"]:checked:hover + svg {
+  input[type="checkbox"]:checked:hover + svg,
+  input[type="checkbox"]:checked:focus + svg {
     fill: rgba($dark-slate-blue, 0.7);
   }
 
