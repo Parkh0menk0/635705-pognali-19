@@ -11,16 +11,6 @@
   background-color: $pale-grey-four;
 }
 
-.filter--open {
-  .filter__content {
-    display: block;
-  }
-
-  .filter__world-parts {
-    display: flex;
-  }
-}
-
 .filter__top {
   display: flex;
   flex-direction: column;
@@ -37,6 +27,10 @@
   display: none;
   overflow: hidden;
   margin-top: 14px;
+}
+
+.filter--open .filter__content {
+  display: block;
 }
 
 .filter__wrapper {
@@ -82,16 +76,6 @@
     background-position: 0 0;
   }
 
-  &--open {
-    &::after {
-      top: 3px;
-      right: 4px;
-      width: 12px;
-      height: 12px;
-      background-image: url("../img/svg/filter-close.svg");
-    }
-  }
-
   &:hover {
     color: rgba($dark-two, 0.6);
 
@@ -106,6 +90,16 @@
     &::after {
       opacity: 0.3;
     }
+  }
+}
+
+.filter--open .filter__expands {
+  &::after {
+    top: 3px;
+    right: 4px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/svg/filter-close.svg");
   }
 }
 
@@ -147,6 +141,10 @@
   margin-top: 30px;
   padding: 0 10%;
   width: 100%;
+}
+
+.filter--open .filter__world-parts {
+  display: flex;
 }
 
 .filter__world-part {
@@ -204,9 +202,7 @@
   }
 
   &:active {
-    color: rgba($dark-two, 0.3);
-
-    &::before {
+    span {
       opacity: 0.3;
     }
   }
@@ -218,9 +214,11 @@
 
   &::before {
     position: absolute;
-    top: 1px;
+    top: -3px;
     left: 0;
+    bottom: 0;
 
+    margin: auto;
     width: 12px;
     height: 12px;
 
@@ -241,15 +239,13 @@
     border-bottom-left-radius: 60px;
   }
 
-  .filter--open {
-    .filter__top {
-      margin-bottom: 56px;
-    }
-  }
-
   .filter__top {
     width: auto;
     margin: 0;
+  }
+
+  .filter--open .filter__top {
+    margin-bottom: 56px;
   }
 
   .filter__top .filter__wrapper {
@@ -293,14 +289,14 @@
       width: 27px;
       height: 5px;
     }
+  }
 
-    &--open {
-      &::after {
-        top: 1px;
-        right: 3px;
-        width: 19px;
-        height: 19px;
-      }
+  .filter--open .filter__expands {
+    &::after {
+      top: 1px;
+      right: 3px;
+      width: 19px;
+      height: 19px;
     }
   }
 
@@ -313,7 +309,7 @@
     letter-spacing: normal;
     text-transform: uppercase;
 
-    &--active {
+    &:last-child {
       display: block;
     }
   }
@@ -354,8 +350,7 @@
     padding-left: 32px;
 
     &::before {
-      top: -1px;
-      left: -5px;
+      left: -6px;
 
       width: 19px;
       height: 19px;
