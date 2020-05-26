@@ -260,22 +260,6 @@
     }
   }
 
-  .traveler-invite__country {
-    position: absolute;
-    top: -3px;
-    left: -1px;
-
-    width: 26px;
-    height: 18px;
-
-    border-radius: 2px;
-
-    svg {
-      width: 26px;
-      height: 18px;
-    }
-  }
-
   .traveler-invite__description {
     font-size: 15px;
     font-weight: normal;
@@ -289,6 +273,22 @@
 
     color: $dark-slate-blue;
   }
+}
+
+.traveler-invite__country {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+
+  width: 26px;
+  height: 18px;
+
+  border-radius: 2px;
+}
+
+.traveler-invite__country svg {
+  width: 26px;
+  height: 18px;
 }
 
 .traveler-invite__list--preferred {

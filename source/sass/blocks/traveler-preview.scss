@@ -192,12 +192,10 @@
     width: 27px;
     height: 27px;
   }
+}
 
-  .traveler-preview__item--active {
-    .traveler-preview__vehicle-icon {
-      fill: $dark-slate-blue;
-    }
-  }
+.traveler-preview__item--active .traveler-preview__vehicle-icon {
+  fill: $dark-slate-blue;
 }
 
 .traveler-preview__country {
