@@ -5,6 +5,15 @@
 
   justify-content: flex-start;
   align-items: flex-start;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .traveler-preview__img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .traveler-preview--active {
@@ -66,10 +75,6 @@
 
   width: 100%;
   margin: auto;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .traveler-preview__level {
