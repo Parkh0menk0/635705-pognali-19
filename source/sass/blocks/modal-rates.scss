@@ -97,6 +97,10 @@
   border-bottom-left-radius: 23px;
   background-color: #f3f4f8;
 
+  &:hover {
+    background-color: #edeff6;
+  }
+
   &:active {
     color: rgba($dark-slate-blue, 0.3);
   }
