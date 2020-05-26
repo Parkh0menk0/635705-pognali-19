@@ -78,64 +78,6 @@
   }
 }
 
-.entertainment textarea {
-  position: relative;
-  line-height: 1.4;
-
-  width: 100%;
-  height: 220px;
-  padding: 10px 13px;
-
-  resize: none;
-
-  border: 1px solid $cloudy-blue;
-  border-radius: 4px;
-  background-color: transparent;
-  white-space: inherit;
-  color: rgba(68, 68, 68, 0.3);
-
-  &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
-  }
-
-  &:hover {
-    border-color: #959bb2;
-  }
-
-  &:focus {
-    outline: none;
-    border-color: $dark-two;
-
-    &::placeholder {
-      color: $greyish-brown;
-    }
-  }
-
-  &:focus:invalid {
-    border-color: red;
-  }
-
-  &:focus:invalid::after {
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.2;
-
-    position: absolute;
-
-    width: 100%;
-    height: 57px;
-
-    content: "Это поле должно быть заполнено";
-    text-align: left;
-    letter-spacing: normal;
-
-    color: red;
-    background-color: #f47e7e;
-  }
-}
-
 .entertainment__country {
   font-size: 18px;
   font-weight: bold;
@@ -175,6 +117,77 @@
     width: 35px;
     height: 24px;
   }
+}
+
+.entertainment__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.entertainment textarea {
+  line-height: 1.4;
+
+  width: 100%;
+  height: 220px;
+  padding: 10px 13px;
+
+  resize: none;
+
+  border: 1px solid $cloudy-blue;
+  border-radius: 4px;
+  background-color: transparent;
+  white-space: inherit;
+  color: rgba(68, 68, 68, 0.3);
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border-color: #959bb2;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $dark-two;
+
+    &::placeholder {
+      color: $greyish-brown;
+    }
+  }
+
+  &:focus:required {
+    border-color: red;
+  }
+
+  &:focus:required + .entertainment__error {
+    display: block;
+  }
+}
+
+.entertainment__error {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+
+  position: absolute;
+  bottom: 7px;
+
+  display: none;
+
+  width: 100%;
+  height: 57px;
+  padding: 10px 13px;
+
+  text-align: left;
+  letter-spacing: normal;
+
+  color: red;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: rgba(red, 0.1);
 }
 
 @media (min-width: $tablet-width) {
@@ -245,6 +258,11 @@
     letter-spacing: normal;
     height: 142px;
   }
+
+  .entertainment__error {
+    font-size: 20px;
+    padding: 17px 35px 17px 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -272,8 +290,15 @@
     margin-bottom: 29px;
   }
 
-  .entertainment textarea {
+  .entertainment__wrapper {
     width: 82.5%;
+  }
+
+  .entertainment textarea {
     padding: 24px 20px 24px 24px;
+  }
+
+  .entertainment__error {
+    padding: 18px 20px;
   }
 }
