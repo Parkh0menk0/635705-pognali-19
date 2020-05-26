@@ -6,6 +6,8 @@
   justify-content: flex-start;
   align-items: flex-start;
 
+  border-radius: 10px;
+
   &:hover {
     cursor: pointer;
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
@@ -247,10 +249,12 @@
 /* Tablet styles */
 
 @media (min-width: $tablet-width) {
-  .traveler-preview--demin {
-    .traveler-preview__hashtags {
-      padding-left: 7px;
-    }
+  .traveler-preview {
+    border-radius: 20px;
+  }
+
+  .traveler-preview--demin .traveler-preview__hashtags {
+    padding-left: 7px;
   }
 
   .traveler-preview__content {
