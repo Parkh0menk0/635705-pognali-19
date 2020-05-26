@@ -34,6 +34,15 @@
       margin-bottom: 18px;
     }
   }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .traveler-invite__img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .traveler-invite h3 {
@@ -157,10 +166,6 @@
   margin: auto;
 
   border-radius: 50%;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .traveler-invite__visit {
