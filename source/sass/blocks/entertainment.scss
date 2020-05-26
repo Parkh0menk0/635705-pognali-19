@@ -156,11 +156,11 @@
     }
   }
 
-  &:focus:required {
+  &:invalid {
     border-color: red;
   }
 
-  &:focus:required + .entertainment__error {
+  &:invalid + .entertainment__error {
     display: block;
   }
 }
