@@ -62,7 +62,7 @@
 .about__picture {
   position: absolute;
   z-index: -1;
-  top: -32px;
+  bottom: -89px;
   right: 10px;
 }
 
@@ -135,7 +135,7 @@
   }
 
   .about__picture {
-    top: 48px;
+    bottom: 36px;
     right: -33px;
   }
 
@@ -194,7 +194,7 @@
   }
 
   .about__picture {
-    top: 15px;
+    bottom: -110px;
     right: 0;
   }
 }
