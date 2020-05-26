@@ -118,7 +118,6 @@
   font-weight: bold;
   line-height: 40px;
 
-  max-width: 270px;
   margin: 0;
   margin-bottom: 244px;
 
@@ -298,7 +297,6 @@
   }
 
   .header__title {
-    max-width: 400px;
     font-size: 60px;
     line-height: 70px;
 
@@ -359,6 +357,8 @@
 
   .header--inner .header__title {
     margin-left: 0;
+    width: auto;
+    max-width: 70%;
   }
 
   .header__wrapper {
@@ -380,7 +380,7 @@
   }
 
   .header__title {
-    max-width: 470px;
+    width: 70%;
     margin-left: 66px;
 
     text-align: left;
