@@ -51,6 +51,10 @@
     opacity: 1;
   }
 
+  &:hover {
+    background-color: #f9d8d8;
+  }
+
   &:active {
     &::before {
       opacity: 0.3;
