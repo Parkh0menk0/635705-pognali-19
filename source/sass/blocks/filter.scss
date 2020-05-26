@@ -309,6 +309,16 @@
     letter-spacing: normal;
     text-transform: uppercase;
 
+    &:first-child {
+      display: block;
+    }
+  }
+
+  .filter--open .filter__expand {
+    &:first-child {
+      display: none;
+    }
+
     &:last-child {
       display: block;
     }
