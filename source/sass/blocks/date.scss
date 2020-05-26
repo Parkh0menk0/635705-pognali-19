@@ -29,6 +29,14 @@
 .date__field--children {
   margin: 0;
 
+  input[type="checkbox"]:disabled + label {
+    opacity: 0.1;
+  }
+
+  input[type="checkbox"]:checked:disabled + label {
+    opacity: 0.1;
+  }
+
   input[type="checkbox"] {
     &:checked + label {
       &::after {

@@ -62,6 +62,14 @@
   input[type="checkbox"]:checked:active + svg {
     fill: rgba($dark-slate-blue, 0.3);
   }
+
+  input[type="checkbox"]:disabled + svg {
+    fill: rgba($dark-slate-blue, 0.1);
+  }
+
+  input[type="checkbox"]:checked:disabled + svg {
+    fill: rgba($dark-slate-blue, 0.1);
+  }
 }
 
 .field-checkbox__vehicle-icon {
@@ -119,6 +127,14 @@ input[type="checkbox"]:focus + .field-checkbox__box {
 input[type="checkbox"]:checked:focus + .field-checkbox__box {
   background-image: url("../img/svg/tick.svg");
   opacity: 0.6;
+}
+
+input[type="checkbox"]:disabled + .field-checkbox__box {
+  opacity: 0.1;
+}
+
+input[type="checkbox"]:checked:disabled + .field-checkbox__box {
+  opacity: 0.1;
 }
 
 @media (min-width: $tablet-width) {
