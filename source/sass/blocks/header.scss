@@ -66,33 +66,33 @@
   &::before {
     display: none;
   }
+}
 
-  .header__wrapper {
-    align-items: flex-start;
+.header--inner .header__wrapper {
+  align-items: flex-start;
 
-    padding: 0 25px;
-  }
+  padding: 0 25px;
+}
 
-  .header__title {
-    position: relative;
+.header--inner .header__title {
+  position: relative;
 
-    margin-bottom: 0;
+  margin-bottom: 0;
 
-    text-align: left;
+  text-align: left;
 
-    &::after {
-      position: absolute;
-      bottom: -11px;
-      left: 0;
+  &::after {
+    position: absolute;
+    bottom: -11px;
+    left: 0;
 
-      width: 100%;
-      height: 5px;
+    width: 100%;
+    height: 5px;
 
-      content: "";
+    content: "";
 
-      border-radius: 2px;
-      background-color: $mango;
-    }
+    border-radius: 2px;
+    background-color: $mango;
   }
 }
 
@@ -114,10 +114,12 @@
 }
 
 .header__title {
+  word-break: break-word;
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
 
+  max-width: 402px;
   margin: 0;
   margin-bottom: 244px;
 
@@ -254,29 +256,30 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     padding-bottom: 58px;
+  }
 
-    .header__wrapper {
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+  .header--inner .header__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-      padding: 0 33px;
+    padding: 0 33px;
+  }
+
+  .header--inner .header__title {
+    line-height: 1.25;
+    max-width: 65%;
+
+    &::after {
+      bottom: -62px;
+      height: 8px;
+      border-radius: 4px;
     }
+  }
 
-    .header__title {
-      line-height: 1.25;
-
-      &::after {
-        bottom: -62px;
-        height: 8px;
-        border-radius: 4px;
-      }
-    }
-
-    .header__link {
-      display: block;
-      padding-right: 63px;
-    }
+  .header--inner .header__link {
+    display: block;
+    padding-right: 63px;
   }
 
   .header__content {
@@ -301,6 +304,7 @@
     line-height: 70px;
 
     margin-bottom: 85px;
+    max-width: 670px;
   }
 
   .header__contacts {
@@ -380,7 +384,7 @@
   }
 
   .header__title {
-    width: 70%;
+    max-width: 480px;
     margin-left: 66px;
 
     text-align: left;
