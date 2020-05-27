@@ -75,6 +75,8 @@
 }
 
 .fellow-travelers__lead {
+  position: relative;
+  z-index: 1;
   order: 1;
   width: 82%;
   margin-bottom: 56px;
@@ -98,8 +100,6 @@
 }
 
 .fellow-travelers__bold-text {
-  position: relative;
-  z-index: 1;
   margin: 0;
   max-width: 200px;
 
@@ -225,8 +225,6 @@
   }
 
   .fellow-travelers__plain-text {
-    position: relative;
-    z-index: 1;
     max-width: 485px;
     margin: 0 0 39px;
 
@@ -321,6 +319,10 @@
 
   .fellow-travelers__lead {
     margin-bottom: 83px;
+  }
+
+  .fellow-travelers__title {
+    max-width: 548px;
   }
 
   .fellow-travelers__btn {
