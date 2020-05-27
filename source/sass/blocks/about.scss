@@ -4,7 +4,7 @@
 
   width: auto;
   margin-bottom: -30px;
-  padding-top: 62px;
+  padding-top: 63px;
   padding-bottom: 81px;
 
   border-bottom-right-radius: 30px;
@@ -21,7 +21,7 @@
   &::before {
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -33px;
     left: 0;
 
     width: 113px;
@@ -29,7 +29,7 @@
 
     content: "";
 
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: $dark-blue-grey-four;
   }
 }
@@ -98,6 +98,7 @@
     padding: 42px 35px;
 
     &::before {
+      top: 0;
       width: 100%;
       height: 213px;
       border-radius: 20px;
