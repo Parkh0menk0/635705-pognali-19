@@ -62,14 +62,6 @@
     &::before {
       background-image: url("../img/svg/triangle-arrow-left.svg");
     }
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   &--next {
@@ -81,7 +73,10 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
+
     &::before {
       opacity: 0.6;
     }
