@@ -104,6 +104,8 @@
 }
 
 .traveler-filter__legend {
+  @include btn-res;
+
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -121,7 +123,6 @@
   padding-top: 12px;
   padding-bottom: 9px;
 
-  cursor: pointer;
   text-align: left;
   text-transform: uppercase;
 
@@ -284,6 +285,18 @@
     line-height: 1.2;
     padding-top: 13px;
     padding-bottom: 4px;
+
+    &::after {
+      top: 3px;
+      width: 10px;
+      height: 5px;
+    }
+  }
+
+  .traveler-filter__fieldset {
+    &:last-of-type {
+      margin-bottom: 26px;
+    }
   }
 
   .traveler-filter__fieldset--typical .traveler-filter__list {
