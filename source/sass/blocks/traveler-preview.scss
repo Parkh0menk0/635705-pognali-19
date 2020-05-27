@@ -13,6 +13,7 @@
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
 
     .traveler-preview__img {
+      transition: transform 0.3s;
       transform: scale(1.1);
     }
   }
