@@ -580,6 +580,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .traveler-invite {
+    align-items: stretch;
+  }
+
   .traveler-invite__vehicle {
     margin-bottom: 0;
   }
@@ -649,7 +653,7 @@
 
   .traveler-invite__picture {
     width: 285px;
-    height: 285px;
+    height: 100%;
     margin: 0;
     margin-right: 0;
 
@@ -660,7 +664,7 @@
 
   .traveler-invite__img {
     width: 285px;
-    height: 285px;
+    height: 100%;
     object-fit: cover;
     border-radius: 17px;
     border-top-right-radius: 0;
