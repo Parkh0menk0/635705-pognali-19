@@ -219,7 +219,9 @@
 }
 
 .main-nav__link[href] {
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     color: $mango-two;
   }
 
